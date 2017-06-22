@@ -1,0 +1,5 @@
+User-agent:*
+Disallow: /tmp/prueba.html
+Disallow: /logs
+Visit-time: 0300-0400 #  obligaría a rastrear las paginas solo de 3 am a 4 am
+Request-rate: 1/30 # indexe una página o varias cada equis tiempo, para ello se utiliza la siguiente sintaxis: 1 el número de documentos a rastrear y el 30 el tiempo que transcurre entre un rastreo y el siguiente.

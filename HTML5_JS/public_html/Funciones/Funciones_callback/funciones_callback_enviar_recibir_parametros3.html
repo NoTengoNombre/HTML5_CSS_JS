@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Primer Callback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <div id='misdivs'>
+   <!--Funcion de callback: es una funcion que 'invoca' o--> 
+   <!--'llama' a otra funcion en cuanto termine de ejecutarse-->
+  </div>
+  <div>
+   <!--Una funcion con retardo que hace que se ejecute la 2º funcion-->
+   <!--y luego la 1º--> 
+  </div>
+
+  <div>
+   De esta forma creamos funciones nombradas fuera de la llamada <br>
+   y estas a su vez podrian disparar otros eventos (con callbacks) tambien.<br>
+
+   Por último y no menos importante, los callbacks No son asincrónicos, <br>
+   es decir, dispara el callback y cuando termina la ejecución de esa <br>
+   función de callback continua desde donde lo disparó. <br>
+   En el ejemplo anterior dispara el callbackPaso1() y <br>
+   cuando este termina, continua continua la ejecución disparando el callbackPaso2().<br>
+  </div>
+
+
+
+  <script>
+
+   /**
+    * La funcion principal se ejecuta recibiendo un argumento que es otra
+    * funcion que se ejecuta despues de que termine su labor llamando a callback
+    * 
+    * @param {type} callback
+    * @returns {undefined}
+    */
+   function functionPrincipal(callback) {
+       console.log('hago algo y llamo al callback avisando que termine');
+   }
+
+   functionPrincipal(function () {
+       alert('terminó de hacer algo');
+   });
+
+
+
+
+  </script>
+ </body>
+</html>

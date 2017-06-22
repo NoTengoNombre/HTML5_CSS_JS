@@ -1,0 +1,57 @@
+
+<!--
+    @Created on : 20-jun-2017, 22:35:48
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <script>
+
+   var t = 7;
+
+//funcion anonima dentro de un objeto
+//variable 'f' es igual a la funcion que ejecuta el 'alert'
+   var f = function () {
+       alert('mi_funcion');
+   };
+// Podemos crear una funcion que admita la otra funcion
+// para que la ejecute
+
+//Ambas funciones estan ejecutando una variable 'objeto' 
+//que tiene como contenido una funcion anonima
+
+//Estas 2 llamadas son iguales
+//funcion lambda
+   suma(f);
+
+//funcion anonima 
+   suma(function () {
+       alert('mi_funcion');
+   });
+
+//Ambas funciones estan ejecutando una variable 'objeto' 
+//que tiene como contenido una funcion anonima
+
+
+//Estas 2 llamadas son iguales
+   llamadaLambda(f);
+
+   llamadaLambda(function () {
+       alert('mi_funcion');
+   });
+
+
+  </script>
+ </head>
+ <body>
+
+ </body>
+</html>

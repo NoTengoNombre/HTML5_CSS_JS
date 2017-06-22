@@ -1,0 +1,33 @@
+<!--
+    @Created on : 21-jun-2017, 13:53:33
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body onunload="mi_funcion_finalizar()">
+
+  <p onload="mi_funcion_iniciar()"> 'onload' Se ejecuta cuando se carga el documento</p>
+  <p> 'onunload' Se ejecuta cuando se carga el documento</p>
+
+  <script>
+
+   function mi_funcion_iniciar() {
+       alert('Se ejecuta el atributo onload');
+   }
+
+   function mi_funcion_finalizar() {
+       alert('Se ejecuta el atributo onunload');
+   }
+
+  </script>
+ </body>
+</html>

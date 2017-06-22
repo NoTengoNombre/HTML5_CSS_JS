@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Primer Callback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <script>
+
+   /**
+    * Los Callbacks en JavaScript son como su propio nombre, 
+    * indica, llamadas de vuelta, quiere decir que cuando invoco 
+    una función pasándole como parámetro otra función 
+    (el callback) esta función parámetro se ejecuta 
+    cuando la función principal ha terminado de ejecutarse
+    
+    * @param {type} callback
+    * @returns {undefined}
+    */
+   function funcionPrincipal(callback) {
+       alert('1 Hago algo y llamo al callback avisando que termine');
+       callback();
+   }
+
+   funcionPrincipal(function () {
+       alert(' 2 Termino de hacer algo');
+   });
+
+
+
+  </script>
+ </body>
+</html>

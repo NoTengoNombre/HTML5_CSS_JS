@@ -1,0 +1,60 @@
+<!--
+    @Created on : 13-may-2017, 0:27:32
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :http://www.w3im.com/es/
+http://www.w3ii.com/es/codeigniter/codeigniter_flashdata.html
+https://www.uno-de-piera.com/las-sesiones-flashdata-en-codeigniter/
+https://www.w3schools.com/jquery/jquery_get_started.asp
+http://www.roseindia.net/ajax/jquery/jquery-fading-method.shtml
+
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+  <p>
+   aqui
+  </p>
+
+  <div id="clickme">
+   Click here
+  </div>
+  <img id="book" src="../assets/img/ct.png" alt="" width="100" height="123" />
+  <br>
+  With the element initially hidden, we can show it slowly:
+  <script>
+
+   $('p').css('color', 'red')
+           .css('text-align', 'center')
+           .css('font-size', '20px');
+
+   $(document).ready(function (e) {
+       $('p').click(function () {
+           alert('enviando');
+       });
+       $('p').css('color', 'blue');
+   }, function () {
+       $('p').fadeIn('slow', function () {
+
+       });
+   });
+
+
+   $('#clickme').click(function () {
+       $('#book').fadeIn('slow', function () {
+           // Animation complete
+       });
+   });
+
+  </script>
+
+ </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='es'>
+ <head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+ </head>
+ <body>
+
+  <input type="text">
+
+  <script>
+//   $('\input[type=\'text\']').on('blur', function () {
+//       if (!this.value) {
+//           alert('Please enter some text');
+//       }
+//   });
+   ("input[type='text']").on("blur", function () {
+       if (!this.value) {
+           alert("Please enter some text!");
+       }
+   });
+  </script>
+ </body>
+</html>

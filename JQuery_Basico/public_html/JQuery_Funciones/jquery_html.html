@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='es'>
+ <head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+ </head>
+ <body>
+
+  <p>
+   <b>Click</b> to change the <span id='tag'>Html</span>
+  </p>
+
+  <p>
+   to a <span id='text'> text </span> node.
+  </p>
+
+  <p>
+   This <button name='nada'> button </button> does nothing.
+  </p>
+
+
+
+
+  <script>
+//    This refers to window
+   $('p').click(function () {
+       var htmlString = $(this).html();
+       $(this).text(htmlString);
+   });
+  </script>
+ </body>
+</html>

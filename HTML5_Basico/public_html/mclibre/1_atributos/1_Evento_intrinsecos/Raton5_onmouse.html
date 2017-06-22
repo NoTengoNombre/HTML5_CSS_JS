@@ -1,0 +1,58 @@
+<!--
+    @Created on : 21-jun-2017, 13:53:33
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Eventos Imagen</title>
+  <meta charset="UTF-8">
+  <!--<meta http-equiv="refresh" content="10">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   span , p{
+       border: 1px solid #000;
+       width: content-box;
+   }
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <span id="linea" onmousedown="mionclickmouse()">
+    <b>onmousedown</b> - Se ejecuta directamente cuando pulso en el parrafo porque tiene asociado el evento
+   </span>
+   <p onmousedown='this.style.color = "green"'>onmousedown - Se ejecuta cuando se pulsa un botón del ratón.</p>
+  </div>
+
+  <div>
+   <span>
+    <b>onmousemove</b> - Se ejecuta directamente cuando pulso en el parrafo porque tiene asociado el evento 
+   </span>
+   <p onmousemove='this.style.color = "orange"'>onmousemove - Se ejecuta cuando se mueve el ratón.</p>
+  </div>
+
+  <div>
+   <span>
+    <b>onmouseout</b> - Se ejecuta directamente cuando pulso en el parrafo porque tiene asociado el evento 
+   </span>
+   <p onmouseout='this.style.color = "red"'>onmouseout - Se ejecuta cuando el cursor deja de situarse sobre un elemento.</p>
+  </div>
+
+  <div>
+   <span>onmouseover - Se ejecuta directamente </span>
+   <p onmouseover='this.style.color = "blue"'>onmouseover - Se ejecuta cuando el cursor se sitúa sobre un elemento.</p>
+  </div>
+
+  <script>
+
+   function mionclickmouse() {
+    document.getElementById('linea').style.background = "red";
+   }
+  </script>
+ </body>
+</html>

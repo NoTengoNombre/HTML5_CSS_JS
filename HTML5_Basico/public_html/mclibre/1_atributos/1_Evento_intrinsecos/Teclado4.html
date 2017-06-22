@@ -1,0 +1,66 @@
+<!--
+    @Created on : 21-jun-2017, 13:53:33
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Eventos Imagen</title>
+  <meta charset="UTF-8">
+  <!--<meta http-equiv="refresh" content="10">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+
+  <div>
+   <h3>Onkeydown</h3>
+   <p>onkeydown - Se ejecuta cuando se pulsa una tecla.</p>
+   <input type="text" value='ejecuta al pulsar' onkeydown="this.style.color = '#d8509b'">
+   <p>Al pulsar dentro del &quot;input&quot; Ejecuta la funcion </p>
+   <input type="text"  onkeydown="myonkeydown()">
+
+  </div>
+
+  <div>
+   <h3>Onkeypress</h3>
+   <p>onkeypress -	Se ejecuta cuando se pulsa y despulsa una tecla.</p>
+   <p>Con el &quot;token&quot; <b>this</b></p>
+   <!--this - hace referencia al propio 'input' -->
+   <input type='text' value='ejecuta al presionar' onkeypress="this.style.color = '#49a3d1'">
+   <p>onkeypress -	Se ejecuta cuando se pulsa y despulsa una tecla.</p>
+   <!--sin 'this' hace referencia al propio 'input' -->
+   <p>Sin el &quot;token&quot; <b>this</b></p>
+   <input type='text' value='ejecuta al presionar' onkeypress="style.color = '#e059c7'">
+   <br />
+   <p>Ejecuta el evento al presionar dentro del input</p>
+   <input type='text' value='ejecuta al presionar' onkeypress="myonkeypress()">
+  </div>
+
+  <div>
+   <h3>Onkeyup</h3>
+   <p>Al soltar la tecla dentro del &quot;input&quot; Ejecuta la funcion </p>
+   <input type='text' value='ejecuta al presionar' onkeyup="myonkeyup()">
+   <p>Al soltar la tecla dentro del &quot;input&quot; Ejecuta la funcion </p>
+   <input type='text' value='ejecuta al presionar' onkeyup="style.background = '#f7f0c3'">
+  </div>
+
+  <script>
+   function myonkeydown() {
+       alert('Ejecuta el evento "onkeydown" : You pressed a key inside the input field : ');
+   }
+
+   function myonkeypress() {
+       alert('Ejecuta el evento "onkeypress" : You pressed a key inside the input field : ');
+   }
+
+   function myonkeyup() {
+       alert('Ejecuta el evento "onkeyup" : You pressed a key inside the input field : ');
+   }
+
+  </script>
+ </body>
+</html>

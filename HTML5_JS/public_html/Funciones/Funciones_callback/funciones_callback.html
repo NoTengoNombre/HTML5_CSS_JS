@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Primer Callback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <div id='misdivs'>
+   <!--Funcion de callback: es una funcion que 'invoca' o--> 
+   <!--'llama' a otra funcion en cuanto termine de ejecutarse-->
+  </div>
+  <div>
+   <!--Una funcion con retardo que hace que se ejecute la 2º funcion-->
+   <!--y luego la 1º--> 
+  </div>
+
+
+  <script>
+
+   /**
+    * 'callback' llamada de vuelta
+    * Llama a una funcion y le envio por parametro otra funcion(un callback)
+    * esperando que la funcion que llame se encargue de ejecutar
+    * esa funcion callback
+    * 
+    * @param {type} miCallback
+    * @returns {undefined}
+    */
+   function haceAlgo(miCallback) {
+//    hago lago y llamo al callback avisando que termine
+       miCallback();
+   }
+
+   haceAlgo(function () {
+       console.log('Termino de hacer algo');
+   });
+
+
+  </script>
+ </body>
+</html>

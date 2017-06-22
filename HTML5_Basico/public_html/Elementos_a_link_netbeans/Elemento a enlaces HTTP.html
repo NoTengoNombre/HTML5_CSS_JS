@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+ https://www.ibiblio.org/pub/linux/docs/LuCaS/Manuales-LuCAS/doc-curso-html/doc-curso-html/x4275.html
+-->
+<html>
+ <head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+
+  <ul>
+   <li style="list-style-type: none">
+    <p>Mismo frame equivale document.write </p>
+   </li>
+   <li>
+    <a href="http://www.example.net/">Same Frame</a>
+   </li>
+
+   <li style="list-style-type: none">
+    <p>Fuerza que el documento referenciado por el enlace sea mostrado en una nueva ventana del navegador</p>
+    <p>Mismo frame</p>
+   </li>
+   <li>
+    <a href="http://www.example.net/" target="_blank">New Window _blank</a>
+   </li>
+
+   <li style="list-style-type: none">
+    <p>Fuerza que el documento referenciado por el enlace sea mostrado en una nueva ventana del navegador</p>
+    <p>Mismo frame</p>
+   </li>
+   <li>
+    <a href="http://www.example.net/" target="_self">New Window _self</a>
+   </li>
+
+   <li style="list-style-type: none">
+    <p>
+     Este valor provoca que el documento sea mostrado en el FRAMESET padre del frame actual.
+    </p>
+   </li>
+   <li>
+    <a href="http://www.example.net/" target="_parent">Parent Frame</a>
+   </li>
+
+   <li style="list-style-type: none">
+    <p>
+     Fuerza a que el enlace sea mostrado usando todo el espacio de la ventana 
+     del navegador destruyendo toda estructura deframes. Este valor debe ser 
+     usado siempre que creemos un enlace a una página externa a nuestro sitio web.
+    </p>
+   </li>
+
+   <li>
+    <a href="http://www.example.net/" target="_top">Full Window</a>
+   </li>
+
+  </ul>
+  <img style="display: block; margin-left: auto; margin-right: auto" src="target.png" alt="1">
+ </body>
+</html>

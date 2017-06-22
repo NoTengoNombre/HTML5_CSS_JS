@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title> Atributo box-shadow </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" />
+ </head>
+ <body>
+
+
+  <a href="#" onclick="javascript: ampliar_info();">
+   Ver mas información
+  </a>
+
+  <p>Texto resumen de este articulo</p>
+
+  <p id="texto_resumen" style="display: block;">
+   La propiedad 'style' desde JS lee las propiedades que se han definido
+   en el 'CSS'
+  </p>
+
+  <p id="texto_ampliado" style="display: none;">
+   Este esto se ampliará cuando se pulse porque cambiará
+   el estado de la propiedad 'style.display' del CSS mediante
+   JS , de un principio esta propiedad no esta definida.
+   Lo cual dará error ya que se esta invocando a un valor
+   que no existe.
+  </p>
+
+  <a id='enlace_ver' href="#" onclick="javascript: ampliar_info();">Ver más información</a>
+  
+  <script>
+   function ampliar_info() {
+
+// Variable localess
+       var resumen = document.getElementById('texto_resumen');
+       var ampliado = document.getElementById('texto_ampliado');
+       var enlace = document.getElementById('enlace_ver');
+
+//          obj    prop   prop   
+       if (resumen.style.display === 'block' || resumen.style.display === '') {
+           resumen.style.display = 'none';
+           ampliado.style.display = 'block';
+           enlace.innerHTML = 'Ocultar Información';
+       } else {
+           resumen.style.display = 'block';
+           ampliado.style.display = 'none';
+           enlace.innerHTML = 'Ver más Información';
+       }
+   }
+  </script>
+
+
+ 
+ </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title> Tablas Dinamicas</title>
+
+  <script type="text/javascript">
+
+   function agregar_fila() {
+
+       var tabla = document.getElementById("factura");
+
+       var fila = tabla.insertRow();
+
+       var celda1 = fila.insertCell(0);
+       var celda2 = fila.insertCell(1);
+       var celda3 = fila.insertCell(2);
+       var celda4 = fila.insertCell(3);
+
+       var campo1 = document.createElement("input");
+
+       campo1.type = "text";
+       campo1.setAttribute("onclick", "vaciar_campo(this);");
+
+       var campo2 = campo1.cloneNode(true);
+       var campo3 = campo1.cloneNode(true);
+
+       var campo4 = document.createElement("input");
+
+       campo4.type = "button";
+       campo4.value = "Borrar Fila";
+       campo4.onclick = function () {
+           var fila = this.parentNode.parentNode;
+           var tbody = tabla.getElementsByTagName("tbody")[0];
+           tbody.removeChild(fila);
+       };
+
+       celda1.appendChild(campo1);
+       celda2.appendChild(campo2);
+       celda3.appendChild(campo3);
+       celda4.appendChild(campo4);
+
+   }
+
+   function vaciar_campo(input) {
+
+       input.value = "";
+
+   }
+  </script>
+
+  <style type="text/css">
+   td {
+       width:160px;
+   }
+  </style>
+
+ </head>
+
+ <body>
+
+  <table id="factura" cellpadding="5" cellspacing="5" border="1">
+   <tr>
+    <td>Cantidad</td>
+    <td>Descripcion</td>
+    <td>Precio</td>
+    <td>
+     <input type="button" value="Agregar Fila" onclick="agregar_fila();"></input>
+    </td> 
+   </tr>
+  </table>
+
+ </body>
+
+</html>

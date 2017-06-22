@@ -1,0 +1,94 @@
+<!--
+    @Created on : 21-jun-2017, 13:53:33
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Eventos Formulario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+
+  <h2>Atributo Evento Formulario : onblur</h2>
+
+  <form method='get' name='formulario' action="#">
+
+   <input type="text" id='fname' onblur="myonblur()">
+   <p>Cuando dejo la entrada al campo , una funcion es disparada la cual transforma la entrada de texto a mayuscula</p>
+  </form>
+
+
+  <select id='mySelect' onchange="myonchange()">
+   <option onselect="myonselect()" value="Audi1">1</option>
+   <option value="Audi2">2</option>
+   <option value="Audi3">3</option>
+   <option value="Audi4">4</option>
+  </select>
+
+
+  <p>When you select a new car , a function is triggered which outputs the value of the selected car</p>
+
+  <p>Salida de la eleccion del selector</p>  
+
+  <p id="demo"></p>
+
+  <p>When the input field gets focus , a function is triggered which changes the background-color</p>
+
+  <p>Cambiar el fondo de la caja</p>
+  <input type="text" onfocus="myonfocus(this)">
+  
+  <div>
+   <p>Ejecutar Evento onreset necesita un tipo input = reset dentro del formulario</p>
+   <form onreset="myonreset()">
+    <p>Input con evento onselect ' se activa cuando se selecciona el texto '</p>
+    <input type="text" value="Seleccionas texto ejecuta evento" name="texto" onselect="myonselect()"> 
+    <input type="reset" value="Enviar">
+   </form>
+  </div>
+
+  <div>
+   <p>Al enviar los datos se ejecuta el evento onsubmit !</p>
+   <form action='#' onsubmit="myonsubmit()" > 
+    <p>Input con evento onselect ' se activa cuando se selecciona el texto ' </p>
+    <input type="text" value="Seleccionas texto ejecuta evento" name="texto" onselect="myonselect()"> 
+    <input type="submit"  value="Enviar">
+   </form>
+  </div>
+
+  <!-- Script JS -->
+  <script>
+   function myonblur() {
+       var x = document.getElementById('fname');
+       x.value = x.value.toUpperCase();
+   }
+
+   function myonchange() {
+       var x = document.getElementById('mySelect').value; // obtengo el valor del value
+       document.getElementById('demo').innerHTML = " You selected : " + x;
+   }
+
+   function myonfocus(x) {
+       x.style.background = "#f55";
+   }
+
+   function myonreset() {
+       alert('Reset el formulario evento onreset');
+   }
+
+   function myonselect() {
+       alert('Elemento seleccionado evento onselect');
+   }
+
+   function myonsubmit() {
+       alert('Formulario enviado evento onsubmit');
+   }
+
+  </script>
+ </body>
+</html>

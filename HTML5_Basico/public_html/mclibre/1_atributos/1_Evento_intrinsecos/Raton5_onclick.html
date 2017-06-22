@@ -1,0 +1,59 @@
+<!--
+    @Created on : 21-jun-2017, 13:53:33
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Eventos Imagen</title>
+  <meta charset="UTF-8">
+  <!--<meta http-equiv="refresh" content="10">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style>
+   #caja1, #caja2{
+       margin: 50px;
+       display: block;
+       width: auto;
+       border: 1px solid black;
+   }
+
+  </style>
+ </head>
+ <body>
+  <div id='caja1'>
+   <span>
+    <b>onclick</b> - Se ejecuta directamente cuando pulso en el parrafo porque tiene asociado el evento </span>
+   <p onclick='this.style.color = "red"'>onclick - Se ejecuta cuando se hace clic.</p>
+   <div onclick="mionclick()" id='myonclick'>
+    Cambiar color del parrafo
+   </div>
+  </div>
+
+  <div id='caja2'>
+   <span>
+    <b>ondblclick</b> - Se ejecuta directamente cuando pulso en el parrafo porque tiene asociado el evento </span>
+   <p ondblclick='this.style.color = "blue"' id='mydobleclick'>ondblclick - Se ejecuta cuando se hace doble clic.</p>
+   <div>
+
+   </div>
+  </div>
+
+  <script>
+
+   function mionclick() {
+       var x = document.getElementById('myonclick').innerHTML = "Cambia de texto mediante onclick".anchor("enlace");
+       x.length = "oragen";
+       console.log(x);
+   }
+
+   function ondblclick() {
+       document.getElementById('mydobleclick').innerHTML = "Cambia de texto 2";
+   }
+
+  </script>
+ </body>
+</html>

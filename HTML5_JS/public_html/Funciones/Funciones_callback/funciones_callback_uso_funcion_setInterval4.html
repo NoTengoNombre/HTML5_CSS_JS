@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Primer Callback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <h3 id="demo"></h3>
+  <h3 id="demo2"></h3>
+
+  <script>
+   /**
+    * Aquí vemos como al invocar a la función principal se le pasan como 
+    * argumentos las tres funciones, que se ejecutan, las cuales podrían 
+    * recibir parámetros… 
+    * 
+    * como hemos visto más arriba, pero de este modo el código queda un 
+    * poco sucio, ya que no podemos ver claramente las funciones, 
+    * de modo que podemos declarar las funciones que se enviarán como 
+    * argumentos aparte, lo cual nos permite también utilizarlas en otras 
+    * partes del código, tal y como vemos en el siguiente ejemplo:
+    * 
+    * Podemos observar cómo se declaran todas las funciones y luego se pasan 
+    * como argumentos de la función principal para poder utilizarlas dentro 
+    * de la misma. 
+    * 
+    * vamos a ver por encima el uso de otra función de javaScript 
+    * llamada setInterval(), esta función nos sirve para retardar 
+    * acciones, y necesita dos parámetros para funciones; 
+    una función que invoca a la función que vamos a usar y un valor 
+    numérico que dice en milisegundos el retraso y 
+    actualización de la función invocada.
+    
+    Esto que parece un lío, vamos a verlo en un código donde mostraremos un 
+    alert, un reloj y un texto, y donde el reloj se va modificando cada 
+    segundo y el texto tardará en aparecer 3 segundos:
+    * 
+    * @param {type} callback1
+    * @param {type} callback2
+    * @param {type} callback3
+    * @returns {undefined}
+    */
+   function funcionPrincipal(callback1, callback2, callback3) {
+//codigo de la funcion principal
+       callback1();
+//       mas codigo de la funcion principal
+       var miVar = setInterval(function () {
+           callback2();
+       }, 1000);
+
+       var miVar2 = setInterval(function () {
+           callback3();
+       }, 3000);
+   }
+
+   function callback1() {
+       alert('primer callback');
+   }
+
+   function callback2() {
+       var d = new Date();
+       var t = d.toLocaleTimeString();
+       document.getElementById('demo').innerHTML = t;
+   }
+
+   function callback3() {
+       document.getElementById('demo2').innerHTML = 'Esto es el callback3';
+   }
+
+   /**
+    * 
+    */
+   funcionPrincipal(callback1, callback2, callback3);
+
+  </script>
+ </body>
+</html>

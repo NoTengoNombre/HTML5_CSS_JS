@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Primer Callback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <div id='misdivs'>
+   <!--Funcion de callback: es una funcion que 'invoca' o--> 
+   <!--'llama' a otra funcion en cuanto termine de ejecutarse-->
+  </div>
+  <div>
+   <!--Una funcion con retardo que hace que se ejecute la 2º funcion-->
+   <!--y luego la 1º--> 
+  </div>
+
+
+  <script>
+
+   /**
+    * 'callback' llamada de vuelta
+    * Llama a una funcion y le envio por parametro otra funcion(un callback)
+    * esperando que la funcion que llame se encargue de ejecutar
+    * esa funcion callback
+    * 
+    * @param {type} miCallback
+    * @returns {undefined}
+    */
+   function haceAlgo(miCallback) {
+//    hago lago y llamo al callback avisando que termine
+       miCallback('cualquier cosa');
+   }
+
+   /**
+    * Pero callback no significa que voy a llamar cuando termino algo, 
+    * simplemente puedo tener distintos callbacks 
+    * que se van llamando en determinados casos.
+    * 
+    * @returns {undefined}
+    */
+//   haceAlgo(function () {
+//       console.log('Termino de hacer algo');
+//   });
+
+   /**
+    * 
+    * La idea es disparar eventos en las funciones que llamaron 'avisando' que 
+    * esta sucediendo 
+    * 
+    * 
+    * @param {type} callbackPaso1
+    * @param {type} callbackPaso2
+    * @param {type} callbackTermino
+    * @returns {undefined}
+    */
+   function haceAlgo(callbackPaso1, callbackPaso2, callbackTermino) {
+// algo aqui
+       callbackPaso1('paso 1');
+
+       callbackPaso2('paso 2');
+
+       callbackTermino('termino');
+
+   }
+
+   haceAlgo(
+           function (quePaso) {
+               console.log(quePaso);
+           },
+           function (quePaso) {
+               console.log(quePaso);
+           },
+           function (queHizo) {
+               console.log(queHizo);
+           });
+
+
+  </script>
+ </body>
+</html>

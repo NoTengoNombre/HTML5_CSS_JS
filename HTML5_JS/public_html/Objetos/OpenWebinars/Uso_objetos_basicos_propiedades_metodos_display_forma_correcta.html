@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title> Atributo box-shadow </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" />
+ </head>
+ <body>
+
+
+  <a href="#" onclick="javascript: ampliar_info();">
+   Ver mas información
+  </a>
+
+  <p>Texto resumen de este articulo</p>
+
+  <p id="texto_resumen" style="display: block;">
+   Texto resumen del articulo.
+  </p>
+
+  <p id="texto_ampliado" style="display: none;">
+   Texto ampliado del articulo.
+   Texto ampliado del articulo.
+   Texto ampliado del articulo.
+   Texto ampliado del articulo.
+   Texto ampliado del articulo.
+   Texto ampliado del articulo.
+  </p>
+
+  <script>
+   function ampliar_info() {
+       var resumen = document.getElementById('texto_resumen');
+       var ampliado = document.getElementById('texto_ampliado');
+
+       console.log(resumen.style.display);
+
+       if (resumen.style.display == 'block') {
+           resumen.style.display = 'none';
+           ampliado.style.display = 'block';
+       } else {
+           resumen.style.display = 'block';
+           ampliado.style.display = 'none';
+       }
+   }
+  </script>
+
+ </body>
+</html>

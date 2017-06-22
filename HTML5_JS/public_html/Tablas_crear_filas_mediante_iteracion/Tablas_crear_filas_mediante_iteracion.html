@@ -1,0 +1,41 @@
+<!--
+    @Created on : 10-jun-2017, 10:10:12
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+  <div id="myTabDiv">
+   <table border='1' id="mytab1">
+    <tr> 
+     <td>col1 Val1</td>
+     <td>col2 Val2</td>
+    </tr>
+    <tr>
+     <td>col1 Val3</td>
+     <td>col2 Val4</td>
+    </tr>
+   </table>
+  </div>
+  <script type="text/javascript">
+   var table = document.getElementById("mytab1");
+   for (var i = 0, row; row = table.rows[i]; i++) {
+       //iterate through rows
+       //rows would be accessed using the "row" variable assigned in the for loop
+       for (var j = 0, col; col = row.cells[j]; j++) {
+           //iterate through columns
+           //columns would be accessed using the "col" variable assigned in the for loop
+       }
+   }
+  </script>
+ </body>
+</html>

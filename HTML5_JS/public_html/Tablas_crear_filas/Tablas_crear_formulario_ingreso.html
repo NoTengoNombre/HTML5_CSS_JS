@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Informe Notas</title>
+  <script language="javascript" type="text/javascript" src="informenotas.js"></script>
+ </head>
+ <body>
+  <center>
+   <div id="creacion">
+    <form enctype="multipart/form-data"  name="formplantilla"  method="post">
+     <table id="tblcrear" border="1" width="800" align="center">
+      <tr>
+       <td>Institución</td>
+       <td><input type="text" id="institucion" name="inst" /></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>Nivel de curso</td>
+       <td><input type="text" id="nivelcurso" name="nivcurso"/></td>
+       <td></td>
+      </tr>
+      <tr>
+       <td>Cantidad de alumnos</td>
+       <td><input type="text" id="cantalumnos" name="cntalumnos" /></td>
+      </tr>
+      <tr>
+       <td></td>
+       <td><input type="button" id="crearplantilla"  onclick="crearinforme();" value="Crear Plantilla" /></td>
+      </tr>
+     </table>
+    </form>
+   </div>
+   <div id="informe" style="display:none;">
+    <form enctype="multipart/form-data" action="crearexcel.php" target="new" id="formcrearexcel" name="formcrearexcel" method="post">
+     <table id="tblcabecerainfo" border="1" style="display:none;" border="0" width="830" align="center">
+     </table>
+     <table id="tbldatosinfo" style="display:none;" border="0" width="830" align="center">
+     </table>
+    </form>
+   </div>
+  </center>
+  <script>
+   // JavaScript Document
+   function crearinforme()
+   {
+
+       //valido institucion
+       if (document.formplantilla.institucion.value.length == 0) {
+           alert("Tiene que escribir el nombre de la institución")
+           document.fvalida.institucion.focus()
+           return 0;
+       }
+
+       //valido el nivel del curso
+       if (document.formplantilla.nivelcurso.value.length == 0) {
+           alert("Tiene que escribir el nivel del curso")
+           document.fvalida.nivelcurso.focus()
+           return 0;
+       }
+
+       //valido la cantidad de alumnos
+       if (document.formplantilla.cantalumnos.value.length == 0) {
+           alert("Tiene que escribir la cantidad de alumnos")
+           document.fvalida.cantalumnos.focus()
+           return 0;
+       }
+
+
+
+       document.getElementById('creacion').style.display = "none";
+       document.getElementById('informe').style.display = "block";
+
+
+       var tablecabecera = document.getElementById('tblcabecerainfo');
+       tablecabecera.style.display = "block"
+
+       var rowinstitucion = tablecabecera.insertRow(0);
+       var cell = rowinstitucion.insertCell(0);
+       var institucion = document.getElementById('institucion').value
+
+
+       cell.innerHTML = "Institución: " + "<b>" + institucion + "</b>"
+       cell.style.width = "200px"
+
+
+
+       var nivelcurso = document.getElementById('nivelcurso').value
+       cell1 = rowinstitucion.insertCell(1);
+       cell1.innerHTML = "Nivel de curso: " + "<b>" + nivelcurso + "</b>"
+       cell1.style.width = "250px"
+
+
+       cell2 = rowinstitucion.insertCell(2);
+
+       cell3 = rowinstitucion.insertCell(3);
+
+       cell4 = rowinstitucion.insertCell(4);
+
+
+
+
+
+
+       var rowdatos = tablecabecera.insertRow(1);
+
+
+       celldatos2 = rowdatos.insertCell(0);
+       celldatos2.innerHTML = "Nombre"
+       celldatos2.style.width = "214px"
+
+       celldatos3 = rowdatos.insertCell(1);
+       celldatos3.innerHTML = "Apellido"
+       celldatos3.style.width = "200px"
+
+       celldatos4 = rowdatos.insertCell(2);
+       celldatos4.innerHTML = "Nota del parcial"
+       celldatos4.style.width = "200px"
+
+       celldatos5 = rowdatos.insertCell(3);
+       celldatos5.innerHTML = "Apreciación docente"
+       celldatos5.style.width = "200px"
+
+       celldatos6 = rowdatos.insertCell(4);
+       celldatos6.innerHTML = "Otras consideraciones"
+       celldatos6.style.width = "200px"
+
+
+       var insertdatosinfo = document.getElementById('tbldatosinfo');
+       insertdatosinfo.border = "1"
+
+       insertdatosinfo.style.display = "block";
+
+       var cantalumnos = document.getElementById('cantalumnos').value;
+
+       cantcolumnas = 0;
+
+
+
+
+       for (i = 0; i < cantalumnos; i++)
+       {
+
+           cantcolumnas = 0;
+
+           var rowinsertdatos = insertdatosinfo.insertRow(i);
+
+           while (cantcolumnas < 5)
+           {
+
+               cellalgo = rowinsertdatos.insertCell(cantcolumnas);
+               cellalgo.innerHTML = "<input type='text'>";
+               cellalgo.style.width = "200px";
+               cantcolumnas++;
+           }
+       }
+   }
+  </script>
+
+ </body>
+</html>

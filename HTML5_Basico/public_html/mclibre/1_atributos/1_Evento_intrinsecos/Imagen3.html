@@ -1,0 +1,59 @@
+<!--
+    @Created on : 21-jun-2017, 13:53:33
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Eventos Imagen</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+  <h2>Eventos de Imagen</h2>
+  <div>
+   <br />
+   <img src='../../../assets/img/h.png' width="200" height="150" alt="img" 
+        onabort="myonabortImagen()" onload="myonloadImage()" />
+   <!--onreadystatechange="OnStateChangeImage (this)"-->
+  </div>
+  <span id='info' style='color:red'></span>
+  <span id='esc'>Press the &quot;Espace&quot; key to abort the process</span>
+
+
+  <!-- Script JS -->
+  <script type="text/javascript">
+
+   function myonabortImagen() {
+       var info = document.getElementById('info');
+// += "se usa para añadir más comentarios" al mismo 'span'       
+       info.innerHTML += '<br /> The loading of the image has been aborted';
+       myremoveEsc();
+   }
+
+   function myonloadImage() {
+       var info = document.getElementById('info');
+       info.innerHTML += '<h1><br />The image has been loaded</h1>';
+       myremoveEsc();
+
+   }
+
+   function myremoveEsc() {
+       var esc = document.getElementById('esc');
+       esc.parentNode.removeChild(esc);
+   }
+
+   //   function myonstatechangeimage(image) {
+//       var info = document.getElementById('info');
+//       info.innerHTML += '<br /> readyState: ' + image.readyState;
+//   }
+
+
+  </script>
+ </body>
+</html>

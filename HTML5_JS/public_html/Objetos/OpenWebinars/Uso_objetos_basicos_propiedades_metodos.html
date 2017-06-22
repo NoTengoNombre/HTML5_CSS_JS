@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title> Atributo box-shadow </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://www.wikipedia.org/favicon.ico" />
+  <style>
+   div{
+       box-shadow: 10px 10px 5px #888888;
+       border: 1px solid red;
+       position: absolute;
+       width: 100px;
+       height: 100px;
+       background-color: coral;
+       color: white;
+   }
+  </style>
+ </head>
+ <body>
+
+
+  <header id="micabecera">
+   <h1 id="mititulo">
+    Soy una cabecera
+    Tengo un nav y una lista
+   </h1>
+   <nav>
+    <ul>
+     <li>fila 1</li>
+     <li>fila 2</li>
+     <li>fila 3</li>
+    </ul>
+   </nav>
+  </header>
+
+  <button onclick="myFunction()">Try It</button>
+
+  <div id='mydiv'>
+
+   <h1>Caja Basica</h1>
+
+   <script>
+    function myFunction() {
+        document.getElementById('mydiv').style.boxShadow = "20px 20px 40px black";
+    }
+   </script>
+  </div>
+ </body>
+</html>

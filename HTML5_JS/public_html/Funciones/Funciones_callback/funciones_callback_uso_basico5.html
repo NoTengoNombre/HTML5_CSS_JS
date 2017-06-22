@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Primer Callback</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+  <h3 id="demo"></h3>
+  <h3 id="demo2"></h3>
+
+  <script>
+   /**
+    * Empieza por el ultimo
+    * 
+    * @param {type} callback1
+    * @param {type} callback2
+    * @param {type} callback3
+    * @returns {undefined}
+    */
+   function funcionPrincipal(callback1, callback2, callback3) {
+       callback3();
+       callback2();
+       callback1();
+   }
+
+
+
+   function callback3() {
+       alert('tercero callback');
+   }
+
+   function callback1() {
+       alert('primer callback');
+   }
+
+   function callback2() {
+       alert('segundo callback');
+   }
+
+
+   /**
+    * 
+    */
+   funcionPrincipal(callback2, callback3,callback1);
+
+  </script>
+ </body>
+</html>

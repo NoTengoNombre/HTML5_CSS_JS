@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+ https://www.ibiblio.org/pub/linux/docs/LuCaS/Manuales-LuCAS/doc-curso-html/doc-curso-html/x4275.html
+-->
+<html>
+ <head>
+  <title>TODO supply a title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+   img{
+       padding: auto;
+       margin: auto;
+       display: block;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <ul>
+
+   <li>
+    <a href="enlace.html">tipo_file</a>
+   </li>
+   <li>
+    <a href="../assets/ct.png">enlace a imagen</a>
+   </li>
+   <li>
+    <a href="enlace.html" target="_parent">Este valor provoca que el documento sea mostrado en el FRAMESET padre del frame actual</a>
+   </li>
+   <li>
+    <a href="enlace.html" target="_blank">Fuerza que el documento referenciado por el enlace sea mostrado en una nueva ventana del navegador.</a>
+   </li>
+   <li>
+    <a href="enlace.html" target="_top">
+     Fuerza a que el enlace sea mostrado usando todo el 
+     espacio de la ventana del navegador destruyendo toda estructura deframes. 
+     Este valor debe ser usado siempre que creemos un enlace 
+     a una página externa a nuestro sitio web.
+    </a>
+   </li>
+   <li>
+    <a href="enlace.html" target="_self">
+     Usando este valor el documento enlazado 
+     será mostrado en el mismo frame 
+     o ventana donde está el enlace.
+     Este valor es especialmente útil cuando 
+     se ha usado la etiqueta BASE para especificar 
+     un frame destino por defecto distinto del actual.</a>
+   </li>
+  </ul>
+  <img src="target.png" alt="1">
+ </body>
+</html>

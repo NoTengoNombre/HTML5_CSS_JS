@@ -1,0 +1,86 @@
+<!--
+    @Created on : 20-jun-2017, 23:25:39
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <script>
+
+  </script>
+ </head>
+ <body>
+  <p>
+   Un atributo sólo puede aparecer una vez en cada etiqueta de apertura o en cada etiqueta vacía (los atributos no pueden repetirse.
+  </p> 
+  <!--BIEN-->
+  <p class="xxx yyy">AAAA</p>
+  <!--MAL-->
+  <!--<p class="xxx" class="yyy">AAAA</p>-->
+  <p>
+   los atributos deben tener siempre valor 
+   (en el caso de atributos booleanos, 
+   el valor debe ser el propio nombre 
+   del atributo o una cadena vacía). 
+   En HTML, los atributos pueden no tener valor asignado
+  </p>
+
+  <ol reversed="reversed">
+   <li>Lista 1</li>
+   <li>Lista 2</li>
+  </ol>
+
+  <p> los valores de los atributos deben
+   escribirse entre comillas (dobles o simples). 
+   En HTML no es necesario si no hay espacios en blanco.</p>
+
+  <p style="color: red">Valor</p>
+
+
+  <code>
+
+   &lt;p id='no_se_puede_repetir'>
+   XHTML como en HTML, el valor de un atributo id 
+   no se puede repetir en un documento 
+   (es decir, en un documento no puede haber dos 
+   elementos con el mismo valor en el atributo id).
+   &lt;/p>
+   <br />
+   <br />
+   Daria Error
+   <br />
+   <br />
+   &lt;p id='no_se_puede_repetir'>
+   XHTML como en HTML, el valor de un atributo id 
+   no se puede repetir en un documento 
+   (es decir, en un documento no puede haber dos 
+   elementos con el mismo valor en el atributo id).
+   p>
+
+  </code>
+
+  <p>
+   Referencias a entidades en hexadecimal deben escribirse en minúsculas.
+  </p>
+  <!--   α       β        π   -->
+  <p>&#x3b1; &#x3b2; &#x3c0;</p>
+
+  <p>
+   Para evitar problemas con los caracteres "<" y "&", en XHTML 
+   el código javascript (y de estilo) se suele incluir en secciones CDATA:
+   &#x0231A;
+   &#x0231B;
+   &#x02328;
+   &#x1F1E8;
+  </p>
+
+
+ </body>
+</html>

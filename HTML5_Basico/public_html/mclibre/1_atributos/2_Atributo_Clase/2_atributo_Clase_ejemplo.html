@@ -1,0 +1,149 @@
+<!--
+    @Created on : 22-jun-2017, 10:28:38
+    @Author     : RVS - N.F.N.D
+    @Pag        : http://www.mclibre.org/consultar/htmlcss/html/html_clases.html
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <link rel="stylesheet" href="../../../Elementos_div/elementos_div.css" type="text/css"/>
+
+  <style>
+   p{ 
+       font-style: oblique;
+   }
+
+   p.clase0{
+       color: red;
+   }
+
+   p.clase1{
+       background-color: aquamarine;
+   }
+
+   p.borde-1{
+       border: red 3px solid;
+   }
+
+   p.borde-2{
+       border: black 1px dashed;
+   }
+
+
+   p.borde-21{
+       border: blue 3px dotted;
+   }
+
+   p.borde-12{
+       border: orange 1px dashed;
+   }
+
+   p.border-111.border-222{
+       border: burlywood 3px dotted;
+   }
+
+   p.border-111{
+       border: plum 3px dotted;
+   }
+
+   p.border-222{
+       border: cyan 3px solid;
+   }
+
+   .borde-distinto-1{
+       color: blueviolet;
+       border: darkgray 3px solid;
+   }
+
+   p.borde-distinto-1{
+       font-size: 10px;
+   }
+
+   span.borde-distinto-1{
+       font-size: 20px;
+   }
+
+   p.atributos_dentro_otro_elemento{
+       font-style: normal;
+       border: 1px solid brown;
+   }
+
+   span.atributos_dentro_otro_elemento{
+       font-size: 30px;
+       border: 5px dashed brown;
+   }
+
+   .borde-universal1 {
+       border: red 3px solid;
+   }
+ 
+   *.borde-universal2 {
+       border: red 3px solid;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <p> Atributo font-style </p>
+  <p class="clase0"> color : red</p>
+
+  <p class="clase1">Un elemento puede tener asignado varias clases. 
+   Para asignar varias clases a un elemento, 
+   hay que escribir en el atributo class los nombres de todas las 
+   clases que se quieren aplicar, 
+   separados por espacios.
+  </p>
+
+  <p>Parrafo sin clase</p>
+
+  <p class="clase0 clase1">parrafo con 2 clases distintas</p>
+
+  <div>Importante el orden de las reglas en la hoja de estilo</div>
+
+  <p class="borde-1 borde-2">Parrafo con clase borde-1 borde-2</p>
+
+  <div>Importante el orden de las reglas en la hoja de estilo</div>
+
+  <p class="borde-21 borde-12">Parrafo con clases borde-21 borde-12</p>
+
+  <hr />
+
+  <p class="border-111">border-111 : Escribir un selector que se aplique únicamente a los elementos que tienen definidas varias clases.</p>
+
+  <p class="border-222">border-222 : Escribir un selector que se aplique únicamente a los elementos que tienen definidas varias clases.</p>
+
+  <p class="border-111 border-222">'border-111 border-222' : Este parrafo tiene ambas clases definidas  </p>
+
+  <h1>Asignar la misma clase a distintos elementos</h1>
+
+  <p class='borde-distinto-1'>Se pueden asignar la misma clase a elementos distintos <br /> 'p' Recibe el 1º estilo del CSS </p>
+
+  <span class='borde-distinto-1'>Se pueden asignar la misma clase a elementos distintos</span>
+
+  <span class='borde-distinto-1'>Se pueden asignar la misma clase a elementos distintos</span>
+
+  <p>Agregar atributo clase dentro de otro elemento que tiene otro elemento</p>
+
+  <p class='atributos_dentro_otro_elemento'>Agregar atributo clase dentro del elemento 'p' el cual posee otro elemento <span class='atributos_dentro_otro_elemento'>'span'</span></p>
+
+  <p class='borde-universal1'>Definiendo una clase universal, en cuyo caso todos los elementos tienen las mismas propiedades</p>
+  
+  <p class='borde-universal2'>Definiendo una clase universal con * </p>
+
+ </body>
+</html>
+
+
+
+
+
+
+

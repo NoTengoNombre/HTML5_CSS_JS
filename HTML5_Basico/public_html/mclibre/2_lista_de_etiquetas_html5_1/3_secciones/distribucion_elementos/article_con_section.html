@@ -1,0 +1,81 @@
+<!--
+    @Created on : 22-jun-2017, 13:34:44
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Section</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   main{
+       border: 1px solid red;
+       width: content-box;
+       padding: 10px;
+   }
+
+   section{
+       border: 1px solid black;
+       width: content-box;
+   }
+  </style>
+ </head>
+ <body>
+
+  <p>
+   Las etiquetas &lt;article&gt; y &lt;section&gt; son similares.<br>
+   La diferencia entre ellas es que &lt;article&gt; es para partes <br>
+   que forman una unidad en sí mismas y &lt;section&gt; es para partes <br>
+   de una unidad mayor.<br>
+   Si la página trata de un único tema y <br>
+   se va a utilizar un único elemento &lt;article&gt;, <br>
+   es preferible utilizar la etiqueta &lt;main&gt;.
+  </p>
+
+  <main>
+
+   <article>
+    <h1>Articulo</h1>
+
+    <section>
+     <h2>Section 1</h2>
+    </section>
+
+    <section>
+     <h2>Section 2</h2>
+    </section>
+
+   </article>
+
+   <section>
+    <h2>sub Articulo 1</h2>
+    <article>
+     <h3>sub Articulo 1</h3>
+     Un elemento &lt;article&gt; puede contener otros 
+     elementos &lt;article&gt; que están relacionados 
+     con el contenido del &lt; article&gt; que los contiene.
+     <br><br>
+    </article>
+
+    <hr>
+
+    <article>
+     <h3>sub Articulo 2</h3>
+     Un elemento &lt;article&gt; puede contener otros 
+     elementos &lt;article&gt; que están relacionados 
+     con el contenido del &lt;article&gt; que los contiene.
+     <br><br>
+    </article>
+   </section>
+
+  </main>
+
+ </body>
+</html>
+

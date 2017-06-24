@@ -1,0 +1,211 @@
+<!--
+    @Created on : 23-jun-2017, 13:28:40
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   span{
+       background-color: aquamarine;
+   }
+
+   span2{
+       font-weight: bold;
+   }
+
+   .atributo1{
+       background-color: khaki;
+       font-style: oblique;
+   }
+
+   .atributo2{
+       background-color: bisque;
+       color : red;
+   }
+
+  </style>
+ </head>
+ <body>
+  <div>
+   Las etiquetas de texto en línea se emplean<br>
+   <span>para identificar fragmentos<br></span>
+   de texto que tienen un significado especial.<br>
+   Normalmente, los elementos<br>
+   de texto en línea se encuentran dentro de elementos de bloque,<br>
+   modificaciones <span> < del > y < ins > están pensadas para <br>
+    identificar las modificaciones que se han realizado en un texto.</span><br>
+   o tablas.<br>
+  </div>
+
+  <div>
+   <pre>
+    Etiquetas de texto en línea 
+    < em >, < a >
+    < strong >, < small>, < s >, < cite >, 
+    < q > , < dfn >, < abbr >, < time >, 
+    < kbd >, < sub >, < sup >, < i > , < b >, 
+    < mark >, < span > y < br >.
+    
+    < data >, < code >, < var >, 
+    < samp >, < u >, < ruby >, < rb >,
+    < rt >, < rtc >, < rp >, < bdi >, 
+    < bdo > y < wbr > 
+   </pre>
+
+   <h1>Texto en linea</h1>
+
+   <p>
+    Énfasis
+    <em>etiqueta</em> em : 
+    Está pensada para dar énfasis a su contenido, 
+    es decir, para llamar la atención sobre ese contenido.
+    Los navegadores suelen mostrar la etiqueta < em > 
+    en cursiva (propiedad font-style: oblique). </p>
+  </div>
+
+  <small>
+   Comentario
+   Letra pequeña < small >
+  </small>
+
+  <s>
+   <br>
+   Termino subrayado para indicar errores < s >
+  </s>
+
+  <p>Obra</p>
+  <cite>
+   <br>
+   < cite > Para crear citas 
+  </cite>
+
+  <p>
+   Cita
+   <br>
+   < q >
+   Para identificar una cita o referencia a otras fuentes
+   Puede incluir el atributo cite
+   <q>
+    Without pain, without sacrifice we would have nothing
+   </q>
+  </p>
+
+  <p>
+   <br>
+   < q >
+   Para identificar una cita o referencia a otras fuentes
+   Puede incluir el atributo cite
+   <q cite='http://www.example.es'>No fear No Distractions
+   </q>
+
+  </p>
+
+  <p>
+   Definición<br>
+   Define un termino de un texto<br>
+   < dfn ><br>
+   un byte tiene 8
+   <dfn>
+    bits
+   </dfn>
+  </p>
+
+  <p>
+   Abreviatura<br>
+   La etiqueta < abbr > está pensada para <br>
+   etiquetar abreviaturas o acrónimos.<br>
+   <br>
+   Si la etiqueta incluye el atributo title, <br>
+   este debe contener el significado de la abreviatura.<br>
+   <br>
+   <abbr title="compara">Firefox</abbr>
+   resalta los elementos < dfn > con atributo title <br>
+   con un subrayado punteado (propiedad CSS 3 text-decoration: <br>
+   underline dotted black), pero <abbr>Internet  Explorer</abbr> y <abbr>Google Chrome</abbr> no lo hacen.<br>
+  </p>
+
+  <p>
+   Fecha y hora: < time >
+  </p>
+  <p>
+   La recomendacion hmtl 5 se aprobo
+   <time datetime="2014-10-28"> 28 de octubre de 2014 </time>
+  </p>
+
+
+  <p>Teclado: < kbd > </p>
+  <p>
+   Identificar pulsaciones de teclas o texto tecleado por el usuario.
+  </p>
+  <p>
+   Pulsa 
+   <kbd>
+    Ctrl + W 
+   </kbd>
+  </p>
+
+  <p>
+   Subíndice: < sub >
+  </p>
+  <p>2 H<sub>2</sub> + O<sub>2</sub> &rarr; 2 H<sub>2</sub>O</p>
+
+  <p>
+   Superíndice: < sup >
+  </p>
+  <p>El último teorema de Fermat dice que la ecuación x<br>
+   <sup>n</sup> + y<sup>n</sup> = z<sup>n</sup> <br>
+   no tiene soluciones enteras para <var>x</var>, <var>y</var> y <var>z</var> cuando <var>n</var> &gt; 2.</p>
+
+  <i>Tecnicismo: </i>
+  <p>La etiqueta < i > está pensada para identificar texto con un significado especial
+   , como nombres de especies, términos técnicos, expresiones extranjeras, etc.
+  </p>
+
+  <p>
+   <b>
+    Atención: <br>
+   </b>
+   La etiqueta < b > está pensada para identificar texto sobre el que se quiere <br>
+   llamar la atención, pero sin que eso signifique que es importante, <br>
+   como los términos clave en un resumen, nombre de productos comerciales, etc<br>
+  </p>
+
+  <p>
+   Resaltar una porción de texto
+   <mark>
+    Marca
+   </mark>
+  </p>
+
+  <div>
+   < span > 
+   <span>
+    No tiene un significado definido y es la que se debe utilizar cuando las otras etiquetas no son adecuadas
+   </span>
+   <p>
+    Incluir el atributo  <span>class</span> para especificar el significado que se le quiere dar a la etiqueta.
+   </p>
+  </div>
+
+  <p>
+   <br>
+   <span class="atributo1">Span con css para darle estilo al elemento en linea</span>
+   <br>
+   <br>
+   <span class="atributo2">Span con css para darle estilo al elemento en linea</span>
+  </p>
+  
+  <p>
+   < br > Salto de linea
+  </p>
+
+ </body>
+</html>

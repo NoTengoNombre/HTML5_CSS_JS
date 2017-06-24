@@ -1,0 +1,126 @@
+<!--
+    @Created on : 23-jun-2017, 12:24:00
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Bloque</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+
+  <p>Contenido en bloque : Parrafo - definir texto o imagenes</p>
+
+  <hr />
+
+  <pre>
+      cuando se quiere conservar los espacios en blanco 
+      y los saltos de línea del texto original. 
+      En el resto de etiquetas, los navegadores no muestran 
+      ni las líneas en blanco ni varios espacios en blanco seguidos.
+  </pre>
+
+  <pre>
+body {
+       text-align: justify;
+     }
+  </pre>
+
+  <p>
+   body {
+   text-align: justify;}
+  </p>
+
+  <blockquote>
+   Identificar una cita larga, que puede contener <br>
+   varios párrafos u otras etiquetas.<br>
+   Los navegadores suelen mostrar la etiqueta < blockquote > <br>
+   con márgenes a izquierda y derecha.<br>
+  </blockquote>
+
+  <figure>
+   Representa contenido independiente, 
+   a menudo con un título. 
+   Si bien se relaciona con el flujo principal, 
+   su posición es independiente de éste. 
+   Por lo general, se trata de una imagen, 
+   una ilustración, un diagrama, un fragmento de código, 
+   o un esquema al que se hace referencia en el texto principal, 
+   pero que se puede mover a otra página o 
+   a un apéndice sin que afecte al flujo principal
+  </figure>
+
+  <figure id="l4">
+   <figcaption>
+    Listing 4. The primary core interface API declaration.</figcaption>
+   <pre>
+<code>interface PrimaryCore {
+ boolean verifyDataLine();
+ void sendData(in sequence&lt;byte> data);
+ void initSelfDestruct();}
+</code>
+   </pre>
+  </figure>
+
+  <figure>
+   <figcaption>
+    Representa un subtítulo ( content ) o leyenda asociada el 
+    contenido de the < figure > element al cual está anidado, 
+    pudiendo ser colocado como  the first o last child de the 
+    < figure > element,  es importante destacar que 
+    < figcaption > es un elemento opcional
+   </figcaption>
+  </figure>
+
+  <main>
+   Se utiliza para agrupar el contenido principal de una página, <br>
+   sin incluir los elementos comunes a otras páginas como bloques <br>
+   de navegación, información general del sitio, <br>
+   Sólo debe haber un elemento < main > <br>
+   <br>
+   No debe estar incluido en otras etiquetas <br> solo en  < section ><br>
+   El elemento < main > agrupa contenido, <br>
+   pero no define secciones en el esquema de la página.<br>
+
+   <p> 
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+            width="570" height="324" viewBox="0 0 1920 1080" style="background-color: #f00">
+    <rect x="20" y="20" width="1880" height="150"
+          fill="white" stroke="black" stroke-width="3" />
+    <text x="40" y="80" font-family="sans-serif" font-size="50">header</text>
+
+    <rect x="20" y="190" width="250" height="710"
+          fill="white" stroke="black" stroke-width="3" />
+    <text x="40" y="250" font-family="sans-serif" font-size="50">nav</text>
+
+    <rect x="290" y="190" width="1340" height="710"
+          fill="gold" stroke="black" stroke-width="3" />
+    <text x="310" y="250" font-family="sans-serif" font-size="50">main</text>
+
+    <rect x="330" y="270" width="1280" height="300"
+          fill="white" stroke="black" stroke-width="3" />
+    <text x="350" y="320" font-family="sans-serif" font-size="50">article</text>
+
+    <rect x="330" y="590" width="1280" height="300"
+          fill="white" stroke="black" stroke-width="3" />
+    <text x="350" y="650" font-family="sans-serif" font-size="50">article</text>
+
+    <rect x="1650" y="190" width="250" height="710"
+          fill="white" stroke="black" stroke-width="3" />
+    <text x="1670" y="250" font-family="sans-serif" font-size="50">aside</text>
+
+    <rect x="20" y="920" width="1880" height="150"
+          fill="white" stroke="black" stroke-width="3" />
+    <text x="40" y="980" font-family="sans-serif" font-size="50">footer</text>
+    </svg></p>
+  </main>
+
+
+ </body>
+</html>

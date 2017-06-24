@@ -1,0 +1,89 @@
+<!--
+    @Created on : 23-jun-2017, 12:41:07
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Div</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       border: black 3px solid;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   div div{
+       border: none;
+       background-color: lightblue;
+   }
+
+   div p{
+       background-color: cadetblue;
+       width: 500px;
+   }
+
+  </style>
+  <script>
+  </script>
+ </head>
+ <body>
+
+  <div>
+   Se puede anidar (es decir, que una división puede contener otras divisiones),<br>
+   por lo que se utiliza para estructurar en bloques el contenido de la página web.<br>
+   Para distinguir unas divisiones de otras en la hoja de estilo se pueden <br>
+   utilizar clases o selectores de tipo o selectores de descendientes, <br>
+   como en el ejemplo siguiente:<br>
+  </div>
+
+  <div>
+   <p>3 capas</p>
+   <div>
+    <div>
+     A las divisiones interiores se le aplican tanto las propiedades <br>
+     del primer selector (div) como las del segundo (div div). <br>
+     Por eso, para que las divisiones interiores no tengan el borde <br>
+     definido en el primer selector (div), <br>
+     hace falta quitarlo en el segundo selector (div div).<br>
+    </div>
+
+    <div id='dividir'>
+     <p>
+      Cuándo utilizar una división<br>
+     </p>
+
+     <p>
+      Las divisiones son elementos muy útiles,<br> 
+      puesto que permiten agrupar elementos, <br>
+      pero hay que evitar las divisiones innecesarias. <br>
+      Por ejemplo, en general no suele ser necesario<br> 
+      crear divisiones cuando sólo contienen un elemento.<br>
+     </p>
+     <br>
+     <p>
+      Los dos ejemplos siguientes ilustran esa situación. <br>
+      En el primer ejemplo, se han creado tres divisiones <br>
+      (una por cada párrafo) para dar el color de fondo. <br>
+     </p>
+     <br>
+     <p>
+      Esas divisiones son innecesarias, directamente se <br>
+      podía haber dado color de fondo a los párrafos, <br>
+      como se ha hecho en el segundo ejemplo. <br>
+      El resultado es idéntico en ambos casos.<br>
+     </p>
+    </div>
+
+   </div>
+  </div>
+
+
+ </body>
+</html>

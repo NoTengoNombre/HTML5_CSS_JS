@@ -12,15 +12,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="">
+  <style>
+   div{
+       border: 1px solid black;
+       width: 500px;
+       display: block;
+   }
+
+   #img2{
+       background-color: #afc;
+   }
+
+   #img3{
+       width: 100px;
+   }
+
+   .unalinea{
+       display: inline-block;
+   }
+
+  </style>
  </head>
  <body>
-  
   <div>
+   <br>
+   PNG<br>
    <img src="assets/ezgif.com-video-to-apng.png" alt="png" width="100">
-   <img src="assets/cargando.gif" alt="gif" width="100">
-   
-   <p>Imagen Vectorial</p>
   </div>
+  <br>
+
+  <div id="img2">
+   <br>
+   PNG con fondo relativo<br>
+   <img id="img3"  src="assets/ezgif.com-video-to-apng.png" alt="png" width="100">
+  </div>
+
+  <br>
+  <div>
+   GIF
+   <img src="assets/cargando.gif" alt="gif" width="100">
+  </div>
+
+  <br>
+  <div> 
+   <center><h4>Comparacion entre SVG y PNG </h4></center>
+   <p>SVG (Scalable Vector Graphics = Gráficos Vectoriales Escalables) - Imagen Vectorial - SVG </p>
+   <img src="assets/svg.svg" alt="svg" width="100">
+  </div>
+
+  <br>
+  <div> 
+   <p>Imagen PNG (Portable Network Graphics = Gráficos de Red Portátiles)  </p>
+   <img src="assets/svg.png" alt="png" width="100">
+  </div>
+
+  <br>
+  <div> 
+   <p>Direccion absoluta - desde la RAIZ - https://www.w3.org/Icons/w3c_main.png </p>
+   <img src="https://www.w3.org/Icons/w3c_main.png" alt="png" width="100">
+  </div>
+
+  <br>
+  <div> 
+   <p>Imagen PNG (Portable Network Graphics = Gráficos de Red Portátiles) - assets/w3c_main.png  </p>
+   <img src="assets/w3c_main.png" alt="png" width="100">
+  </div>
+
+  <br>
+  <div> 
+   <p>Imagen PNG - alt </p>
+   <img src="assets/w13c_main.png" alt="no se encuentra la imagen" width="100" />
+  </div>
+
+  <br>
+  <div> 
+   <p>Imagen PNG</p>
+   <img src="assets/w13c_main.png" alt="no se encuentra la imagen" width="100" />
+  </div>
+
+  <br>
+  <div> 
+   <p>Imagen PNG</p>
+   <img src="assets/w13c_main.png" alt="no se encuentra la imagen" width="100" />
+  </div>
+
+  <hr />
+
+  <br>
+  <div>
+   <p>Imagen PNG</p>
+   <img src="assets/estrella_png.png" alt="no se encuentra la imagen" width="100">
+  </div>
+
+  <br>
+  <div>
+   <p>Imagen SVG</p>
+   <img src="assets/estrella_svg.svg" alt="no se encuentra la imagen" width="100">
+  </div>
+
+  <hr />
+
+  <div class="unalinea">
+   <p>
+    Si los valores no son proporcionales en width a la imagen original, esta se deforma.
+   </p>
+   <img src="assets/estrella_svg.svg" alt="no se encuentra la imagen" width="85" height="165">
+   <img src="assets/estrella_png.png" alt="no se encuentra la imagen" width="85" height="165">
+  </div>
+
+  <hr />
+
+  <div class="unalinea">
+   <p>
+    Si los valores no son proporcionales en height a la imagen original, esta se deforma.
+   </p>
+   <img src="assets/estrella_svg.svg" alt="no se encuentra la imagen" width="170" height="82">
+   <img src="assets/estrella_png.png" alt="no se encuentra la imagen" width="170" height="82">
+  </div>
+
+  <div class='unalinea'>
+   <p>
+    Si sólo se establece un atributo, la imagen se amplia o reducede forma proporcional.
+   </p>
+   <img src="assets/estrella_svg.svg" alt="no se encuentra la imagen" width="80">
+   <img src="assets/estrella_png.png" alt="no se encuentra la imagen" width="80">
+  </div>
+
+
+
+
+
 
  </body>
 </html>

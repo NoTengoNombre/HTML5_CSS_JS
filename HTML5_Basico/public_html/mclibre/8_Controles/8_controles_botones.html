@@ -1,0 +1,103 @@
+<!--
+    @Created on : 25-jun-2017, 20:24:30
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Controles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>Atributo name, pero se<br>
+    puede poner si se quiere<br>
+    (tendría sentido si un formulario contuviera <br>
+    dos botones de envío y quisieramos saber <br>
+    en cuál de ellos ha hecho clic el usuario)<br>
+   </p>
+   <form>
+    <input type="submit" name="dato1" value="Dato 1">
+    <input type="submit" name="dato2" value="Dato 2">
+   </form>
+  </div>
+
+  <div>
+   <p>Botones estandar</p>
+   <button type="submit">Enviar</button> 
+   <button type="reset">Borrar</button> 
+   <button type="button">Boton estandar</button> 
+  </div>
+
+  <div>
+   <p>Botones estandar</p>
+   <button>
+    <img src="arrow.ico" alt="boton enviar" width="16" height="16">
+   </button> 
+  </div>
+
+  <div>
+   <button>Botón no lleva el atributo 'type' se comporta 
+    como un botón de tipo submit.</button> 
+  </div>
+
+  <div>
+   <p>
+    El atributo value (optativo) permite <br>
+    incluir un texto en la caja de texto <br>
+    para que el usuario lo modifique. <br><br>
+    HTML 5 introdujo el atributo placeholder <br>
+    que puede ser más cómodo para el usuario <br>
+    si tiene que borrar todo el texto incluido.
+   </p>
+   Value : 
+   <input type="text" name="texto" value="Escribe algo" />
+   <br> 
+   Placeholder : 
+   <input type="text" name="texto" placeholder="Escribe algo" />
+  </div>
+
+  <div>
+   <p>Numero min 20 y max 100</p>
+   <input type="number" name="numero" min="20" max="100" />
+  </div>
+
+  <div>
+   <p>Numero min 20 y max 100 step 5</p>
+   <input type="number" name="numero" min="20" max="100" step="5" />
+  </div>
+  
+  <div>
+   <p>Numero min 20 y max 100 step 0.5</p>
+   <input type="number" name="numero" min="20" max="100" step="0.5" />
+  </div>
+
+  <div>
+   <p>Numero min 20 y max 100 step 'any'</p>
+   <p>Escribir cualquier número</p>
+   <input type="number" name="numero" min="20" max="100" step="any" />
+  </div>
+
+
+
+
+ </body>
+</html>

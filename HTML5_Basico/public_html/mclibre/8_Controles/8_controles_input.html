@@ -1,0 +1,55 @@
+<!--
+    @Created on : 25-jun-2017, 20:24:30
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Controles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+ 
+  <div>
+   <p>Numero min 20 y max 100</p>
+   <input type="number" name="numero" min="20" max="100" />
+  </div>
+
+  <div>
+   <p>Numero min 20 y max 100 step 5</p>
+   <input type="number" name="numero" min="20" max="100" step="5" />
+  </div>
+  
+  <div>
+   <p>Numero min 20 y max 100 step 0.5</p>
+   <input type="number" name="numero" min="20" max="100" step="0.5" />
+  </div>
+
+  <div>
+   <p>Numero min 20 y max 100 step 'any'</p>
+   <p>Escribir cualquier número</p>
+   <input type="number" name="numero" min="20" max="100" step="any" />
+  </div>
+
+
+
+
+ </body>
+</html>

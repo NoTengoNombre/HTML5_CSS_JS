@@ -1,0 +1,208 @@
+<!--
+    @Created on : 25-jun-2017, 20:24:30
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Controles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+  <form method="get" action="#">
+   <div>
+    <br>
+    <input type="text"  placeholder="Texto">
+   </div>
+
+   <div>
+    <br>
+    <input type="password"  placeholder="Password">
+   </div>
+   <div>
+    <br>
+    <p>Restablecer</p>
+    <input type="reset" value="Resetear">
+   </div>
+   <div>
+    <br>
+    <p>Archivo</p>
+    <input type="file">
+   </div>
+   <br>
+   <div>
+    <p>Enviar</p>
+    <input type="submit" value="Enviar Submit">
+    <br>
+   </div>
+   <div>
+    <p>Boton normal</p>
+    <input type="button" value="boton" name="boton">
+   </div>
+   <br>
+   <div>
+    <p>Checkbox</p> 
+    <span>
+     A:
+    </span>
+    <input type="checkbox" value="checkbox" name="checkbox">
+    <br> 
+    <span>
+     B:
+    </span>
+    <input type="checkbox" value="checkbox" name="checkbox">
+   </div>
+   <br>
+   <div>
+    <p>Color</p>
+    <input type="color">
+   </div>
+   <br>
+   <div>
+    <p>Fecha</p>
+    <input type="date">
+   </div>
+   <br>
+   <div>
+    <p>
+     Datetime -<br>
+     Note: < input> elements <br>
+     with type="datetime-local" do not show <br> 
+     as any datetime field/calendar in Firefox <br>
+     or in IE12 and earlier versions.
+    </p>
+    <input type="datetime">
+   </div>
+   <br>
+   <div>
+    <p>Datetime Local </p>
+    <input type="datetime-local">
+   </div>
+   <br>
+   <div>
+    <p>Email </p>
+    <input type="email">
+   </div>
+   <br>
+   <div>
+    <p>Archivo File </p>
+    <input type="file">
+   </div>
+   <br>
+   <div>
+    <p>Esconder - hidden </p>
+    <input type="hidden">
+   </div>
+   <br>
+   <div>
+    <p>Imagen flecha</p>
+    <input type="image" src="arrow.ico" alt="Submit" width="48" height="48">
+   </div>
+   <br>
+   <div>
+    <p>Semana y año </p>
+    <input type="week">
+   </div>
+   <br>
+   <div>
+    <p>Mes y año</p>
+    <input type="month">
+   </div>
+   <br>
+   <div>
+    <br>
+    <p>Numero</p>
+    <input type="number">
+   </div>
+   <br>
+   <div>
+    <p>Password</p>
+    <input type="password">
+    <br>
+   </div>
+   <div>
+    <p>Radio 1 2 3</p>
+    <input type="radio">
+    <input type="radio">
+    <input type="radio">
+   </div>
+   <div>
+    <p>Buscar </p>
+    <input type="search">
+    <br>
+   </div>
+   <div>
+    <p>Borrar </p>
+    <input type="reset">
+    <br>
+   </div>
+   <div>
+    <p>Telefono </p>
+    <input type="tel">
+    <br>
+   </div>
+   <div>
+    <p>Tiempo </p>
+    <input type="time">
+    <br>
+   </div>
+   <div>
+    <p>Url </p>
+    <input type="url">
+    <br>
+   </div>
+  </form>
+
+  <div>
+   <p>Barra de carga</p>
+   <meter value="2" min="0" max="10">2 out of 10</meter><br>
+   <meter value="0.6">60%</meter>
+  </div>
+
+  <div>
+   <label for="flying">Flying Skill Level</label>
+   <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+    <input name="flevel" id="flying" type="range" min="0" max="100" value="0"> 
+    <output for="flying" name="level">0</output>/100
+   </form>  
+  </div>
+
+  <div>
+   Caja para calcular
+   <form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+    <input name=a type=number step=any> +
+    <input name=b type=number step=any> =
+    <output name=o for="a b"></output>
+   </form>
+  </div>
+
+  <div>
+   <p>Efecto carga sin valores</p>
+   <progress></progress>
+  </div>
+
+  <div>
+   <p>Efecto carga con valores</p>
+   <progress id='p' max='70'><span>0</span>%
+   </progress>
+  </div>
+
+ </body>
+</html>

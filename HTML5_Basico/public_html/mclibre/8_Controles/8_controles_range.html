@@ -1,0 +1,68 @@
+<!--
+    @Created on : 25-jun-2017, 20:24:30
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Controles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>Indique su nivel:</p>
+   <input type="range" name="rango" />
+  </div>
+
+  <div>
+   <p>Indique su nivel:</p>
+   <p>Min="1" Max="10" step="1"</p>
+   <input type="range" name="rango" min="1" max="10" step="1" />
+  </div>
+
+  <div>
+   <p>Indique su nivel:</p>
+   <p>min="1" max="10" step="5"</p>
+   <input type="range" name="rango" min="1" max="100" step="5" />
+  </div>
+
+  <div>
+   <p>Indique su nivel:</p>
+   <p>min="1" max="10" step="5"</p>
+   <input type="range" name="rango" min="1" max="100" step="0.1" />
+  </div>
+
+  <div>
+   <p>Indique su nivel (Malo, Regular, Bueno):</p>
+   <input type="range" name="rango"
+          min="1" max="3" list="lista-rango" />
+   <datalist id="lista-rango">
+    <option value="1" label="Malo"></option>
+    <option value="2" label="Regular"></option>
+    <option value="3" label="Bueno"></option>
+   </datalist>
+
+  </div>
+
+
+
+ </body>
+</html>

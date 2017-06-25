@@ -1,0 +1,90 @@
+<!--
+    @Created on : 25-jun-2017, 18:08:08
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Formularios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+
+  <div style="border: 1px solid red; display: block ; margin: 10px 0 0 10px; padding: 10px; width: 300px ; float: left  ;">
+   <p>
+    El atributo <b>accesskey</b> permite definir <br>
+    teclas de acceso (atajos de teclado). <br>
+    Para acceder al elemento, hay que <br>
+    utilizar la combinación de teclas siguiente: <br>
+    Firefox utiliza la combinación Alt+Shift+tecla <br>
+    <br>
+    Internet Explorer utiliza la <br>
+    combinación Alt+tecla o Alt+Shift+tecla <br>
+    <br>
+    Google Chrome utiliza normalmente <br>
+    la combinación Alt+tecla, <br>
+    pero cuando esa combinación ya está <br>
+    asociada a alguna acción <br>
+    usa la combinación Alt+Shift+tecla<br>
+    Internet Explorer y Chrome <br>
+    utilizan la combinación Alt+tecla, <br>
+    que tiene el inconveniente <br>
+    que entra en conflicto con <br>
+    combinaciones de teclas <br>
+    ya definidas por el navegador <br>
+    o el sistema operativo. <br>
+    <br>
+    Firefox utiliza la <br>
+    combinación Alt+Shift+tecla, <br>
+    más incómoda de utilizar, <br>
+    pero que no interfiere con las combinaciones <br>
+    ya definidas por el navegador <br>
+    o el sistema operativo.<br>
+    En el ejemplo siguiente, <br>
+    <br>
+    Firefox utiliza la <br>
+    combinación Alt+Shift+tecla y <br>
+    Google Chrome e Internet Explorer <br>
+    utilizan la combinación Alt+tecla <br>
+    para acceder a las cajas de texto:<br>
+   </p>
+   <br>
+   <input type="text" name="texto1" value="Acceso con a" accesskey="a">
+   <br>
+   <input type="text" name="texto2" value="Acceso con i" accesskey="i">
+   <br>
+   <input type="text" name="texto3" value="Acceso con o" accesskey="o">
+   <br>
+   <input type="text" name="texto4" value="Acceso con u" accesskey="u">
+  </div>
+
+  <br>
+
+  <div style="border: 1px solid red; display: block ; margin: 10px 0 0 10px; 
+       padding: 10px; width: 400px ; position: relative; float: left  ; display: block">
+   <input type="text" name="texto2" value="Acceso con e" accesskey="e" />
+  </div>
+
+  <div style="border: 1px solid red; display: block ; margin: 10px 0 0 10px;
+       padding: 10px; width: 400px ; position: relative; float: left  ; display: block">
+   <p>Varios elementos con la misma tecla de acceso, o si hay varios elementos 
+    con la misma tecla de acceso en mayúsculas y minúsculas</p>
+   <br>
+   <input type="text" name="texto1" value="Acceso con w" accesskey="w" readonly>
+   <br>
+   <input type="text" name="texto2" value="Acceso con w" accesskey="w" readonly>
+   <br>
+   <input type="text" name="texto3" value="Acceso con w" accesskey="w" readonly>
+   <br>
+   <input type="text" name="texto4" value="Acceso con w" accesskey="w" readonly>
+  </div>
+
+
+
+ </body>
+</html>

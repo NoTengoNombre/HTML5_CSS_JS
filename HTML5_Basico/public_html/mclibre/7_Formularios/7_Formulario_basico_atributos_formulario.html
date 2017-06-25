@@ -1,0 +1,48 @@
+<!--
+    @Created on : 25-jun-2017, 18:08:08
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Formularios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+
+  <div style="border: 1px solid red; display: block ; margin: 10px 10px 10px 10px; 
+       padding: 10px; width: 400px ; position: relative; float: left  ; display: block">
+   <p>
+    Los atributos <b>name</b> no se deben repetir, <br>
+    porque no se recibiría toda la información al enviarla. <br>
+    La única excepción es el botón radio, <br>
+   </p>
+   <p>
+    El atributo <b>value</b> permite establecer el valor inicial de un control<br>
+    aunque cada control lo utiliza de una forma ligeramente distinta <br>
+    y algunos controles no lo admiten (área de texto, archivo o imagen).<br>
+   </p>
+   <div>
+    <p>
+     El atributo <b>required</b> permite indicar qué controles es obligatorio rellenar para enviar el formulario.
+    </p>
+    <p>Nombre
+     <input type="text" name="nombre" required="required">
+    </p>
+    <p>
+     Sexo : 
+     <br>
+     <input type="radio" name="hm" value="h" required="required"> Hombre
+     <br>
+     <input type="radio" name="hm" value="m" required="required"> Mujer
+    </p>
+   </div>
+  </div>
+
+ </body>
+</html>

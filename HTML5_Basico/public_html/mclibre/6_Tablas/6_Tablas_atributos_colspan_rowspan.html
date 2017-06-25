@@ -1,0 +1,131 @@
+<!--
+    @Created on : 25-jun-2017, 11:43:17
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tablas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   table.mcl-centrado{
+       margin-top: 10px;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       border: 5px solid red;
+   }
+
+   .centrado{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       border: 1px solid red;
+   }
+  </style>
+ </head>
+ <body>
+
+  <div class="centrado">
+   <p>
+    Los atributos colspan y rowspan permiten <br>
+    unir una celda con las celdas contiguas, <br>
+    tanto horizontal como verticalmente. <br>
+    El valor de colspan indica la cantidad de <br> 
+    celdas unidas en horizontal y el valor de <br>
+    rowspan indica la cantidad de celdas unidas en vertical. <br>
+   </p>
+  </div>
+
+  <hr />
+
+  <table class="mcl-centrado" border="">
+   <caption>Titulo - Tabla basica</caption>
+   <thead>
+    <tr>
+     <th>Cabecera 1</th>
+     <th>Cabecera 2</th>
+     <th>Cabecera 3</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>1</td>
+     <td>2</td>
+     <td>3</td>
+    </tr>
+    <tr>
+     <td>1</td>
+     <td>2</td>
+     <td>3</td>
+    </tr>
+    <tr>
+     <td>1</td>
+     <td>2</td>
+     <td>3</td>
+    </tr>
+   </tbody>
+   <tfoot>
+    <tr>
+     <td>1</td>
+     <td>2</td>
+     <td>3</td>
+    </tr>
+   </tfoot>
+  </table>
+
+  <hr />
+
+  <div>
+   <p class="centrado">colspan - fusiona las columnas </p>
+   <table class="mcl-centrado" border="1">
+    <caption> Coge como titulo 2 filas de abajo </caption>
+    <tbody>
+     <tr>
+      <td colspan="2">celda a1 y b1</td> <!-- Coge como titulo 2 filas de abajo -->
+     </tr>
+     <tr>
+      <td>celda a2</td>
+      <td>celda b2</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+
+  <hr />
+
+  <div>
+   <p class="centrado">rowspan - fusiona las filas </p>
+   <table class="mcl-centrado" border="1">
+    <caption> Coge como titulo 2 filas de abajo </caption>
+    <tbody>
+
+     <tr>
+      <td rowspan="2" colspan="2">
+       Celdas a1 , a2 , b1 y b2 unidas
+      </td>
+      <td>celda c1</td>
+     </tr>
+
+     <tr>
+      <td>celda c2</td>
+     </tr>
+
+     <tr>
+      <td>celda a3</td>
+      <td>celda b3</td>
+      <td>celda c3</td>
+     </tr>
+    </tbody>
+
+   </table>
+  </div>
+
+
+ </body>
+</html>

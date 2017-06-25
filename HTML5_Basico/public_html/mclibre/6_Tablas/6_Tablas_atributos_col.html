@@ -1,0 +1,77 @@
+<!--
+    @Created on : 25-jun-2017, 11:43:17
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tablas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   table.mcl-centrado{
+       margin-top: 40px;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       border: 5px solid red;
+   }
+
+   .centrado{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       text-indent: 3px;
+       border: 1px solid red;
+   }
+
+   col{
+       background-color: lightblue;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p class="centrado">
+    El atributo <b>span</b> permite que una etiqueta < col /> 
+    haga referencia a varias columnas seguidas. 
+    El valor del atributo span indica el número 
+    de columnas al hace referencia la etiqueta < col />.
+   </p>
+  </div>
+
+  <div class="centrado">
+   <p>
+    Uso 3 espacios para el margen superior 
+   </p>
+  </div>
+  
+  <table border="" class="mcl-centrado">
+   <caption>Leyenda</caption>
+   <!-- Uso 3 espacios para el margen superior -->
+   <col span="2"><col />
+   <tbody>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+     <td>Celda 3</td>
+    </tr>
+    <tr>
+     <td>Celda 4</td>
+     <td>Celda 5</td>
+     <td>Celda 6</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <hr>
+
+
+ </body>
+</html>

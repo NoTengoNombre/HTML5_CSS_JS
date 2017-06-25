@@ -1,0 +1,60 @@
+<!--
+    @Created on : 25-jun-2017, 18:08:08
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Formularios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+ </head>
+ <body>
+  <div>
+   <p>
+    La etiqueta < form > es un elemento de bloque. 
+    <br>
+    En su interior puede haber cualquier elemento típico <br>
+    de una página web (párrafos, imágenes, divisiones, 
+    listas, tablas, etc.), <br>
+    además de las etiquetas 
+    que crean los controles.
+    <br>
+    Los etiquetas que crean los controles en los 
+    formularios son <br>
+    < input />, < button>, < select>, 
+    < optgroup>, < option> y < textarea>. 
+    <br>
+    Además, se pueden estructurar los controles 
+    con las etiquetas < fieldset> y < legend>.
+    <br> 
+    Por útlimo, la etiqueta < label> permite 
+    mejorar la accesibilidad de los controles.
+   </p>
+  </div>
+
+  <div style="border: 1px solid red; display: block ; padding: 10px; margin-top: 10px ; width: 300px">
+   <form action="#" method="get">
+    <p>Nombre : 
+     <input type="text" name="nombre" size="30">
+    </p>
+    <p>Año de nacimiento : 
+     <input type="number" name="nacido" min="1990">
+    </p>
+    <p>Sexo: 
+     <br><input type="radio" name="hm" value="h"> Hombre
+     <br><input type="radio" name="hm" value="h"> Mujer
+    </p>
+    <p>
+     <input type="submit" value="Enviar">
+     <input type="reset" value="Borrar">
+    </p>
+   </form>
+  </div>
+
+ </body>
+</html>

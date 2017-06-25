@@ -1,0 +1,140 @@
+<!--
+    @Created on : 25-jun-2017, 11:43:17
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tablas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   table.mcl-centrado{
+       margin-top: 5px;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       border: 5px solid red;
+   }
+
+   .centrado{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       text-indent: 3px;
+       border: 1px solid red;
+   }
+
+   colgroup{
+       background-color: aquamarine;
+   }
+
+   col{
+       background-color: lightblue;
+   }
+
+
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p class="centrado">
+    Para indicar el número de columnas que forman parte de un grupo de columnas,<br> 
+    se pueden utilizar etiquetas < col /> (con o sin atributo span) <br>
+    o el atributo span de < colgroup >. <br>
+    <br>
+    Si se utiliza el atributo span, <br>
+    su valor indica el número de columnas que <br>
+    forman parte del grupo de columnas.<br>
+    <br>
+    Pero si se utiliza el atributo span <br>
+    en la etiqueta < colgroup />, <br>
+    no se pueden incluir etiquetas < col /> en el < colgroup />.  <br>
+   </p>
+  </div>
+
+  <div class="centrado">
+   <p>
+    Uso 3 espacios para el margen superior 
+   </p>
+  </div>
+
+  <div>
+   <p class="centrado">colgroup span 2 - 1 col</p>
+   <table border="1" class="mcl-centrado"> 
+    <caption>Leyenda</caption>
+    <colgroup span="2"></colgroup><col />
+    <tbody>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+
+  <div>
+   <p class="centrado">Sin el atributo span - 2 colgroup 2 col</p>
+   <table border="1" class="mcl-centrado">
+    <caption>Leyenda</caption>
+    <colgroup><col /><col /><colgroup><col />
+    <tbody>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+
+  <div>
+   <p class="centrado"> Con el atributo colgroup 2 - col span 2</p>
+   <table class="centrado" border="1">
+    <caption>Leyenda</caption>
+    <colgroup><col span="2" /></colgroup><col />
+    <tbody>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+
+ </body>
+</html>
+
+
+
+
+
+

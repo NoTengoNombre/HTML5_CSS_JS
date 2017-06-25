@@ -1,0 +1,79 @@
+<!--
+    @Created on : 25-jun-2017, 11:43:17
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tablas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   table.mcl-centrado{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: left;
+   }
+   .centrado{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       border: 1px solid red;
+   }
+
+  </style>
+ </head>
+ <body>
+  <div>
+   <p class="centrado">
+    La etiqueta < col /> permite hacer <br>
+    referencia a una columna <br> 
+    y la etiqueta < colgroup > permite definir <br>
+    grupos de columnas (de manera similar a <br>
+    como la etiqueta < tbody > define grupos de filas). <br>
+   </p>
+  </div>
+
+  <div>
+   <p class="centrado">
+    Las etiquetas < col / > y < colgroup > se encuentran situadas al principio <br>
+    de la tabla, después de la etiqueta < caption >.
+   </p>
+   <table border="1" class="mcl-centrado">
+    <caption>Leyenda</caption>
+    <colgroup> <!-- -->
+     <col /> <!-- 1º columna -->
+     <col /> <!-- 2º columna -->
+    </colgroup>
+
+    <colgroup> <!-- -->
+     <col /> <!-- 3º columna -->
+    </colgroup>
+
+    <tbody>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+     <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+     </tr>
+    </tbody>
+    
+   </table>
+  </div>
+
+ </body>
+</html>

@@ -35,7 +35,9 @@
 
   <div>
    <dl>
-    <dt><dfn>happiness</dfn></dt>
+    <dt>
+     <dfn>happiness</dfn>
+    </dt>
     <dd class="pronunciation">pronunciation</dd>
     <dd class="part-of-speech"><i><abbr>part-of-speech</abbr></i></dd>
     <dd>The state of being happy.</dd>
@@ -47,23 +49,118 @@
    </dl>
   </div>
 
-  Las listas de definición tienen una estructura distinta:
-  las etiquetas < dl > ...< /dl > delimitan la lista completa
-  las etiquetas < dt > ...< /dt > delimitan los términos
-  las etiquetas < dd > ...< /dd > delimitan las definiciones
+  <div>
+   <p>
+    Las listas de definición tienen una estructura distinta:<br>
+    las etiquetas < dl > ...< /dl > delimitan la lista completa<br>
+    las etiquetas < dt > ...< /dt > delimitan los términos<br>
+    las etiquetas < dd > ...< /dd > delimitan las definiciones<br>
+   </p>
+  </div>
 
   <dl>
-   <dt>software</dt>
-   <dd>Conjunto de programas, instrucciones y reglas informáticas para
+   <dt>Software</dt>
+   <dd>Conjunto de programas, instrucciones y reglas informáticas para<br>
     ejecutar ciertas tareas en una computadora.</dd>
-   <dt>libre</dt>
-   
+   <dt>Libre</dt>
    <dd>Que tiene facultad para obrar o no obrar.</dd>
    <dd>Que no es esclavo.</dd>
    <dd>Que no está preso.</dd>
    <dd>Licencioso,</dd>
   </dl>
 
+  <ul> <!-- Tipo de lista : desordenada-->
+
+   <!-- Primera fila -->
+   <li>Item 1
+
+    <ol> <!-- Tipo de lista : ordenada-->
+
+     <!-- Primera subfila -->
+     <li>Item 1 de sublista
+      <ul>
+       <li>Item 1 de sub-sublista</li>
+       <li>Item 2 de sub-sublista</li>
+      </ul>
+     </li>
+
+     <!-- Segunda subfila -->
+     <li>Item 2 de sublista
+      <ol>
+       <li>Item 1 de sub-sublista</li>
+       <li>Item 2 de sub-sublista</li>
+      </ol>
+     </li>
+
+     <!-- Tercera subfila -->
+     <li>Item 3 de sublista</li>
+     <!-- Cuarta subfila -->
+     <li>Item 4 de sublista</li>
+
+    </ol>
+   </li>
+
+   <!-- Segunda fila -->
+   <li> Item 2 
+
+    <ul> <!-- Tipo de lista : desordenada--> 
+     <!-- Primera subfila -->
+     <li>Item 1 de sublista</li>
+     <!-- Segunda subfila -->
+     <li>Item 2 de sublista</li>
+
+    </ul>
+   </li>
+
+  </ul>
+
+  <div>
+   <p>Lista ordenadas hasta el 3 nivel</p>
+
+   <ul>
+    <li>Esto es un punto de una lista</li>
+    <li>Esto es otro punto de una lista
+     <ul>
+      <li>Esto es un punto de una sublista</li>
+      <!--<ul> Error por el nivel de anidamiento -->
+      <li>Esto es un punto de una sublista</li>
+      <!--</ul>-->
+     </ul>
+    </li>
+   </ul>
+
+   <hr>
+
+   <ol>
+    <li>Item 1
+     <ol>
+      <li>Item 1 de sub-sublista
+       <ol>
+        <li>Item 1 de sub-sublista</li>
+        <li>Item 2 de sub-sublista</li>
+       </ol>
+      </li>
+
+      <li>Item 2 de sub-sublista
+       <ol>
+        <li>1</li>
+        <li>2</li>
+       </ol>
+      </li>
+      <li>3</li>
+      <li>4</li>
+     </ol>
+    </li>
+
+    <li>Item 2
+     <ol>
+      <li>1</li>
+      <li>2</li>
+     </ol>
+    </li>
+   </ol>
+
+  </div>
 
  </body>
 </html>

@@ -1,0 +1,79 @@
+<!--
+    @Created on : 26-jun-2017, 11:59:39
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>9_SVG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+  <p>stroke - trazo</p>
+
+  <section>
+   <h2>Lienzo</h2>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        width="105" height="105" viewBox="-100 -100 105 105"
+        style="background-color: lightgray">
+   </svg>
+  </section>
+
+
+
+  <section>
+   <h2>Svg Circulo</h2>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+        width="200" height="200"
+        viewBox="-100 -100 200 200"
+        style="background-color: lightgray">
+   <circle cx="0" cy="0" r="100" fill="none" stroke="red" stroke-width="1" />
+   <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+   <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+   </svg>
+  </section>
+
+  <section>
+   <h2>Svg Circulo 1</h2>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        width="105" height="105"
+        viewBox="-100 -100 105 105"
+        style="background-color: lightgray">
+   <circle cx="0" cy="0" r="100" fill="none" stroke="red" stroke-width="1" />
+   <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+   <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+   </svg>
+  </section>
+
+
+  <section>
+   <h2>Atributos width y height </h2>
+   <p>
+    Los atributos width y height de < svg>
+   </p>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" 
+        width="100" height="100" viewBox="-50 -50 100 100"
+        style="background-color: lightgray">
+   <circle cx="0" cy="0" r="50" fill="none" stroke="red" stroke-width="1" />
+   </svg>
+  </section>
+
+ </body>
+</html>

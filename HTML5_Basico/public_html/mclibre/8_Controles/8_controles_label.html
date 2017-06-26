@@ -1,0 +1,190 @@
+<!--
+    @Created on : 25-jun-2017, 20:24:30
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Controles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+   #d1{
+       position: relative;
+       border: 1px solid aquamarine; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>La etiqueta < label > permite asociar <br>
+    un control con un texto, de manera que <br>
+    mejore la accesibilidad de los formularios. <br><br>
+    La asociación entre el control<br>
+    y la etiqueta < label > <br>
+    puede ser implícita o explícita.</p>
+   <p>Relación implícita</p>
+   <p>Relación es implícita <br>
+    cuando el control se <br>
+    encuentra en el interior <br>
+    de la etiqueta.</p>
+   <label>Sin nada<br></label>
+   <label>
+    <input type="checkbox" name="casilla" />Casilla 1
+   </label>
+  </div>
+
+  <div>
+   <p>
+    Cajas de texto < input type="text" />, <br>
+    la etiqueta < label> permite que el cursor <br>
+    se sitúe en la caja de texto haciendo clic en el texto,<br>
+    <label>Sin nada<br></label>
+   </p>
+   <input type="text" name="casilla" />Casilla 1
+  </div>
+
+  <div>
+   <p>
+    <label>Nombre: <br></label>
+   </p>
+   <input type="text" name="casilla" />Casilla 1
+  </div>
+
+  <div>
+   <p>
+    Casilla de verificación, la etiqueta < label> <br>
+    permite que la casilla se marque <br>
+    o desmarque haciendo clic en el texto <br>
+   </p>
+   <label>Nombre: <br></label>
+   <input type="checkbox" name="casilla" />Casilla 1
+   <p>
+    Relación es implícita cuando el control se encuentra en el interior de la etiqueta
+   </p>
+   <label>
+    <input type="checkbox" name="casilla" />Casilla 1
+   </label>
+  </div>
+
+  <div>
+   <p>
+    Cajas de texto < input type="text" />, <br>
+    la etiqueta < label> permite que el <br>
+    cursor se sitúe en la caja <br>
+    de texto haciendo clic en el texto  <br>
+   </p>
+   <label>
+    Nombre: Sin label relacionado<br>
+   </label>
+   <br>Casilla 1<br>
+   <input type="text" name="texto" />
+
+   <p>
+    Relación es implícita cuando el control se encuentra en el interior de la etiqueta
+   </p>
+   <label>
+    Nombre: con label relacionado
+    <br> <br> Casilla 1 : Pincha para seleccionarla el input
+    <input type="text" name="texto1" />
+   </label>
+  </div>
+
+  <div>
+   <p>
+    Relación es explícita cuando la etiqueta < label> <br>
+    contiene el atributo <b>for</b>, que indica el <br>
+    control afectado (el control tiene <br>
+    entonces que tener establecido el atributo id).<br>
+   </p>
+   Casilla 1<br>
+   <input type="checkbox" name="casilla" />
+  </div>
+
+  <div>
+   <label for="casilla1">Casilla 1</label>
+   <input type="checkbox" name="casilla" id="casilla1" />
+  </div>
+
+  <div>
+   Cajas de texto < input type="text" />, <br>
+   la etiqueta < label> permite que el cursor <br>
+   se sitúe en la caja de texto haciendo clic en el texto <br>
+   Nombre:  <input type="text" name="casilla" /> 
+  </div>
+
+  <div>
+   <p>
+    Cajas de texto < input type="text" />, <br>
+    la etiqueta < label> permite que el <br>
+    cursor se sitúe en la caja de texto <br>
+    haciendo clic en el texto <br>
+   </p>
+   <label for="text1">Nombre : </label>
+   <input type="text" name="casilla" id="text1" /> 
+  </div>
+
+  <div>
+   <p>
+    La forma explícita se necesita cuando el control 
+    y el texto asociado se encuentran en 
+    elementos distintos (por ejemplo en una tabla) 
+    y la etiqueta < label> no puede 
+    incluir ambos, como muestra el ejemplo siguiente:
+   </p>
+   <table border="">
+    <tbody>
+
+     <tr>
+      <th>Sexo</th>
+      <th></th>
+     </tr>
+
+     <tr>
+      <td><label for="h">Hombre</label></td>
+      <td><input type="radio" name="hm" value="h" id="h"/></td>
+     </tr>
+
+     <tr>
+      <td><label for="m">Mujer</label></td>
+      <td><input type="radio" name="hm" value="m" id="m"/></td>
+     </tr>
+
+    </tbody>
+   </table>
+  </div>
+
+
+
+ </body>
+</html>
+
+
+
+
+
+
+
+

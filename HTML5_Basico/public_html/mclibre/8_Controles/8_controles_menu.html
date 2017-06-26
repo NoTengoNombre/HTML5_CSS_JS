@@ -1,0 +1,152 @@
+<!--
+    @Created on : 25-jun-2017, 20:24:30
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Controles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+   #d1{
+       position: relative;
+       border: 1px solid aquamarine; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+
+  <form method="get" action="#">
+   <div>
+    <p>Menu despleguable</p>
+    <select name="menu">
+     <option>Uno</option>
+     <option>Dos</option>
+     <option>Tres</option>
+    </select>
+   </div>
+
+   <div>
+    <p>Menu despleguable sin value en DOS</p>
+    <select name="menu">
+     <option value="1">Uno</option>
+     <option>Dos</option>
+     <option value="3">Tres</option>    
+    </select>
+   </div>
+
+   <div>
+    <p>Menu despleguable con selected</p>
+    <select name="menu">
+     <option value="1">Uno</option>
+     <option value="2">Dos</option>
+     <option value="3" selected="selected">Tres</option>    
+    </select>
+   </div>
+
+   <div>
+    <p>
+     Mostrar una de las opciones de forma predeterminada <br>
+     es que al recibir el formulario no se puede <br>
+     saber si el usuario ha elegido realmente <br>
+     esa opción o simplemente no ha modificado el control. <br>
+     Por ello, se aconseja incluir una opción <br>
+     en blanco al principio de los menús<br>
+    </p>
+    <select name="menu">
+     <option value="0" selected="selected">...</option>
+     <option value="1">Uno</option>
+     <option value="2">Dos</option>
+     <option value="3">Tres</option>    
+    </select>
+   </div>
+
+   <div>
+    <p>
+     El atributo <b>size</b> permite definir la altura del control.
+    </p>
+    <select name="menu" size="3">
+     <option value="0" selected="selected">...</option>
+     <option value="1">Uno</option>
+     <option value="2">Dos</option>
+     <option value="3">Tres</option>    
+     <option value="4">4</option>    
+     <option value="5">5</option>    
+     <option value="6">6</option>    
+    </select>
+   </div>
+
+   <div>
+    <p>
+     El atributo <b>multiple</b> permite <br>
+     elegir varias opciones simultáneamente <br> 
+     (con ayuda de la tecla <b>Control o Mayúsculas</b>) <br>
+    </p>
+    <select name="menu" multiple="multiple">
+     <option value="0" selected="selected">...</option>
+     <option value="1">Uno</option>
+     <option value="2">Dos</option>
+     <option value="3">Tres</option>    
+     <option value="4">4</option>    
+     <option value="5">5</option>    
+     <option value="6">6</option>    
+    </select>
+   </div>
+
+   <div>
+    <p>
+     Se pueden agrupar opciones utilizando la etiqueta <b>< optgroup>.</b>
+    </p>
+    <select name="menu">
+     <option selected="selected">...</option>
+     <optgroup label="Grupo1">
+      <option value="1">Opcion 1</option>
+      <option value="2">Opcion 2</option>
+      <option value="3">Opcion 3</option>
+     </optgroup>
+     <optgroup label="Grupo2">
+      <option value="4">Opcion 4</option>
+      <option value="5">Opcion 5</option>
+      <option value="6">Opcion 6</option>
+     </optgroup>
+    </select>
+   </div>
+   <div>
+    <button style="margin-left: 120px;">Enviar</button>
+   </div>
+  </form>
+
+
+
+
+ </body>
+</html>
+
+
+
+
+
+
+
+

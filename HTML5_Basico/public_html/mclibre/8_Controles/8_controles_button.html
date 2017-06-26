@@ -26,30 +26,21 @@
   </style>
  </head>
  <body>
-
+  
   <div>
-   <p>Obtener datos de la diana </p>
-   <br>
-   <form method="get" action="<?php echo $_SERVER['PHP_SELF'] ?>">
-    <input id="info" type="image" alt="img1" src="formularios_image.svg">
-   </form>
+   <button type="submit">Enviar</button>
+   <button type="reset">Reset</button>
+   <button type="button">Boton basico</button>
+   <button type="button">
+    <img src="arrow.ico" alt="f1" width="40"> 
+   </button>
+   <p>Button sin nada - boton de submit</p>
+   <button type="button">Enviar</button>
   </div>
-
-<!--  <?php
-  if (!isset($_REQUEST['x']) && (!isset($_REQUEST['y']))) {
-  echo 'Define los puntos';
-  } else {
-  echo '1º valor : ' . $_REQUEST['x'];
-  echo '<br>';
-  echo '2º valor : ' . $_REQUEST['y'];
-  if ($_REQUEST['x'] == 60 && $_REQUEST['y'] == 60) {
-  echo '<h1>Diana</h1>';
-  }
-  }
-  ?>
--->
-
-
-
+  
  </body>
+
+
+
+
 </html>

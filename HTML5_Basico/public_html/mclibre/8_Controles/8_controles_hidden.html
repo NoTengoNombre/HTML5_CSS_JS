@@ -1,0 +1,94 @@
+<!--
+    @Created on : 25-jun-2017, 20:24:30
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Controles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+   #d1{
+       position: relative;
+       border: 1px solid aquamarine; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+
+  <div id="d1">
+   <input type="hidden" name="nombre" value="escondido">
+  </div>
+
+  <div>
+   <p>
+    Los controles ocultos se pueden utilizar para dividir <br>
+    en varias páginas un formulario largo. <br>
+    El problema de dividir en varias páginas <br>
+    es que cada página es independiente de las demás <br>
+    y HTML no permite relacionar una con otra por lo <br>
+    que no se sabría que la información enviada <br>
+    en el segundo formulario completa la del primero <br>
+    (los lenguajes de programación de servidor, como PHP,<br> 
+    sí que disponen de mecanismos para relacionar <br>
+    unas páginas con otras, por ejemplo <br>
+    mediante cookies o sesiones). <br>
+    Una solución es guardar en el segundo formulario <br>
+    la información enviada en el primer formulario <br>
+    en controles ocultos, de manera que cuando el <br>
+    usuario envía el segundo formulario, está <br>
+    enviando a la vez la información del primero <br>
+    y así sucesivamente en los siguientes formularios.<br>
+   </p>
+  </div>
+
+  <form method="get" action="#">
+   <div>
+    <p>Nombre : </p>
+    <input type="text" name="nombre">
+    <br>
+   </div>
+
+   <div>
+    <p>Edad : </p>
+    <input type="text" name="edad">
+    <p>Aunque el input nombre escriba un valor y se envie<br>
+    desde este campo se puede enviar el nombre oculto 
+    y con un valor por defecto </p>
+    <input type="hidden" name="nombre" value="nombre">
+    <br>
+   </div>
+   
+   <div>
+    <button>Enviar</button>
+   </div>
+   
+  </form>
+
+ </body>
+
+
+
+
+</html>

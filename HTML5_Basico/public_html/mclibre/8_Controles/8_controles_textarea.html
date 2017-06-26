@@ -23,32 +23,28 @@
        float: left;
        display: inline-block;        
    }
+   #d1{
+       position: relative;
+       border: 1px solid aquamarine; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
   </style>
  </head>
  <body>
 
   <div>
-   <p>Obtener datos de la diana </p>
-   <br>
-   <form method="get" action="<?php echo $_SERVER['PHP_SELF'] ?>">
-    <input id="info" type="image" alt="img1" src="formularios_image.svg">
-   </form>
+   <textarea name="texto" rows="4" cols="20">
+   </textarea>
   </div>
 
-<!--  <?php
-  if (!isset($_REQUEST['x']) && (!isset($_REQUEST['y']))) {
-  echo 'Define los puntos';
-  } else {
-  echo '1º valor : ' . $_REQUEST['x'];
-  echo '<br>';
-  echo '2º valor : ' . $_REQUEST['y'];
-  if ($_REQUEST['x'] == 60 && $_REQUEST['y'] == 60) {
-  echo '<h1>Diana</h1>';
-  }
-  }
-  ?>
--->
-
+  <div>
+   <textarea name="texto" rows="4" cols="40" placeholder="Escribe algo"></textarea>
+  </div>
 
 
  </body>

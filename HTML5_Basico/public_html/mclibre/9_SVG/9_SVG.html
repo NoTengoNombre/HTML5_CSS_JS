@@ -1,0 +1,164 @@
+<!--
+    @Created on : 26-jun-2017, 11:59:39
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>9_SVG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   div{
+       position: relative;
+       border: 1px solid red; 
+       margin: 5px ; 
+       padding: 5px;
+       display: inline-block;
+       width: 300px; 
+       float: left;
+       display: inline-block;        
+   }
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>
+    los principales obstáculos al uso de SVG 
+    siguen siendo que las implementaciones en
+    los navegadores todavía son incompletas 
+    y los potenciales riesgos de seguridad 
+    (debido a que las imágenes SVG pueden 
+    contener código Javascript, se recomienda 
+    no incorporar imágenes SVG sin haber 
+    comprobado antes su contenido).
+    De todas formas, SVG se ha ido imponiendo 
+    poco a poco como formato estándar de 
+    gráficos vectoriales frente a otros 
+    formatos propietarios y numerosos programas 
+    de edición de gráficos son capaces 
+    de importar y exportar en formato SVG.
+   </p>
+  </div>
+
+  <div>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        width="170" height="165" viewBox="0 0 170 165">
+   <polygon fill="yellow" stroke="red" stroke-width="7"
+            points="129,150 85,119 41,150 57,104 15,66 68,66 85,15 102,65 156,66 113,98"
+            />
+   </svg>
+  </div>
+
+  <div>
+   Los dibujos SVG se definen en un plano <br> 
+   infinito en el que el eje Y está orientado <br>
+   hacia abajo, como muestra el dibujo <br>
+   siguiente en el que se muestran los <br>
+   ejes de coordenadas, cuatro puntos <br>
+   en rojo y sus coordenadas.<br>
+   Los atributos version y xmlns de < svg>
+   <br><br>
+   El atributo version indica la versión de SVG empleada en el dibujo. <br><br>
+   En estos apuntes se utiliza la versión 1.1.<br><br>
+   El atributo xmlns indica el espacio de nombres empleada 
+   en el dibujo, es siempre https://www.w3.org/2000/svg.
+   <br><br>
+   El atributo <b>viewBox</b> establece la porción 
+   del plano SVG que muestra la imagen. 
+   Este atributo se establece con cuatro valores:
+   <ul>
+    <li>Primer valor: abcisa (X) de la esquina superior izquierda de la porción del plano que muestra la imagen<br></li>
+    <li>Segundo valor: ordenada (Y) de la esquina superior izquierda de la porción del plano que muestra la imagen<br></li>
+    <li>Tercer valor: ancho de la porción del plano que muestra la imagen<br></li>
+    <li>Cuarto valor: alto de la porción del plano que muestra la imagen<br></li>
+   </ul>
+
+   <section>
+    <h2>Plano SVG </h2>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+         width="400" height="400" viewBox="-200 -200 400 400" style="background-color: #eeeeee">
+    <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+    <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+    <text x="10" y="190" font-family="sans-serif" font-size="20" fill="black">Y</text>
+    <polyline points="-5,190 0,200 5,190" fill="none" stroke-width="1" stroke="black" />
+    <text x="180" y="-10" font-family="sans-serif" font-size="20" fill="black">X</text>
+    <polyline points="190,5 200,0 190,-5" fill="none" stroke-width="1" stroke="black" />
+    <polygon points="100,100 -100,100 -100,-100, 100,-100" fill="none" stroke-width="1" stroke="black" stroke-dasharray="5,5" />
+    <circle cx="100" cy="100" r="4" fill="red" />
+    <text x="105" y="120" font-family="sans-serif" font-size="18" fill="black">(100, 100)</text>
+    <circle cx="100" cy="-100" r="4" fill="red" />
+    <text x="105" y="-105" font-family="sans-serif" font-size="18" fill="black">(100, -100)</text>
+    <circle cx="-100" cy="-100" r="4" fill="red" />
+    <text x="-105" y="-105" font-family="sans-serif" font-size="18" fill="black" text-anchor="end">(-100, -100)</text>
+    <circle cx="-100" cy="100" r="4" fill="red" />
+    <text x="-105" y="120" font-family="sans-serif" font-size="18" fill="black" text-anchor="end">(-100, 100)</text>
+    </svg>
+   </section>
+  </div>
+
+  <div>
+   <section>
+    <h2>Plano SVG </h2>
+    <p>
+     El atributo viewBox
+    </p>
+    El atributo viewBox establece la porción del plano SVG que muestra la imagen. 
+    Este atributo se establece con cuatro valores:<br>
+    <ul>
+     <li>
+      Primer valor: abcisa (X) de la esquina superior izquierda de la porción del plano que muestra la imagen
+     </li>
+     <li>
+      Segundo valor: ordenada (Y) de la esquina superior izquierda de la porción del plano que muestra la imagen
+     </li>
+     <li>
+      Tercer valor: ancho de la porción del plano que muestra la imagen
+     </li>
+     <li>
+      Cuarto valor: alto de la porción del plano que muestra la imagen
+     </li>
+     <li>
+      <br>
+      El ejemplo siguiente muestra con una línea 
+      roja a trazos la porción del plano SVG 
+      que se mostraría con unos valores determinados en el atributo viewbox.
+     </li>
+    </ul>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+         width="400" height="400" viewBox="-200 -200 400 400" style="background-color: #eeeeee">
+    <line x1="-200" y1="0" x2="200" y2="0" stroke="black" stroke-width="1" />
+    <line x1="0" y1="-200" x2="0" y2="200" stroke="black" stroke-width="1" />
+    <text x="10" y="190" font-family="sans-serif" font-size="20" fill="black">Y</text>
+    <polyline points="-5,190 0,200 5,190" fill="none" stroke-width="1" stroke="black" />
+    <text x="180" y="-10" font-family="sans-serif" font-size="20" fill="black">X</text>
+    <polyline points="190,5 200,0 190,-5" fill="none" stroke-width="1" stroke="black" />
+
+    <text x="-168" y="-170" font-family="sans-serif" font-size="20" fill="black">viewBox="-100 -50 200 150"</text>
+
+    <polygon points="-100,-50 100,-50 100,100, -100,100" fill="none" stroke-width="1" stroke="red" stroke-dasharray="5,5" />
+    <text x="-105" y="-55" font-family="sans-serif" font-size="18" fill="black" text-anchor="end">(-100, -50)</text>
+    <text x="105" y="120" font-family="sans-serif" font-size="18" fill="black">(100, 100)</text>
+
+    <path fill="none" stroke="red" stroke-width="2" d="M -80,-165 A 50 30, 0, 0, 0, 0,-165"/>
+    <line x1="-50" y1="-155" x2="-95" y2="-60" stroke-width="1" stroke="red" />
+    <polyline points="-97,-67 -95,-60 -88,-64" fill="none" stroke-width="1" stroke="red" />
+
+    <path fill="none" stroke="red" stroke-width="2" d="M 5,-165 A 50 90, 0, 0, 0, 40,-165"/>
+    <line x1="20" y1="-160" x2="0" y2="-55" stroke-width="1" stroke="red" />
+    <polyline points="-4,-65 0,-55 7,-63" fill="none" stroke-width="1" stroke="red" />
+
+    <path fill="none" stroke="red" stroke-width="2" d="M 45,-165 A 50 90, 0, 0, 0, 80,-165"/>
+    <line x1="62" y1="-160" x2="94" y2="20" stroke-width="1" stroke="red" />
+    <polyline points="88,12 95,20 98,10" fill="none" stroke-width="1" stroke="red" />
+    </svg>
+   </section>
+  </div>
+
+ </body>
+</html>

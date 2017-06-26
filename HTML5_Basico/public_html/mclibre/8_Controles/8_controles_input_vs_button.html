@@ -27,27 +27,15 @@
  </head>
  <body>
 
+
   <div>
-   <p>Obtener datos de la diana </p>
-   <br>
-   <form method="get" action="<?php echo $_SERVER['PHP_SELF'] ?>">
-    <input id="info" type="image" alt="img1" src="formularios_image.svg">
+   <p>Enviar datos</p>
+   <form method="get" action="../../../../../xampp/htdocs/PHP7_Basico/php_formularios/php_recibir_datos_boton_envio.php">
+    <button type="submit" name="envio1" value="Enviar1" >Enviar 1</button>
+    <button type="submit" name="envio2" value="Enviar2" >Enviar 2</button>
    </form>
   </div>
 
-<!--  <?php
-  if (!isset($_REQUEST['x']) && (!isset($_REQUEST['y']))) {
-  echo 'Define los puntos';
-  } else {
-  echo '1º valor : ' . $_REQUEST['x'];
-  echo '<br>';
-  echo '2º valor : ' . $_REQUEST['y'];
-  if ($_REQUEST['x'] == 60 && $_REQUEST['y'] == 60) {
-  echo '<h1>Diana</h1>';
-  }
-  }
-  ?>
--->
 
 
 

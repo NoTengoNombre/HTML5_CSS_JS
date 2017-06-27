@@ -1,0 +1,29 @@
+/* 
+    @Created on : 27-jun-2017, 8:58:12
+    @Author     : RVS
+    @Pag        :
+    @version    :
+*/
+
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    margin: 10px 10px 10px 100px;
+    padding: 5px;
+    display: inline-block;
+}
+
+a:hover{
+    border: 1px solid red;
+    background-color: aquamarine;
+}
+
+a:link{
+    color: black;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <link rel="stylesheet" href="assets/css/css1.css">
+ </head>
+ <body>
+
+  <div>
+   <center>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+         width="600" viewBox="-50 -50 600 190" 
+         style="background-color: white; border: black solid 2px" 
+         font-family="sans-serif" font-size="36">
+
+    <text x="20" y="100" text-anchor="start">@charset "utf-8";</text>
+
+    <rect x="16" y="70" rx="2" ry="2" width="40" height="42" fill="none" stroke="blue" stroke-width="3" />
+    <rect x="60" y="70" rx="2" ry="2" width="120" height="42" fill="none" stroke="blue" stroke-width="3" />
+    <rect x="282" y="70" rx="2" ry="2" width="15" height="42" fill="none" stroke="blue" stroke-width="3" />
+
+    <line x1="36" y1="70" x2="36" y2="30" stroke-width="3" stroke="blue" />
+    <text x="36" y="20" text-anchor="middle" fill="blue" font-size="24">regla-arroba</text>
+    <line x1="120" y1="70" x2="120" y2="-10" stroke-width="3" stroke="blue" />
+    <text x="120" y="-16" text-anchor="middle" fill="blue" font-size="24">identificador</text>
+    <line x1="289" y1="70" x2="289" y2="30" stroke-width="3" stroke="blue" />
+    <text x="289" y="20" text-anchor="middle" fill="blue" font-size="24">punto y coma</text>
+    </svg>
+   </center>
+   <br>
+   <center>
+
+    <p style="margin-left: 30px; color: black">
+     Reglas-arroba <span>(@charset, @import o @namespace)</span> <br>
+     deben aparecer al principio de la hoja de estilo, <br>
+     pero el resto <span>(@font-face, @media, etc.)</span> <br>
+     pueden escribirse en cualquier lugar de la hoja de estilo.<br><br>
+     Las reglas están formadas por un selector <br>
+     y un bloque de declaración.<br> <br>
+     El bloque de declaración empieza <br>
+     y acaba con llaves { }.<br>
+    </p>
+   </center>
+  </div>
+
+  <div>
+   @charset — Define el set de caracteres usado por la hoja de estilos.<br><br>
+
+   @import — Indica al motor de CSS que incluya una hoja de estilos externa.<br><br>
+
+   @namespace — Indica al motor de CSS que todo el contenido usa como prefijo de un espacio de nombres XML.<br>
+   Reglas-at anidadas — Un subconjunto de declaraciones anidadas,que pueden 
+   ser usadas como declaraciones de estilos,así como <br>
+   grupos de reglas condicionadas internas:<br><br>
+   @media — Un grupo de reglas condicional que aplicará <br>
+   su contenido si el dispositivo cumple los criterios
+   de las condiciones definidas usando un media query.<br><br>
+   @supports   — Un grupo de reglas condicional<br>
+   que aplicará su contenido si el navegador<br>
+   cumple los criterios de la condición dada.<br><br>
+   @document  — Un grupo de reglas condicionadas<br>
+   que aplicará su contenido si el documento donde<br>
+   se aplica la hoja de estilos cumple los criterios<br>
+   de la condición dada. (diferida al Nivel 4 de la Especificación CSS)<br><br>
+   @page — Describe los cambios en la disposición<br>
+   de la página que serán aplicados al imprimir el documento.<br><br>
+   @font-face — Describe la configuración de fuentes<br>
+   externas que se descargarán.<br><br>
+   @keyframes  — Describe la configuración de<br>
+   pasos intermedios en una secuencia de animación CSS.<br><br>
+   @viewport  — Describe los aspectos del viewport<br>
+   para dispositivos de pantalla pequeña. (actualmente en Borrador)<br><br>
+   @counter-style — Define estilos de contador específicos<br>
+   que no son parte de los conjuntos de estilos predeterminados.<br>
+   (en estado de Recomendación Candidata, pero sólo<br>
+   implementada en Gekko al momento de esta publicación)<br><br>
+   @font-feature-values (junto con @swash, @ornaments, 
+   @annotation, @stylistic, @styleset y @character-variant)<br><br>
+
+   Define nombres comunes para la propiedad font-variant-alternates.<br>
+   (en estado de Recomendación Candidata,<br>
+   pero sólo implementada en Gekko al momento de esta publicación)<br></div>
+
+  <div>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        width="650" viewBox="-155 -10 650 250" style="background-color: white; border: black solid 2px" font-family="sans-serif" font-size="24">
+
+   <text x="20" y="80" text-anchor="start">h1 &nbsp; {</text>
+   <text x="40" y="120" text-anchor="start">color : &nbsp; white ;</text>
+   <text x="40" y="160" text-anchor="start">background-color : &nbsp; black ;</text>
+   <text x="20" y="200" text-anchor="start">}</text>
+
+   <rect x="35" y="100" rx="2" ry="2" width="57" height="25" fill="none" stroke="purple" stroke-width="3" />
+   <rect x="97" y="100" rx="2" ry="2" width="10" height="25" fill="none" stroke="darkorange" stroke-width="3" />
+   <rect x="122" y="100" rx="2" ry="2" width="59" height="25" fill="none" stroke="olive" stroke-width="3" />
+   <rect x="186" y="100" rx="2" ry="2" width="10" height="25" fill="none" stroke="dodgerblue" stroke-width="3" />
+
+   <rect x="35" y="140" rx="2" ry="2" width="191" height="25" fill="none" stroke="purple" stroke-width="3" />
+   <rect x="231" y="140" rx="2" ry="2" width="10" height="25" fill="none" stroke="darkorange" stroke-width="3" />
+   <rect x="255" y="140" rx="2" ry="2" width="60" height="25" fill="none" stroke="olive" stroke-width="3" />
+   <rect x="320" y="140" rx="2" ry="2" width="10" height="25" fill="none" stroke="dodgerblue" stroke-width="3" />
+
+   <line x1="35" y1="100" x2="0" y2="80" stroke-width="3" stroke="purple" />
+   <text x="-5" y="87" text-anchor="end" fill="purple" font-size="24">propiedad</text>
+   <line x1="102" y1="100" x2="102" y2="40" stroke-width="3" stroke="darkorange" />
+   <text x="102" y="35" text-anchor="middle" fill="darkorange" font-size="24">dos puntos</text>
+   <line x1="115" y1="100" x2="179" y2="38" stroke-width="3" stroke="black" />
+   <text x="184" y="45" text-anchor="start" fill="black" font-size="24">espacio en blanco</text>
+   <line x1="169" y1="100" x2="199" y2="70" stroke-width="3" stroke="olive" />
+   <text x="204" y="77" text-anchor="start" fill="olive" font-size="24">valor</text>
+   <line x1="195" y1="112" x2="240" y2="112" stroke-width="3" stroke="dodgerblue" />
+   <text x="245" y="119" text-anchor="start" fill="dodgerblue" font-size="24">punto y coma</text>
+   </svg>
+  </div>
+
+ </body>
+</html>

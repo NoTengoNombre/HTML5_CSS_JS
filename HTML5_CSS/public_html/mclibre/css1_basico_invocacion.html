@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icons/Favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/css/css1.css">
+ </head>
+ <body>
+
+  <div>
+   <br>
+   <center>
+    <p id="reglas">Regla de las Arroba @</p>
+   </center>
+   <br>
+  </div>
+
+  <div>
+   <center>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+         width="600" viewBox="-50 -50 600 190" 
+         style="background-color: #ffffcc; border: black solid 1px" 
+         font-family="sans-serif" font-size="36">
+
+    <text x="20" y="100" text-anchor="start">@charset "utf-8";</text>
+
+    <rect x="16" y="70" rx="2" ry="2" width="40" height="42" fill="none" stroke="blue" stroke-width="1" />
+    <rect x="60" y="70" rx="2" ry="2" width="120" height="42" fill="none" stroke="blue" stroke-width="1" />
+    <rect x="282" y="70" rx="2" ry="2" width="15" height="42" fill="none" stroke="blue" stroke-width="1" />
+
+    <line x1="36" y1="70" x2="36" y2="30" stroke-width="3" stroke="blue" />
+    <text x="36" y="20" text-anchor="middle" fill="blue" font-size="24">regla-arroba</text>
+    <line x1="120" y1="70" x2="120" y2="-10" stroke-width="3" stroke="blue" />
+    <text x="120" y="-16" text-anchor="middle" fill="blue" font-size="24">identificador</text>
+    <line x1="289" y1="70" x2="289" y2="30" stroke-width="3" stroke="blue" />
+    <text x="289" y="20" text-anchor="middle" fill="blue" font-size="24">punto y coma</text>
+    </svg>
+   </center>
+
+   <center>
+    <p id="reglas1">
+     Reglas-arroba <span>(@charset, @import o @namespace)</span> <br>
+     deben aparecer al principio de la hoja de estilo, <br>
+     pero el resto <span>(@font-face, @media, etc.)</span> <br>
+     pueden escribirse en cualquier lugar de la hoja de estilo.<br>
+     <br>
+     Las reglas están formadas por un selector <br>
+     y un bloque de declaración.<br> <br>
+     El bloque de declaración empieza <br>
+     y acaba con llaves { }.<br>
+    </p>
+   </center>
+  </div>
+
+ </body>
+</html>

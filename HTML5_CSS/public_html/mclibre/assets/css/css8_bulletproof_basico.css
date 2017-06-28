@@ -1,0 +1,42 @@
+/* 
+    @Created on : 26-jun-2017, 19:11:04
+    @Author     : RVS
+    @Pag        :
+    @version    :
+*/
+
+div{
+    border: 1px solid red;
+}
+
+/* Orden alfabetico */
+h1 , h2 , h3 , h4 , h5 , h6{
+    align-content: center;
+    background-color: #000;
+    color: red;
+    display: block;
+    font-size: 30px;
+    width: 500px;
+}
+
+p.intro{
+    margin-left: 30%;
+    margin-right: 30%;
+    line-height: 200%;
+    text-align: justify;
+}
+
+@font-face {
+    font-family: MyFirstFont;
+    src: url(../webfonts/sansationbold/SansationBold.woff);
+}
+
+@font-face{
+    font-family: MyFirstFont;
+    src: url(../webfonts/sansationbold/SansationBold.woff);
+    font-weight: bold;
+}
+
+div{
+    font-family: MyFirstFont;
+}

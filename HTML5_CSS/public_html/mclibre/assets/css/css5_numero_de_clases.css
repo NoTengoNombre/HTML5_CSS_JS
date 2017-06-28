@@ -1,0 +1,36 @@
+/* 
+    @Created on : 27-jun-2017, 23:41:40
+    @Author     : RVS
+    @Pag        :
+    @version    :
+*//* Orden : Etiqutas la pagina web
+           Orden alfabetico */
+
+
+/* Definir 3 clases distintas de párrafo <p> (una para cada de los tres tipos que hay en la página): */
+/*p.clase-1 {
+    font-family: sans-serif;
+}
+
+p.clase-2{
+    font-family: serif;
+}
+
+p.clase-3{
+    font-family: monospace;
+}*/
+
+/*Definir sólo 2 clases distintas de párrafo <p> 
+(para dos de los tipos que hay en la página) 
+y definir la etiqueta sin clase para el tercer tipo*/
+p{
+    font-family: sans-serif;
+}
+
+p.clase-2{
+    font-family: serif;
+}
+
+p.clase-3{
+    font-family: monospace;
+}

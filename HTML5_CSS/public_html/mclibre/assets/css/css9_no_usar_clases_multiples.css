@@ -1,0 +1,20 @@
+/* 
+    @Created on : 28-jun-2017, 13:47:24
+    @Author     : RVS
+    @Pag        :
+    @version    :
+*//* Orden : Etiquetas la pagina web
+           Orden alfabetico */
+
+
+.intro{
+    background-color: aquamarine;
+}
+
+div.a.b {
+    background-color: #E56F60;
+}
+
+div#intro{
+    background-color: burlywood;
+}

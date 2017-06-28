@@ -1,0 +1,69 @@
+/* 
+    @Created on : 26-jun-2017, 19:11:04
+    @Author     : RVS
+    @Pag        :
+    @version    :
+*/
+
+/*
+Seguir el orden por : 
+    Etiqutas en la pagina web
+    Orden alfabetico
+*/
+
+/**{
+    padding: 0;
+    margin: 0;
+}*/
+
+
+/*Siempre se pone en 1º posicion */
+@charset "utf-8";
+
+div{
+    border: 1px solid red;
+}
+
+/* Orden alfabetico */
+h1 , h2 , h3 , h4 , h5 , h6{
+    align-content: center;
+    background-color: #000;
+    color: red;
+    display: block;
+    font-size: 30px;
+    width: 500px;
+}
+
+p{
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: justify;
+}
+
+p.intro{
+    margin-left: 30%;
+    margin-right: 30%;
+    line-height: 200%;
+    text-align: justify;
+}
+
+
+/* Configuración */
+@font-face{
+    /*Declaro el nombre de la fuente */ 
+    font-family: LemonChickenRegular;
+    /*Agrego la ruta de la fuente*/ 
+    src: url('../webfonts/lemonchicken/LemonChicken Regular.ttf');
+}
+
+@font-face{
+    font-family: LemonChickenRegular;
+    src: url('../webfonts/lemonchicken/LemonChicken Regular.ttf');
+    /* • Atributo extra*/
+    /*font-weight: bold; */
+}
+
+div{
+    font-family: LemonChickenRegular;
+}
+

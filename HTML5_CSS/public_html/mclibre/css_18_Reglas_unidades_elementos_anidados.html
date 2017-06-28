@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   div{
+       border: 1px solid black;
+       font-size: 150%;
+   }
+
+   p {
+       font-size: 150%;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p>
+   Si se cambia el tamaño en dos elementos anidados, <br>
+   los porcentajes se <b>multiplican entre sí. <br>
+   </b>
+   <br>
+   A este fenómeno se le denomina "composición", <br>
+   es decir, el tamaño final es la <br>
+   composición de tamaños de cada elemento.<br>
+   <br>
+   En el ejemplo siguiente, los párrafos <br>
+   están aumentados al 150%, por lo que <br>
+   el párrafo situado en la división <br>
+   (cuyo contenido está a su vez aumentado al 150%), <br>
+   está aumentado el 225% (el 150% del 150%, 150% x 150% = 225%).<br>
+  </p>
+
+  <p>Parrafo aumentado al 150%</p>  
+
+  <div>
+   <p>Parrafo aumentado al 150%</p>
+   <p>
+    Composición de tamaños no siempre es conveniente <br>
+    y puede provocar cambios de tamaños indeseados <br>
+    debido a anidamientos no previstos. <br><br>
+    Para evitarlo, se puede utilizar la <br>
+    unidad relativa <b>rem</b>, introducida en CSS 3.<br>
+   </p>
+  </div>
+
+ </body>
+</html>

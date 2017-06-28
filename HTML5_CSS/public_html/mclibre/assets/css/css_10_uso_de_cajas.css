@@ -1,0 +1,23 @@
+/* 
+    @Created on : 28-jun-2017, 13:47:24
+    @Author     : RVS
+    @Pag        :
+    @version    :
+*//* Orden : Etiquetas la pagina web
+           Orden alfabetico */
+
+
+div#css2{
+    width: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;   
+}
+
+p#css3{
+    border: 5px solid red;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <!--hojas de estilo alternativas, es decir, 
+  para que el usuario pueda elegir en el navegador 
+  qué hoja de estilo quiere aplicar, es suficiente 
+  con que los enlaces a las hojas de estilo tengan 
+  el atributo title:-->
+  <link rel="stylesheet" type="text/css" href="assets/css/css_13_hoja_estilo.css" title="1">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/css_13_hoja_estilo2.css" title="2">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/css_13_hoja_estilo3.css" title="3">
+ </head>
+ <body>
+
+  <div>
+   <p>
+    Dos o más hojas de estilo, 
+    con lo que el código fuente 
+    contendrá tantas etiquetas 
+    < link /> como hojas enlazadas
+   </p>
+   <p>
+    Navegador aplica simultáneamente 
+    las dos hojas de estilo 
+    a la página web. 
+    Si un elemento está definido 
+    en las dos hojas, 
+    el navegador hará lo que diga 
+    la última hoja de estilo de la lista.
+   </p>
+  </div>
+
+  <div>
+   el <span>navegador</span> hará lo que diga 
+   la última hoja de estilo de la lista.
+  </div>
+
+  <div>
+   <p>
+    Para que sean hojas de estilo alternativas, 
+    es decir, para que el usuario pueda elegir 
+    en el navegador qué hoja de estilo quiere 
+    aplicar, es suficiente con que los enlaces 
+    a las hojas de estilo tengan el atributo <b>title:</b>
+   </p>
+   <p>
+    En este caso la primera hoja de estilo enlazada 
+    es la que se aplica de forma predeterminada 
+    y el resto son hojas de estilo alternativas.
+   </p>
+  </div>
+
+  <div>
+   <p>
+    Si se quiere indicar explícitamente la hoja de estilo predeterminada, 
+    también se puede establecer en el enlace a la hoja de estilo predeterminada 
+    el atributo <b>rel</b> con el valor <b>"stylesheet"</b> y establecer en el resto de 
+    enlaces el <b>atributo rel</b> con el valor <b>"alternate stylesheet"</b>. 
+    En este caso, el orden de los enlaces no es importante.
+   </p>
+  </div>
+
+ </body>
+</html>

@@ -19,26 +19,13 @@ Seguir el orden por :
 
 /*Siempre se pone en 1º posicion */
 @charset "utf-8";
-/*@import*/ 
+/*@import -- desaconsejado*/ 
 /*@namespace*/
 /*@font-face*/
 /*@media*/
 
-/*La ultima regla es la que se ejecuta */
-p ,span , pre {
-    background-color: lightyellow;
-    margin-left: 30px; 
-    color: black
-}
 
-ul , li{
-    background-color: burlywood;
-    margin-left: 30px;
-    color: #000;
-}
-
-
-h1{
-    color: white;
-    background-color: black;
-}
+/*h1{
+    Evitar porque relentiza*/
+/*font-family: "RibEye Marrow", cursive;*/
+/*}*/

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <!--1º forma baja prioridad-->
+  <link rel="stylesheet" type="text/css" href="assets/css/css_15_hojas_estilo_aparecer_propiedades.css" title="Mi estilo basico">
+  <!--2º forma - media prioridad -->
+  <style type="text/css">
+   p#parrafo1  {
+       background-color: #d0f2db;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+  <!--3º forma - maxima prioridad-->
+   <p style="background-color: #caf2f2">
+    Dos o más hojas de estilo, 
+    con lo que el código fuente 
+    contendrá tantas etiquetas 
+    < link /> como hojas enlazadas
+   </p>
+
+   <p id="parrafo1">
+    Reglas de aplicación de los estilos<br>
+
+    Si se define la misma propiedad para la misma etiqueta <br>
+    con el mismo selector en dos sitios distintos, <br>
+    las reglas de precedencia son las siguientes:<br>
+    Las propiedades definidas dentro de un elemento con un <br>
+    atributo <b>style</b> se imponen a las propiedades <br>
+    definidas en la etiqueta < style >.<br>
+
+    Las propiedades definidas en la etiqueta < style > <br>
+    se imponen a las propiedades definidas <br>
+    en una hoja de estilo enlazada.<br>
+    <br>
+    Las propiedades definidas en un atributo <b>style</b> <br>
+    se imponen a las propiedades definidas <br>
+    en una hoja de estilo enlazada.<br>
+    <br>
+    Además de estas propiedades definidas por el <br>
+    creador de la página web, hay que tener en <br>
+    cuenta que también se aplican las propiedades <br>
+    definidas en la hoja de estilo por defecto del navegador.<br>
+    <br>
+    Si las propiedades se encuentran definidas en diferentes <br>
+    hojas de estilo, el navegador aplica el valor definido <br>
+    en la <b>última hoja de estilo enlazada </b><br>
+    (es decir, en el último enlace < link /> del < head >).
+   </p>
+
+  </div>
+
+  <div style="border: black 1px solid; color:red;">
+   <p>
+    Elementos dentro de otros<br>
+    <br>
+    Cuando un elemento está contenido en otro <br>
+    (por ejemplo, un párrafo < p > dentro<br> 
+    de una división < div >), <br>
+    al elemento de dentro se le <br>
+    aplican también las propiedades <br>
+    definidas para el elemento de fuera.<br>
+    <br>
+    En el ejemplo siguiente, <br>
+    el párrafo incluido dentro de la <br>
+    división se muestra de color rojo <br>
+    porque el párrafo está incluido <br>
+    dentro de la división.<br>
+   </p>
+  </div>
+
+
+ </body>
+</html>

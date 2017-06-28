@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   p.borde-em-serif{
+       border: 1ex solid red;
+       font-family: serif;
+   }
+
+   p.borde-em-sans-serif{
+       border: 1ex solid green;
+       font-family: sans-serif;
+   }
+
+   p.borde-em-monospace{
+       border: 1ex solid blue;
+       font-family: monospace;
+   }
+
+   hr{
+       width: 50%;
+   }
+
+   p#parrafo2{
+       border: 2px solid black;
+       font-size: 1.5em;
+   }
+
+
+   div#parrafo3{
+       font-size: 1.5em;
+   }
+
+
+  </style>
+ </head>
+ <body>
+  <div>
+   <h1>Unidades Relativas 1em se ajustan al tipo de letra</h1>
+  </div>
+
+  <div>
+   <hr>
+   <p class="borde-em-serif">
+    Este párrafo tiene un borde de 1ex de grosor (la altura de la letra "x").
+   </p>
+   <p class="borde-em-sans-serif">
+    Este párrafo tiene un borde de 1ex de grosor (la altura de la letra "x").
+   </p>
+   <p class="borde-em-monospace">
+    Este párrafo tiene un borde de 1ex de grosor (la altura de la letra "x").
+   </p>
+   <hr>
+  </div>
+
+  <div>
+   <p>
+    La unidad relativa <b>em</b> se puede relacionar 
+    directamente con los porcentajes, concretamente 
+    <span style="font-size: x-large;">
+     <b>1em = 100%.</b>
+    </span>
+   </p>
+
+   <p>
+    Unidades relativas <b>em, ex y ch </b><br>
+    se produce también el fenómeno de composición <br>
+    <br>
+    Si se cambia el tamaño en dos elementos anidados, <br>
+    los porcentajes se multiplican entre sí<br>
+   </p>
+
+  </div>
+
+  <p id="parrafo2">Parrafo esta aumentado a 1.5 em  </p>
+
+  <div id="parrafo3">
+   <p>Parrafo esta aumentado a 1.5em </p>
+  </div>
+
+  <p>
+   Esta composición de tamaños no siempre es <br>
+   conveniente y puede provocar cambios de <br>
+   tamaños indeseados debido a anidamientos <br>
+   no previstos. <br><br>
+   Para evitarlo, se puede <br>
+   utilizar la unidad relativa rem, introducida en CSS 3.<br>
+  </p>
+
+ </body>
+</html>

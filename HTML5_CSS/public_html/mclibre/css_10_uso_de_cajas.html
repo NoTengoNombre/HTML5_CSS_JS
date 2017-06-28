@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/css/css_10_uso_de_cajas.css">
+ </head>
+ <body>
+  <div id="css2">
+   <p>
+    Se utilizan las propiedades border o padding junto con width. 
+    Este aviso simplemente nos recuerda que en el modelo de caja CSS 2, 
+    el tamaño del borde y del margen interior se añaden 
+    al tamaño del elemento definido con la propiedad width
+   </p>   
+  </div> 
+  <p id="css3">
+   Ese aviso se puede evitar utilizando la 
+   propiedad CSS 3 box-sizing: border-box, 
+   que hace que los tamaños del borde y 
+   del margen interior se descuenten del 
+   tamaño definido con la propiedad width. 
+   Pero, al usar esa propiedad, 
+   CSS Lint genera un aviso que nos recuerda 
+   que esa propiedad no funciona  
+   en versiones antiguas de los navegadores.
+  </p>   
+
+ </body>
+</html>

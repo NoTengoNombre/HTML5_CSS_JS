@@ -1,0 +1,39 @@
+/* 
+    @Created on : 26-jun-2017, 19:11:04
+    @Author     : RVS
+    @Pag        :
+    @version    :
+*//*
+Seguir el orden por : 
+    Etiqutas en la pagina web
+    Orden alfabetico
+*/
+
+
+/*Siempre se pone en 1º posicion */
+@charset "utf-8";
+
+p.intro{
+    margin-left: 30%;
+    margin-right: 30%;
+    line-height: 200%;
+    text-align: justify;
+}
+
+/* Forma completa para todos los navegadores */
+@font-face {
+    font-family: mifuente;
+    src:
+        url('../webfonts/fantasquesanmono/FantasqueSansMono-Regular.eot');  /*IE9 Compat Modes */
+    src: 
+        url('../webfonts/fantasquesanmono/FantasqueSansMono-Regular.eot?#isefix') format('embedded-opentype'),  /*IE6-IE8 */
+        url('../webfonts/fantasquesanmono/FantasqueSansMono-Italic.woff2') format('woff2'),  /*Super Modern Browsers */
+        url('../webfonts/fantasquesanmono/FantasqueSansMono-Regular.woff') format('woff'),  /*Pretty Modern Browsers */
+        /*url('../webfonts/fantasquesanmono/webfont.ttf')  format('truetype'),  Safari, Android, iOS */
+        url('../webfonts/fantasquesanmono/FantasqueSansMono-Regular.svg') format('svg');  /*Legacy iOS */
+}
+
+div{
+    border: 1px solid red;
+    font-family: mifuente;
+}

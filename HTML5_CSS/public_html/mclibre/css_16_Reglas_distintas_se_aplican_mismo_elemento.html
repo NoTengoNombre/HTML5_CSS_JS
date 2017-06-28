@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   p#nuevo{
+       color: red;
+   }
+   p{
+       color: green;
+   }
+
+   div#viejo{
+       border: 1px solid black ;
+       margin: 2px;
+       padding: 2px;
+   }
+
+   div p#nuevo{
+       color: red;
+   }
+
+   div#viejo p#nuevo{
+       color: black;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <div id="viejo">
+   <p>
+    Dos reglas distintas se aplican a un mismo <br><br>
+
+    Elemento cuando el elemento coincide con los selectores de ambas reglas. <br><br>
+    La regla que se aplica es la del selector de mayor especificidad. <br><br>
+    La especificidad de un selector se calcula atendiendo a los siguientes criterios:<br>
+    Número de atributos id en el selector<br><br>
+    Número de otros atributos y pseudo-clases en el selector (los pseudo-elementos se ignoran)<br><br>
+    Número de elementos en el selector<br><br>
+    Posición en la hoja de estilo<br><br>
+    Estos criterios se aplican en orden, <br><br>
+    es decir, primero se comparan el número de atributos id de cada selector. <br><br>
+    Si un selector tiene más que el otro, se aplica esa regla, <br>
+    si el número es el mismo, entonces <br>
+    se calcula el segundo criterio (número de otros atributos y pseudo-clases). <br>
+   </p>
+
+   <p id="nuevo">
+    Párrafo con atributo id "nuevo" <br>
+    dentro de una división con atributo id "viejo"
+   </p>
+
+  </div>
+
+  <p id="nuevo1">Parrafo con atributo id "nuevo"</p>
+
+  <p>Parrafo sin atributo id</p>
+
+
+
+
+ </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   [lang|=en]{
+       background-color: #ffff99;
+   }
+
+   [style|=border]{
+       background-color: #66ffcc;
+       border: 2px solid #3d7c54;
+   }
+
+   [id|=valor]{
+       background-color: #adff99;
+       border: 1px dashed #5c7c54;
+   }
+
+   [class|=valor1]{
+       background-color: #ff6666;
+       border: 2px dashed #99ccff;
+   }
+
+  </style>
+ </head>
+ <body>
+  <header>
+   <h2>Selector mediante los atributos de los elementos</h2>
+  </header>
+
+  <section>
+   <h3>Selector mediante los atributos de los elementos</h3>
+
+   <div>
+    Selecciona los elementos por medio de los atributos
+   </div>
+
+   <p lang="en">Hello</p>
+   <p lang="en-us">Hi!</p>
+   <p lang="en-gb">Ello!</p>
+   <p lang="no">Hei!</p>
+
+   <br>
+
+   <p style="border">style="border"</p>
+
+   <p id="valor">id="valor"</p>
+
+   <p class="valor1">class="valor1"</p>
+
+  </section>
+
+ </body>
+</html>

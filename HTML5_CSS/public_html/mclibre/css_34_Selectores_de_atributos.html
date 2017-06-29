@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   p.p1{
+       color: red;
+   }
+
+   p.p2{
+       color: blue;
+   }
+
+   p[class]{
+       text-transform: uppercase;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <header>
+   <h1>
+    Hay cuatro formas de seleccionar elementos con determinados atributos: 
+   </h1>
+  </header>
+
+  <section>
+   <div>
+    <h2>
+     Tipo de Selectores de Elementos 
+    </h2>
+    <ul>
+     <li>
+      <p>
+       E[atributo], 
+      </p>
+     </li>
+     <li>
+      <p>
+       E[atributo="valor"], 
+      </p>
+     </li>
+     <li>
+      <p>
+       E[atributo~="valor"], 
+      </p>
+     </li>
+     <li>
+      <p>
+       E[atributo|="valor"].
+      </p>
+     </li>
+    </ul>
+   </div>
+  </section>
+
+  <div>
+   <p>
+    Si se escribe una etiqueta seguida del nombre de un atributo <br>
+    entre corchetes, <b>E[atributo],</b>
+    <br>
+    las propiedades afectan a todos<br> 
+    los elementos que tengan establecidos ese atributo. <br>
+    <br>
+    los párrafos con clase, independientemente <br>
+    de la clase asignada, se muestran en mayúsvculas.<br>
+   </p>
+  </div>
+
+
+  <p style="border: 1px solid red; padding-left: auto;padding-right: auto; text-align: center; width: 150px">
+   Sintaxis basica <br>
+   atributo = valor <br>
+   class = p1 <br>
+  </p> 
+
+
+  <p class="p1">
+   Contiene el selector : p[class]<br>
+   Esto es un parrafo de la clase p1<br>
+  </p>
+
+  <p class="p2">
+   Contiene el selector : p[class]<br>
+   Esto es un parrafo de la clase p2<br>
+  </p>
+
+  <p>Esto es un parrafo sin clase y sin atributo</p>
+
+ </body>
+</html>

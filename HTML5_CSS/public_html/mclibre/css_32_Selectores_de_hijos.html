@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS 2: Selectores de descendientes: E F</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   div{
+       border: 3px solid red;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   div > p {
+       color: red;
+   }
+
+   span{
+       color: brown;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <section>
+   <div>
+    Se escriben dos etiquetas seguidas y separadas por un signo <br>
+    "mayor que" (E &gt; F), las propiedades afectan <br>
+    a los elementos con la <span>segunda etiqueta (F) </span><br>
+    contenidos dentro de la <span>primera etiqueta (E), </span><br>
+    pero no afecta si hay etiquetas intermedias entre ellos.<br> 
+    <br>
+    Unicamente los párrafos <br>
+    < p> dentro de una división < div><br>
+    sin elementos intermedios se ven de color rojo.<br>
+   </div>
+  </section>
+
+  <div>
+   <p>Esto es un párrafo &lt;p&gt;.</p>
+
+   <ul> <!-- No afecta -->
+    <li>Esto es una lista<!-- No afecta -->
+     <p>Esto es un párrafo &lt;p&gt; dentro de una lista : No afecta</p>
+    </li>
+   </ul>
+
+   <p>Esto es otro párrafo &lt;p&gt;.</p>
+
+   <address>Esto no es un párrafo &lt;p&gt;, sino una dirección &lt;address&gt;.</address>
+  </div>
+
+
+
+ </body>
+</html>

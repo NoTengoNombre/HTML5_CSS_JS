@@ -13,30 +13,32 @@ and open the template in the editor.
   <style type="text/css">
 
    div{
-       width: 50%;
-       border: 1px solid black;
+       border: 1em solid red;
+       font-size: 1.5rem;
    }
 
-   hr {
-       width: 50%;
+   p{
+       font-size: 1.5rem;
    }
+
 
   </style>
  </head>
  <body>
 
-  <hr>
-  <div>
-   <p>
-    Esta división ocupa el <br>
-    50% del espacio horizontal disponible.<br>
-    <br>
-   <!--<hr>-->
-    Esta división ocupa el <br>
-    50% del espacio horizontal disponible.<br>
+  <header>
+   <p>Unidad relativa <b>rem</b>
+    no se produce el fenómeno de composición <br>
+    de tamaños en elementos anidados, <br><br>
+    Los párrafos dentro de la divisón se ven <br>
+    del mismo tamaño que los párrafos de fuera de la división
    </p>
+  </header>
+  <p>Parrafo aumentado 1.5 rem</p>
+
+  <div>
+   <p>Parrafo aumentado 1.5 rem</p>
   </div>
-  <hr>
 
  </body>
 </html>

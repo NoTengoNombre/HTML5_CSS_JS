@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Códigos de colores HSL</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   #p0{
+       background-color: #ccccff;
+   }
+   #p1{
+       background-color: lightblue;
+       height: 150px;
+       margin-left: 50px;
+       width: 150px;
+   }
+   #p2{
+       background-color: coral;
+       color: white;
+       height: 150px;
+       margin-left: 25px;
+       opacity: 0.5;
+       width: 200px;
+   }
+
+   #p11{
+       background-color: lightblue;
+   }
+
+   div.resultado{
+       background-color: white;
+       font-family: serif;
+       padding: 4px;
+       text-align: left;
+   }
+
+   .resultado{
+       margin: 100px;   
+   }
+
+   #opacity1{
+       background-color: lightblue; 
+       height: 100px; 
+       margin-bottom: 0; 
+       left: 10%;
+       position: relative; 
+       width: 50%; 
+   }
+
+
+   #opacity2{
+       background-color: coral; 
+       color: white; 
+       height: 100px; 
+       left: 20%; 
+       margin-top: 0; 
+       opacity: 0.5;
+       position: relative; 
+       top: -3em; 
+       width: 50%;
+   }
+
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>Propiedad opacity </h1>
+
+  </header>
+
+  <article>
+   <h2 id="p11">
+    Permite hacer que un elemento sea parcialmente transparente. <br>
+   </h2>
+   <p id="p0">
+    El valor de esta propiedad debe ser un valor decimal entre 0 y 1<br>
+    <br>
+    (El valor 0 hace que el elemento <br>
+    sea completamente transparente<br> 
+    y el valor 1 hace que el elemento <br>
+    sea completamente opaco)<br>
+   </p>
+  </article>
+
+  <section>
+   <h2>Uso de la opacity</h2>
+
+   <div id="p1">
+    Este texto se encuentra situado a la izquierda
+    Este texto se encuentra situado a la izquierda
+
+    <div id="p2">
+     Este texto se encuentra situado a la derecha
+     Este texto se encuentra situado a la derecha
+    </div>
+   </div>
+
+   <div class="resultado">
+    <h2>Uso opacidad - Superposicion de elementos</h2>
+    <p id="opacity1">
+     Este texto se encuentra situado a la izquierda, 
+     a la izquierda, a la izquierda, a la izquierda, 
+     a la izquierda, a la izquierda, a la izquierda, 
+     a la izquierda, a la izquierda
+    </p>
+
+    <p id="opacity2">Este texto se encuentra situado a la derecha, 
+     a la derecha, a la derecha, a la derecha, 
+     a la derecha, a la derecha, a la derecha, 
+     a la derecha, a la derecha
+    </p>
+   </div>
+
+  </section>
+
+
+ </body>
+</html>

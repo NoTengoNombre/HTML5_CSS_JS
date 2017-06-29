@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS basico - Unidades Absolutas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   .captura {
+       text-align: center;
+   }
+
+  </style>
+ </head>
+ <body>
+  <h1>
+   Todas las unidades absolutas están relacionadas, puesto que se trata de unidades de distancia:
+  </h1>
+  <div>
+   <p>
+    <b>px:</b> píxeles, la 96ava parte de una pulgada (96 px = 1in = 2.54cm)<br>
+    <b>cm:</b> centímetros<br>
+    <b>mm: </b> milímetros (10mm = 1cm)<br>
+    <b>q: </b> cuartos de milímetros (4q = 1mm)<br>
+    <b>in: </b> pulgadas (1in = 2.54cm = 25.4mm)<br>
+    <b>pc: </b> picas, la sexta parte de una pulgada (6pc = 1in)<br>
+    <b>pt: </b> puntos, la doceava parte de una pica, es decir, la 72ava parte de una pulgada (72pt = 6pc = 1in)<br>
+   </p>
+
+   <p class="captura">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+         width="1100" viewBox="-110 -40 1100 280" style="background-color: white;" font-family="sans-serif" font-size="18">
+    <title>Unidades absolutas SVG a escala</title>
+    <text x="-10"  y="0" text-anchor="end">Real:</text>
+    <line x1="0" y1="-10" x2="0" y2="10" stroke="red" stroke-width="2" />
+    <line x1="0" y1="0" x2="96" y2="0" stroke="red" stroke-width="2" />
+    <line x1="96" y1="-10" x2="96" y2="10" stroke="red" stroke-width="2" />
+    <text x="96"    y="-20" text-anchor="middle">1in</text>
+    <line x1="37.8" y1="-10"  x2="37.9" y2="10" stroke="red" stroke-width="2" />
+    <text x="37.8"  y="-20" text-anchor="start">1cm</text>
+    <line x1="16" y1="-10"  x2="16" y2="10" stroke="red" stroke-width="2" />
+    <text x="16"  y="-20" text-anchor="middle">1pc</text>
+
+    <line x1="0" y1="0" x2="0" y2="100" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+    <line x1="16" y1="0" x2="160" y2="100" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+    <line x1="37.8" y1="0" x2="378" y2="100" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+    <line x1="96" y1="0" x2="960" y2="100" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+
+    <text x="-10"   y="100" text-anchor="end">Aumentado:</text>
+    <line x1="0"    y1="90"  x2="0"     y2="110" stroke="red" stroke-width="2" />
+    <line x1="0"    y1="100" x2="960"   y2="100" stroke="red" stroke-width="2" />
+    <line x1="960"  y1="90"  x2="960"   y2="110" stroke="red" stroke-width="2" />
+    <text x="960"   y="130" text-anchor="middle">1in</text>
+    <line x1="378"  y1="90"  x2="378"   y2="110" stroke="red" stroke-width="2" />
+    <text x="378"   y="130" text-anchor="middle">1cm</text>
+    <line x1="160"  y1="90"  x2="160"   y2="110" stroke="red" stroke-width="2" />
+    <text x="160"   y="130" text-anchor="middle">1pc</text>
+    <line x1="37.8" y1="90"  x2="37.8"  y2="110" stroke="red" stroke-width="2" />
+    <text x="37.8"  y="80" text-anchor="start">1mm</text>
+    <line x1="13.3" y1="90"  x2="13.3"  y2="110" stroke="red" stroke-width="2" />
+    <text x="13.3"  y="130" text-anchor="start">1pt</text>
+    <line x1="10"   y1="90"  x2="10"    y2="110" stroke="red" stroke-width="2" />
+    <text x="15"    y="80" text-anchor="middle">1px</text>
+    <line x1="9.4"  y1="90"  x2="9.4"   y2="110" stroke="red" stroke-width="2" />
+    <text x="9.4"   y="130" text-anchor="end">1q</text>
+
+    <line x1="0" y1="100" x2="0" y2="200" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+    <line x1="9.4"  y1="100" x2="100" y2="200" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+    <line x1="10"   y1="100" x2="105.8" y2="200" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+    <line x1="13.3" y1="100" x2="141.1" y2="200" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+    <line x1="37.8" y1="100" x2="400" y2="200" stroke="black" stroke-width="1" stroke-dasharray="5, 5" />
+
+    <text x="-10"    y="200" text-anchor="end">Aumentado:</text>
+    <line x1="0"     y1="190"  x2="0"     y2="210" stroke="red" stroke-width="2" />
+    <line x1="0"     y1="200"  x2="400"   y2="200" stroke="red" stroke-width="2" />
+    <line x1="400"   y1="190"  x2="400"   y2="210" stroke="red" stroke-width="2" />
+    <line x1="400"   y1="190"  x2="400"   y2="210" stroke="red" stroke-width="2" />
+    <text x="400"    y="180" text-anchor="start">1mm</text>
+    <line x1="141.1" y1="190"  x2="141.1"  y2="210" stroke="red" stroke-width="2" />
+    <text x="141.1"  y="230" text-anchor="start">1pt</text>
+    <line x1="105.8" y1="190"  x2="105.8" y2="210" stroke="red" stroke-width="2" />
+    <text x="100"  y="180" text-anchor="start">1px</text>
+    <line x1="100"   y1="190"  x2="100"   y2="210" stroke="red" stroke-width="2" />
+    <text x="100"    y="230" text-anchor="end">1q</text>
+    </svg>
+   </p>
+
+  </div>
+
+
+
+ </body>
+</html>

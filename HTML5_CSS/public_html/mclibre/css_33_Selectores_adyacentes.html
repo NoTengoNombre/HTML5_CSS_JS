@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS 2: Selectores de descendientes: E F</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   div{
+       border: 3px solid red;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   div + p{
+       color: red;
+   }
+
+   span{
+       font-size: 1.3em;
+       color: #339900;
+   }   
+
+
+  </style>
+ </head>
+ <body>
+  <p>
+   Se escriben dos etiquetas seguidas <br>
+   separadas por un signo "más" (E + F), <br>
+   las propiedades afectan únicamente a los elementos <br>
+   con la segunda etiqueta (F) que van justo <br>
+   después de un elemento con la primera etiqueta (E). <br>
+   <br>Unicamente el párrafo < p> <span>inmediatamente posterior 
+    a la división </span>< div> se ven de color rojo.
+  </p>
+
+  <div>
+   <p>Este párrafo esta marcado con div + p </p>
+
+   <ul>
+    <li>Esto es una lista
+     <p>Esto es un párrafo &lt;p&gt; dentro de una lista</p>
+    </li>
+   </ul>
+
+   <p>Esto es otro párrafo &lt;p&gt;.</p>
+
+   <address>Esto no es un párrafo &lt;p&gt;, sino una dirección &lt;address&gt;.</address>
+  </div>
+
+  <p>Este párrafo esta marcado con div + p 
+   <br> inmediatamente posterior a la división 
+  </p>
+
+  <p>Esto es otro párrafo &lt;p&gt;.</p>
+ </body>
+</html>

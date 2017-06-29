@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   a[data-info~="external"]{
+       color: red;
+   }
+
+   a[data-info~="image"]{
+       border: 3px solid black;
+   }
+   
+   span{
+       color: #ff0000;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <section>
+   <h2>Selector por el simbolo ~</h2>
+   <p>Tienes 1 selector y 2 atributos</p>
+   <p>Nos permite afectar un atributo que tenga<br>
+    una lista de valores separados por espacios<br>
+    <br>
+    a[data-info~="external"]<br>
+    <br>
+    a[data-info~="image"]<br>
+    <br>
+    Da igual el orden de los atributos
+   <span>data-info="external image"</span>
+   </p>
+   <a href="assets/image/viewport-size-420x236.png" data-info="external image">Click me , Fool</a>
+  </section>
+
+ </body>
+</html>

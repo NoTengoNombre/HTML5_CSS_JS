@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS 2: Selectores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   *{
+       color: red;
+   }
+
+   .aviso{
+       color: hsl(100,40%,30%);
+   }
+
+   .aviso1{
+       color: #ff33cc;
+   }
+
+
+   *.aviso{
+       color: green;
+   }
+
+   #aviso{
+       color : violet;
+   }
+
+   #aviso1{
+       color : #f60;
+   }
+
+
+
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>Selectores universales: *, . y # </h1>
+   <div>
+    Si se escribe un asterisco (*), las propiedades afectan a todos los elementos de la página. 
+   </div>
+  </header>
+
+  <section>
+   <h2>Selectores de tipo: E, E.e y E#e</h2>
+   <p class="aviso">
+    Para definir una clase que afecte a cualquier etiqueta,<br>
+    se debe escribir un punto y el nombre de la clase. <br>
+   </p>
+   <p class="aviso">
+    Para definir un id que afecte a cualquier <span id="aviso">etiqueta</span>,<br>
+    se debe escribir un punto y el nombre de la clase<br>
+    <br>
+    El atributo <span id="aviso1">id</span> no se puede repetir<br>
+    , es decir, que no puede haber en una página web <br>
+    dos elementos con el <span class="aviso1">mismo valor del atributo id </span><br>
+    (independientemente de que los elementos tengan etiquetas iguales o distintas). <br>
+    <br>
+    En el caso de que la misma hoja de estilo se enlace desde varias páginas web, <br>
+    en cada una de esas páginas sí que puede haber un elemento <br>
+    (del mismo tipo o distinto en cada página) con el <span class="aviso1">mismo valor del atributo id.</span><br>
+   </p>
+  </section>
+
+
+ </body>
+</html>

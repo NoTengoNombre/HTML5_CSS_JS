@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS 2: Selectores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+   p{
+       color: red;
+   }
+
+   p.aviso{
+       color: hsl(100,70%,20%);
+   }
+
+   p.aviso2{
+       color: hsl(100,50%,10%);
+   }
+
+   span{
+       font-size: 1.1rem;
+       color: hsl(100,0%,0%);
+   }
+
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>Selectores de tipo: E, E.e y E#e</h1>
+   <div>
+    <p>E : elemento</p>
+    <br>
+    <p>E.e : elemento.class</p>
+    <br>
+    <p>E#e : elemento.id</p>
+   </div>
+  </header>
+
+  <section>
+   <h2>Selectores de tipo: E, E.e y E#e</h2>
+   <p>
+    Etiqueta (E), <br>
+    Las propiedades afectan a todos los elementos con etiqueta E.<br> 
+   </p>
+   <p class="aviso">
+    Escribe una etiqueta seguida de un punto y un nombre de clase (E.e), <br>
+    las propiedades afectan a todos los elementos con etiqueta E <br>
+    cuyo atributo class tenga el valor e. <br>
+   </p>
+
+   <p class="aviso2">
+    Escribe una etiqueta seguida de una almohadilla <br>
+    y un nombre de id (E#e), las propiedades afectan <br>
+    al elemento con etiqueta E cuyo atributo id tenga <br>
+    el valor e.  <br>
+    <br>
+    Atributo <span>id</span> no se puede repetir, 
+    no puede haber dos elementos con el mismo valor <br>
+    del <span>atributo id </span> (independientemente de que los <br>
+    elementos tengan etiquetas iguales o distintas).<br>
+   </p>
+
+
+  </section>
+
+
+ </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS 2: Selectores de descendientes: E F</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   div{
+       border: 3px solid red;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   div li p {
+       color: red;
+   }
+
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>Varias etiquetas seguidas (E F G ... ) </h1>
+  </header>
+
+  <section>
+   <p>
+    Si se escriben varias etiquetas seguidas (E F G ... ), <br>
+    las propiedades afectan a los elementos con la última <br>
+    etiqueta contenidos dentro de la etiqueta anterior, <br>
+    contenidos a su vez dentro de etiqueta anterior y <br>
+    así sucesivamente, aunque haya etiquetas intermedias. <br>
+    <br>
+    Los párrafos dentro de un elemento de lista < li><br>
+    dentro de una división < div> se ven de color rojo.<br>
+   </p>
+  </section>
+
+  <div>
+   Div sin parrafo y sin lista
+  </div>
+
+  <div>
+   <p>Esto es un parrafo</p>
+   <ul>
+    <li>Esto es una lista
+     <p>
+      Esto es un párrafo &lt;p&gt; dentro de una lista<br>
+      Div dentro de un p y a la vez dentro de un ul , de un li con un p 
+     </p>
+    </li>
+   </ul>
+  </div>
+
+ </body>
+</html>

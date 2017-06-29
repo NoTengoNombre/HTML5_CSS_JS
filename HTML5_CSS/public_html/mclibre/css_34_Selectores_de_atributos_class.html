@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   p.p1{
+       color: red;
+   }
+
+   p.p2{
+       color: blue;
+   }
+
+   p[class="p1 p2"]{
+       text-transform: uppercase;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <header>
+   <h1>
+    Hay cuatro formas de seleccionar elementos con determinados atributos: 
+   </h1>
+  </header>
+
+  <section>
+
+   <p style="border: 1px solid red; padding-left: auto;padding-right: auto; text-align: center; width: 150px">
+    Sintaxis basica <br>
+    atributo = valor <br>
+    class = p1 <br>
+   </p> 
+
+   <div>
+    Se escribe una etiqueta seguida del nombre de un atributo <br>
+    igual a un valor entre corchetes, E[atributo="valor"], <br>
+    las propiedades afectan a todos los elementos que tengan <br>
+    establecidos ese atributo exactamente con ese valor. <br>
+    <br><br>
+    En el ejemplo siguiente, el párrafo con dos clases <br>
+    (asignadas en el mismo orden en el que aparecen entre <br>
+    corchetes en la hoja de estilo), se muestran en mayúsculas. <br>
+    <br><br>
+    Además, los párrafos con dos clases se ven de color azul <br>
+    porque las clases no se aplican en el orden en el <br>
+    que aparecen en el atributo clase, <br>
+    sino en el orden en que aparecen en la hoja de estilo<br>
+   </div>
+  </section>
+
+  <div>
+   <p>
+    Si se escribe una etiqueta seguida del nombre de un atributo <br>
+    entre corchetes, <b>E[atributo],</b>
+    las propiedades afectan a todos<br> 
+    los elementos que tengan establecidos ese atributo. <br>
+    <br>
+    Los párrafos con clase, independientemente <br>
+    de la clase asignada, se muestran en mayúsvculas.<br>
+   </p>
+  </div>
+
+
+  <p class="p1">
+   Contiene el selector : p[class]<br>
+   Esto es un parrafo de la clase p1<br>
+  </p>
+
+  <p class="p2">
+   Contiene el selector : p[class]<br>
+   Esto es un parrafo de la clase p2<br>
+  </p>
+
+  <p class="p1 p2">Esto es un parrafo con selector clase y los atributos en orden <b>p1 p2 </b> - se le aplica las mayusculas</p>
+
+  <p class="p2 p1">Esto es un parrafo con selector clase y los atributos en orden <b>p2 p1 </b> - no se le aplica las mayusculas</p>
+
+ </body>
+</html>

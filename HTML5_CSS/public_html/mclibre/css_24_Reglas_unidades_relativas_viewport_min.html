@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS basico</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   body{
+       font-family: Helvetica, Arial , sans-serif;
+       font-size: 36px;
+   }
+
+   h1{
+       padding-bottom: 1em;
+       padding-top: 1em;
+   }
+
+   .section{
+       background-color: #6f0; /*lado más corto del viewport */
+       width: 100vmin; /*lado más corto del viewport */
+       height: 100vmin; /*lado más corto del viewport */
+   }
+
+   .section:first-child{
+       background-color: #f60;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <div class="section">
+   <h1>Testing vmin</h1>
+  </div>
+
+  <div class="section">
+   <h1>Testing vmin</h1>
+  </div>
+
+  <h1>vmin: viewport min</h1>
+
+  <p>
+   Porcentaje de la medida actual del viewport, <br>
+   pero se calcula con respecto al lado más corto.<br><br>
+   
+   Es decir que si el ancho del viewport es más <br>
+   corto que el alto, entonces vmin será lo mismo <br>
+   que utilizar <b>vw</b>. 
+   <br>Por el contrario, si el alto <br>
+   del viewport es más corto que el ancho, entonces vmin será lo mismo que vh. = viewheight <br>
+  </p>
+
+
+
+ </body>
+</html>

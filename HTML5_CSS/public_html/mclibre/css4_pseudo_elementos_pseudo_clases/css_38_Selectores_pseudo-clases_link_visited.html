@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   a:link{
+       color: green;
+   }
+
+   a:visited{
+       color: red;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>
+    La pseudo clase :link (o a:link) permite especificar el aspecto de los enlaces que todavía no han sido visitados.
+   </p>
+   <p>
+    La pseudo clase :visited (o a:visited) permite especificar el aspecto de los enlaces que sí han sido visitados.
+   </p>
+   <p>
+    Los navegadores "recuerdan" los enlaces visitados, pero no de la misma manera. 
+   </p>
+  </div>
+
+  <div>
+   <p>
+    <a href="#enlace1">Enlace - aparece de color verde </a>
+   </p>
+  </div>
+  <div>
+   <p>
+    <a href="#enlace2">Enlace - aparece de color naranja porque ha sido visitado </a>
+   </p>
+  </div>
+
+ </body>
+</html>

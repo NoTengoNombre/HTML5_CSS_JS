@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   div{
+       border: black 5px solid;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   /* Se aplica a todos los primeros hijos de tipo 'p' */
+   div p:first-child{
+       color: red;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p>
+   Las hojas de estilo asocian características de estilo<br>
+   a los elementos basándose en las etiquetas de los <br>
+   elementos y en su posición relativa (en el árbol del documento). 
+  </p>
+
+  <p>
+   Las pseudo-clases y los pseudo-elementos permiten <br>
+   hacer referencia a determinados elementos sin <br>
+   basarse en la información contenida en el árbol del documento.
+  </p>
+
+  <div>
+   <p>
+    La sintaxis de las pseudo-clases y los pseudo-elementos <br>
+    es la misma: etiqueta:pseudo-elemento_o_pseudo-clase <br>
+    (el nombre de la etiqueta y del pseudo-elemento <br>
+    o de la pseudo-clase separado por dos puntos).
+   </p>
+  </div>
+
+  <div>
+   <p>
+    pseudo-clase : first-child
+   </p>
+
+   <p>La pseudo-clase :first-child hace referencia <br>
+    al primer elemento de un tipo contenido dentro de otro. <br>
+    El ejemplo siguiente muestra cómo identificar <br>
+    al primer párrafo dentro de una división <br>
+    sin necesidad de asignar ninguna clase al párrafo.<br>
+   </p>
+  </div>
+
+  <p>
+   El tipo del primer elemento hijo en la página web <br>
+   sea el indicado en la hoja de estilo. <br>
+   El primer elemento dentro de la división no <br>
+   es un < p>, sino un < pre>, <br>
+   así que no se le aplica el estilo <br>
+   indicado en la hoja de estilo.<br>
+  </p>
+
+  <div>
+   <pre>El primer hijo no es un párrafo &lt;p&gt;, <br>
+        sino un &lt;pre&gt; entonces no se aplica el elemento :first-child</pre>
+
+   <p>Este es el primer párrafo &lt;p&gt; en una división que contiene tres párrafos.</p>
+
+   <p>Este es el segundo párrafo &lt;p&gt; en una división que contiene tres párrafos.</p>
+
+   <p>Este es el tercer párrafo &lt;p&gt; en una división que contiene tres párrafos.</p>
+  </div>
+
+  <p>
+   La pseudo-clase :first-child se aplica al primer <br>
+   elemento dentro de la división, sea cual sea el elemento, <br>
+   ya que en la hoja de estilo no se especifica el elemento.<br>
+  </p>
+
+ </body>
+</html>

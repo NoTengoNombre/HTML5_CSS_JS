@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>La pseudo-clase de idioma :lang()</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   q:lang(es){
+       font-size: 1.1em;
+       color: #E56F60;
+       quotes: "--" "--"; 
+   }
+
+   q:lang(en){
+       font-size: 1.1em;
+       color: #3d7c54;
+       quotes: '""' '""'; 
+
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>
+    La pseudo-clase de idioma :lang()
+   </p>
+  </div>
+  <div>
+   <p>
+    La pseudo-clase de idioma :lang() permite especificar <br>
+    el aspecto de los elementos de un idioma determinado. <br><br>
+
+    En el ejemplo siguiente se cambia las comillas utilizadas <br>
+    en una cita < q> según el idioma indicado en el atributo lang.<br>
+   </p>
+  </div>
+  <div>
+   <p>Ambrose Bierce dijo (más o menos) que
+    <q lang="es">una cita es una manera de repetir
+     erróneamente las palabras de otros</q>.</p>
+
+   <p>Ambrose Bierce dijo (más o menos) que
+    <q lang="en">a quotation is the act of repating
+     erroneously the words of another</q>.</p>
+  </div>
+
+ </body>
+</html>

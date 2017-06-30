@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Favicon.ico">
+  <style type="text/css">
+
+   div{
+       border: black 5px solid;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   div p:first-child{
+       color: red;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <pre>
+   La pseudo-clase div pre:first-child se aplica al primer elemento <br>
+   </pre>
+   dentro de la división, pero como esta definido como p:first-child <br>
+   no se modifica el parrafo con el color rojo
+  </div>
+
+  <div>
+   <p>
+    La pseudo-clase div p:first-child se aplica al primer elemento <br>
+    dentro de la división, 
+   </p>
+   sea cual sea el elemento, <br>
+   ya que en la hoja de estilo no se especifica el elemento.<br>
+  </div>
+
+ </body>
+</html>

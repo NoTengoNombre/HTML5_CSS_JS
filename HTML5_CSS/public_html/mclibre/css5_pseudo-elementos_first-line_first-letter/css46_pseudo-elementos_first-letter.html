@@ -1,0 +1,46 @@
+<!--
+    @Created on : 30-jun-2017, 0:10:51
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Los pseudo-elementos :first-line y :first-letter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+   p:first-letter{
+       text-transform: uppercase;
+       color: #339900;
+       font-size: 1.3em;
+   }
+
+   p#p1:first-letter{
+       background-color: #66ffcc;
+       color: red;
+       float: left;
+       font-family: monospace;
+       font-size: 400%;
+   }
+  </style>
+ </head>
+
+ <body>
+  <p>
+   El pseudo-elemento :first-letter <br>
+   permite especificar el aspecto de la primera letra del texto.
+  </p>
+  <p>
+   La letra de este párrafo<br> 
+   se tiene que ver en mayúsculas. <br>
+  </p>
+  <p id='p1'>
+   Usar selector <b>id</b> para añadir más pseudo-elementos
+  </p>
+ </body>
+
+</html>

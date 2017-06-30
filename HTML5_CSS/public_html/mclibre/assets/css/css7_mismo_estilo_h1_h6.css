@@ -28,7 +28,7 @@ Seguir el orden por :
 div{
     border: 1px solid red;
 }
- 
+
 /* Orden alfabetico */
 h1 , h2 , h3 , h4 , h5 , h6{
     align-content: center;

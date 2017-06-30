@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Selectores de atributo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   input{
+       border: 1px solid green;
+       padding: 1px;
+   }
+
+   input:focus{
+       border: red 2px dotted;
+       padding: 2px;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <p>
+   La pseudo-clase :focus permite especificar el aspecto de un elemento cuando 
+   este tiene el foco. <br>
+   <br>
+   Los elementos que admiten el foco en una página web son aquellos 
+   que reaccionan a entrada por teclado <br>
+   (los elementos de los formularios o los enlaces). <br>
+   <br>
+   Al hacer clic en un campo de texto (o cambiar de campo con el tabulador),<br>
+   el campo seleccionado se resalta con un borde rojo.
+  </p>
+
+  <div>
+   <input type="text" name="valor" placeholder="texto 1" accesskey="1">
+   <input type="text" name="valor" placeholder="texto 2" accesskey="2">
+   <input type="text" name="valor" placeholder="texto 3" accesskey="3">
+   <input type="text" name="valor" placeholder="texto 4" accesskey="4">
+  </div>
+
+ </body>
+</html>

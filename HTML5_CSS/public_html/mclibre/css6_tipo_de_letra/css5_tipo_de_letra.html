@@ -1,0 +1,177 @@
+<!--
+    @Created on : 30-jun-2017, 11:56:17
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tipo de letra</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   div{
+       counter-reset: cuenta-parrafo;  
+   }
+
+   p:before{
+       content: counter(cuenta-parrafo) " • ";
+       counter-increment: cuenta-parrafo 1; 
+   }
+
+   p{
+       font: oblique bold 100% cursive;
+   }
+
+   p.p2{
+       font: bold 90% monospace;
+   }
+
+   p.p3{
+       font: oblique bold 120% cursive;
+   }
+
+   p.p4{
+       font: small-caps 100%/200% serif;
+   }
+
+
+   p.error{
+       /*ERROR*/
+       /*font: monospace 150%;*/
+   }
+
+   p.error2{
+       /*ERROR*/
+       /*font: bold 150%;*/
+   }
+
+   .espacio{
+       align-content: center;
+       margin-left: auto;
+       margin-right: auto;
+       width: 400px;
+       font-size: 1.1rem;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <header>
+   <h1>
+    CSS 2: Tipo de letra (fuente)
+   </h1>  
+  </header>
+
+  <section>
+   <h2>La propiedad compuesta font</h2>
+
+   <span class="espacio"><br>
+    La propiedad compuesta font permite 
+    definir simultáneamente las propiedades
+    relacionadas <br>
+    con el tipo de letra: font-style, 
+    font-variant, font-weight, 
+    font-size , line-height y font-family 
+   </span>
+
+   <span class="espacio"><br>
+    <br>La propiedad compuesta, el orden en que deben 
+    aparecer los valores es el orden en que aparecen 
+    las propiedades simples.<br> 
+   </span>
+
+   <span class="espacio"><br>
+    Las únicas propiedades que deben aparecer 
+    obligatoriamente son <b>font-size y font-family.</b><br>
+   </span>
+
+   <span class="espacio"><br>
+    Si se escribe la propiedad <b>line-height</b> debe 
+    aparecer separada de <b>font-size</b> por una barra /<br>
+   </span>
+
+   <span class="espacio"><br>
+    La propiedad compuesta font <br>
+    permite definir simultáneamente <br>
+    las propiedades relacionadas con el tipo de letra:<br>
+    <br>
+    El orden que tiene que seguir para evitar errores
+   </span>
+
+   <div>
+    <ul>
+     <li>
+      <p>
+       font-style, 
+      </p>
+     </li>
+     <li>
+      <p>
+       font-variant, 
+      </p>
+     </li>
+     <li>
+      <p>
+       font-weight, 
+      </p>
+     </li>
+     <li>
+      <p>
+       font-size , 
+      </p>
+     </li>
+     <li>
+      <p>
+       line-height 
+      </p>
+     </li>
+     <li>
+      <p>
+       font-family.
+      </p>
+     </li>
+    </ul>
+   </div>
+  </section>
+
+ <center>
+  <h2>Parrafos con estilos font diferentes </h2>
+ </center>
+
+ <div>
+  <p class="p2">
+   Parrafo : font bold 90% monospace 
+  </p>
+
+  <p class="p3">
+   Parrafo : oblique bold 120% cursive
+  </p>
+
+  <p class="p4">
+   Parrafo : small-caps 100%/200% serif;
+  </p>
+
+  <p class="error">
+   Parrafo : monospace 150%;
+  </p>
+
+  <p class="error2">
+   Parrafo : bold 90%;
+  </p>
+
+  <p class="error2">
+   Parrafo : Si los primeros valores son correctos, <br>
+   pero al final hay valores que deberían estar en otro lugar, <br>
+   los navegadores aplican los valores correctos <br>
+   e ignoran los valores finales (font-family también se ignora).<br>
+  </p>
+
+ </div>
+</body>
+</html>

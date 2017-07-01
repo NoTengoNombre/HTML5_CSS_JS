@@ -13,28 +13,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="">
   <style type="text/css">
-   
+
    span{
        color: red;
    }
 
-   
-   p.ciudado:before{
-       content: "Aviso";
+
+   p.antes:before{
+       content: " Se añade antes ";
        font-weight: bold;
        text-decoration: underline;
+       color : #f00;
    }
+
+   p.despues:after{
+       content : " Se añade despues ";
+       color : #00f;
+   }
+
+
 
   </style>
  </head>
 
  <body>
+  <p>
+   Los pseudo-elementos :before y :after<br> 
+   permiten añadir <span>contenido </span>a un elemento <br>
+   desde la hoja de estilo, <br>
+   al principio o al final del elemento.<br>
+  </p>
 
-  Los pseudo-elementos :before y :after<br> 
-  permiten añadir <span>contenido </span>a un elemento <br>
-  desde la hoja de estilo, <br>
-  al principio o al final del elemento.<br>
-
+  <p class="antes despues"> <br>Este parrafo es un parrafo &lt;p&gt; con clase "antes y despues"<br></p>
 
  </body>
 

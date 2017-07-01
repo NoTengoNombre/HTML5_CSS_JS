@@ -1,0 +1,69 @@
+<!--
+    @Created on : 30-jun-2017, 11:56:17
+    @Author     : RVS - N#F#N#D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tipo de letra</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   /*inicia el contador */
+   div{
+       counter-reset: contador;
+   }
+
+   p:before{
+       content: counter(contador) " - ";
+       counter-increment: contador 1;
+   }
+
+   p#p1{
+       font: caption;
+   }
+
+   p#p2{
+       font: icon;
+   }
+
+   p#p3{
+       font: menu;
+   }
+
+   p#p4{
+       font: message-box;
+   }
+
+   p#p5{
+       font: small-caption;
+   }
+
+   p#p6{
+       font: status-bar;
+   }
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p id="p1">Caption</p>
+   <br>
+   <p id="p2">Icon</p>
+   <br>
+   <p id="p3">Menu</p>
+   <br>
+   <p id="p4">Message-box</p>
+   <br>
+   <p id="p5">small-caption</p>
+   <br>
+   <p id="p6">status-bar</p>
+  </div>
+
+ </body>
+</html>

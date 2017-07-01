@@ -1,0 +1,92 @@
+<!--
+    @Created on : 30-jun-2017, 11:56:17
+    @Author     : RVS - N#F#N#D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tipo de letra</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   time[datetime]:after {
+       float: right;
+       content: attr(datetime);
+   }
+
+   /* month and day come first */
+   time[datetime*="-"] {
+       float: left;
+   }
+
+   /* Months (non-USA) */
+   time[datetime^="01-"]:after {
+       content: "jan/";
+   }
+
+
+   time[datetime^="12-"]:after {
+       content: "dec/";
+   }
+
+   /* Days (non-USA) */
+   time[datetime$="-01"]:before {
+       content: "1/";
+   }
+
+
+   time[datetime$="-31"]:before {
+       content: "31/";
+   }
+
+   /* Months (USA) */
+   *[lang="en-US"] time[datetime^="01-"]:before {
+       content: "jan/";
+   }
+
+
+   *[lang="en-US"] time[datetime^="12-"]:before {
+       content: "dec/";
+   }
+
+   /* Days (USA) */
+   *[lang="en-US"] time[datetime$="-01"]:after {
+       content: "1/";
+   }
+
+
+   *[lang="en-US"] time[datetime$="-31"]:after {
+       content: "31/";
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <table border>
+   <tr>
+    <td lang="en-US">
+     <time datetime="2015">
+      <time datetime="04-08"/>
+     </time>
+    </td>
+   </tr>
+
+   <tr>
+    <td lang="en-GB">
+     <time datetime="2015">
+      <time datetime="04-08"/>
+     </time>
+    </td>
+   </tr>
+
+  </table>
+
+
+ </body>
+</html>

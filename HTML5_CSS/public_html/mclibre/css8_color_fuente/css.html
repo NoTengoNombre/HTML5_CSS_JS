@@ -1,0 +1,122 @@
+<!--
+    @Created on : 01-jul-2017, 2:14:52
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" /> 
+  <style>
+
+   p{
+       border: 1px solid red;
+   }
+
+   img.top {
+       vertical-align: text-top;
+   }
+
+   img.bottom {
+       vertical-align: text-bottom;
+   }
+
+   span#mySpan_super {
+       background-color: #ffcccc;
+       vertical-align:super;
+   }
+
+   span#mySpan_bottom {
+       background-color:yellow;
+       vertical-align:bottom;
+   }
+
+   span#mySpan_text-bottom {
+       background-color:orange;
+       vertical-align: text-bottom;
+   }
+
+   span#mySpan_text-middle {
+       background-color: wheat;
+       vertical-align: middle;
+   }
+
+   span#mySpan_sub {
+       background-color: #00ffff;
+       vertical-align: sub;
+   }
+
+   div#sangria{
+       margin-left: 25px;
+       text-indent: -25px;
+       text-align: center;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p>An <img class="top" src="../assets/image/svg/icono_html5.svg" alt="W3Schools"
+             width="270" height="50" /> 
+   image with a text-top alignment.</p> 
+
+  <p>An <img class="bottom" src="../assets/image/svg/icono_html5.svg" alt="W3Schools" 
+             width="270" height="50" />
+   image with a text-bottom alignment.</p>
+
+  <p>
+   Super<br>
+   ipsum dolor sit amet, <span id="mySpan_super">consectetur adipisicing </span>
+   elit ipsum dolor sit amet, consectetur adipisicing elit
+  </p>
+
+  <p>
+   Bottom<br>
+   ipsum dolor sit amet, <span id="mySpan_bottom">consectetur adipisicing </span>
+   elit ipsum dolor sit amet, consectetur adipisicing elit
+  </p>
+
+  <p>
+   Text-Bottom<br>
+   ipsum dolor sit amet, <span id="mySpan_text-bottom">consectetur adipisicing </span>
+   elit ipsum dolor sit amet, consectetur adipisicing elit
+  </p>
+
+  <p>
+   Text-Middle<br>
+   ipsum dolor sit amet, <span id="mySpan_text-middle">consectetur adipisicing </span>
+   elit ipsum dolor sit amet, consectetur adipisicing elit
+  </p>
+
+  <p>
+   Sub<br>
+   ipsum dolor sit amet, <span id="mySpan_sub">consectetur adipisicing </span>
+   elit ipsum dolor sit amet, consectetur adipisicing elit
+  </p>
+
+  <p>
+   Top<br>
+   ipsum dolor sit amet 
+   <img class="top" 
+        src="../assets/image/svg/icono_html5.svg" 
+        alt="W3Schools" />
+   consectetur adipisicing elit
+  </p>
+
+  <div id="sangria">
+   Esto es un párrafo normal y corriente con 
+   margen izquierdo y cuya primera línea tiene 
+   sangría negativa del mismo valor que el 
+   margen (sangría francesa), por ello la 
+   primera línea empieza más a la izquierda 
+   que el resto de líneas del párrafo.
+  </div>
+
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!--
+    @Created on : 30-jun-2017, 0:10:51
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       : 
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Los pseudo-elementos :first-line y :first-letter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   a:lang(es){
+       quotes: "<<" ">>";
+   }
+
+   a:lang(en){
+       quotes: '"' '"' ;
+   }
+
+   q:lang(es){
+       quotes: "<<" ">>";
+   }
+
+   q:lang(en){
+       quotes: '•' '•' ;
+   }
+
+  </style>
+ </head>
+
+ <body>
+
+  <p>
+   Ambrose Bierce dijo : (mas o menos) que 
+   <q lang="es"> una cita es una manera de repetir erroneamente 
+    las palabras de otros</q>
+   <br>
+   <a lang="es" href="#enlace">Enlace</a>
+  </p>
+
+  <p>
+   Ambrose Bierce dijo : (mas o menos) que 
+   <q lang="en"> a quotation is the act of 
+    repeating erroneously the words of another</q>
+   <br>
+   <a lang="en" href="#enlace">Enlace</a>
+  </p>
+
+ </body>
+</html>

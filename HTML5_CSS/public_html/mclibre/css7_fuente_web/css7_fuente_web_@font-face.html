@@ -1,0 +1,80 @@
+<!--
+    @Created on : 30-jun-2017, 19:04:13
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>css7_fuente_web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   p{
+       font-size: 150%;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       width: 500px;
+   }
+
+   p#tipo{
+       font-weight: 900;
+       font-family: "FantasqueSansMonos",cursive;
+       font-size: 150%;
+
+   }
+
+   /*la utilización de fuentes web mediante el uso de la regla-arroba*/
+   @font-face{
+       font-family: "FantasqueSansMonos";
+       src: url("../assets/webfonts/fantasquesanmono/FantasqueSansMono-Regular.woff")
+   }
+
+  </style>
+ </head>
+ <body>
+  <div>
+   <p>
+    Las fuentes web son las fuentes que 
+    pueden mostrarse en el navegador 
+    sin necesidad de que el usuario 
+    las tenga instaladas en su ordenador 
+    ya que se descargan automáticamente.
+   </p>
+   <p id="tipo">
+    CSS3 - Permite la utilización de fuentes 
+    web mediante el uso de la regla-arroba @font-face
+   <p>
+    La propiedad <b>font-family</b> establece cómo 
+    tenemos que llamar a la fuente en la hoja de estilo.<br><br> 
+    Si el nombre contiene espacios en blanco, 
+    es necesario escribir el nombre entre comillas.
+   </p>
+   <p>
+    La propiedad src indica el camino (absoluto o relativo) 
+    del fichero de la fuente.<br><br>
+    Una vez definido el nombre de la fuente, 
+    se puede hacer referencia a ella en las propiedades font-family.
+   </p>
+  </div>
+
+  <div>
+   <center>
+    <div style="font-weight: bold; font-size: 1.3rem;float:left;display: block">
+     <br>
+     @font-face{<br>
+     font-family: "FantasqueSansMonos";<br>
+     src: url("../assets/webfonts/fantasquesanmono/FantasqueSansMono-Regular.woff")
+     }
+     <br>
+    </div>
+   </center>
+  </div>
+
+ </body>
+</html>

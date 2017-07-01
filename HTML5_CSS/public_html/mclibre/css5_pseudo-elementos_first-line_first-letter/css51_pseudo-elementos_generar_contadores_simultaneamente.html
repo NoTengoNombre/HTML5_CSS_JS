@@ -1,0 +1,107 @@
+<!--
+    @Created on : 30-jun-2017, 0:10:51
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       : http://www.mclibre.org/consultar/htmlcss/css/css_pseudoclases.html#pseudo-clase-enlace
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>counter-increment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   h1{
+       /*counter reset - accion que reinicia el conteo o el diseño añadido*/
+       counter-reset: cuenta-parrafos;
+       counter-reset: cuenta-apartados;
+       color: #339900;
+   }
+
+   h2{
+       counter-reset: cuenta-parrafos;
+       color: #e74e4e;
+   }
+
+   h2:before{
+       content: counter(cuenta-apartados,upper-alpha)". Añade color Azul - ";
+       counter-increment: cuenta-apartados;
+       color: #5a92ec;
+   }
+
+   p:before{
+       content: counter(cuenta-parrafos, upper-alpha)"-"counter(cuenta-parrafos)". ";
+       counter-increment: cuenta-parrafos;
+   }
+
+  </style>
+ </head>
+
+ <body>
+
+  <h1>H1 - Titulo reinicia parrafos y apartados </h1>
+
+  <h2>H2 - Subtitulo con propiedad counter-reset : Inicia los parrafos - Rojo </h2>
+
+  <p>
+   Parrafo : Generar contadores simultáneamente 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+  <h2>H2 - Subtitulo que reinicia los parrafos</h2>
+
+  <p>
+   Parrafo : Generar contadores simultáneamente 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+  <h2>H2 - Subtitulo que reinicia los parrafos</h2>
+
+  <p>
+   Parrafo : Generar que  contadores simultáneamente 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+  <h1>H1 - Titulo reinicia parrafos y apartados </h1>
+
+  <h2>H2 - Subtitulo que reinicia los parrafos</h2>
+
+  <p>
+   Parrafo : Generar contadores simultáneamente 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+  <p>
+   Parrafo 
+  </p>
+
+ </body>
+
+</html>

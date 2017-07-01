@@ -1,0 +1,39 @@
+<!--
+    @Created on : 30-jun-2017, 0:10:51
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       : http://www.mclibre.org/consultar/htmlcss/css/css_pseudoclases.html#pseudo-clase-enlace
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Los pseudo-elementos :first-line y :first-letter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   span{
+       color: red;
+   }
+
+   p.auto-contenido:after{
+       content: " (escrito por RVS)";
+   }
+
+
+
+
+  </style>
+ </head>
+ <body>
+  
+  <p>Este parrafo es un parrafo &lt;p&gt; sin clases</p>
+
+  <p class="auto-contenido">
+   Este parrafo es un parrafo < p > con la clase "auto-contenido"
+  </p>
+
+ </body>
+</html>

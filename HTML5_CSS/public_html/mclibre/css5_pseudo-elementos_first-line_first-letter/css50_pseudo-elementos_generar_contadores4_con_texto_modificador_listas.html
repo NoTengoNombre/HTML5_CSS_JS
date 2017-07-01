@@ -1,0 +1,54 @@
+<!--
+    @Created on : 30-jun-2017, 0:10:51
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       : http://www.mclibre.org/consultar/htmlcss/css/css_pseudoclases.html#pseudo-clase-enlace
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>counter-increment</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   pre{
+       counter-reset: cuenta-parrafos;
+   }
+
+   p:before{
+       content: counter(cuenta-parrafos, upper-roman);
+       counter-increment: cuenta-parrafos 1;
+   }
+
+  </style>
+ </head>
+
+ <body>
+
+  <pre>La etiqueta pre es el iniciador del contador de elementos</pre>
+
+  <p> Parrafo : 
+   El contador predeterminado muestra números enteros <br>
+   pero se puede utilizar cualquiera de los estilos <br>
+   de listas como estilo de contador. <br>
+  </p>
+  <p> Parrafo : 
+   El estilo se indica en la <b> propiedad content </b><br>
+   mediante el valor counter(nombre_de_contador, estilo_de_lista), <br>
+  </p>
+  <p>
+   Parrafo 
+  </p>
+  <p>
+   Parrafo 
+  </p>
+  <p>
+   Parrafo 
+  </p>
+
+ </body>
+
+</html>

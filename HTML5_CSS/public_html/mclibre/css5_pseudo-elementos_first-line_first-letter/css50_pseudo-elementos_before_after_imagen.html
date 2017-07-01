@@ -1,0 +1,51 @@
+<!--
+    @Created on : 30-jun-2017, 0:10:51
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       : http://www.mclibre.org/consultar/htmlcss/css/css_pseudoclases.html#pseudo-clase-enlace
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Los pseudo-elementos :first-line y :first-letter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   p.imagen:before{
+       content: url('../assets/image/png/smiley.png');
+       font-weight: bold;
+       text-decoration: underline;
+       color : #f00;
+   }
+
+   p.imagen:after{
+       content: url('../assets/image/svg/icono_html5.svg');
+   }
+
+   #color{
+       font-size: 1.1em;
+       color: hsla(0,100%,30%,1);
+   }
+
+  </style>
+ </head>
+
+ <body>
+  <p>
+   El contenido generado mediante la propiedad <b>content</b> puede incluir una imagen indicando su URI:
+   <br>
+   <span id="color"> 
+    <br>
+    No hace falta añadir las propiedades :before o :after</span>
+  </p>
+
+  <p class="imagen"> 
+   Este parrafo es un parrafo &lt;p&gt; con clase :before : after
+  </p>
+
+ </body>
+
+</html>

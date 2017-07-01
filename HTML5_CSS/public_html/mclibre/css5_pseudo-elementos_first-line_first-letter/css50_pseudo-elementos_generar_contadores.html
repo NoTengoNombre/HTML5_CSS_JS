@@ -1,0 +1,60 @@
+<!--
+    @Created on : 30-jun-2017, 0:10:51
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       : http://www.mclibre.org/consultar/htmlcss/css/css_pseudoclases.html#pseudo-clase-enlace
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Los pseudo-elementos :first-line y :first-letter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   pre{
+       counter-reset: cuenta-parrafos;
+   }
+
+   p:before{
+       content: counter(cuenta-parrafos);
+       counter-increment: cuenta-parrafos;
+   }
+
+  </style>
+ </head>
+
+ <body>
+  <p>
+   Se pueden generar contadores en los pseudo-elementos <br>
+   <b>:after y :before </b> mediante la <b>propiedad content</b>
+   <br>
+   y el valor <b>counter(nombre_de_contador). </b><br>
+   <br><br>
+   El contador debe ponerse a cero con la <br>
+   <b>propiedad counter-reset </b> y aumentarse con la propiedad <b>counter-increment.</b>
+   <br><br>
+   Este contador se genera al principio de cada párrafo, <br>
+   se pone a cero con el elemento < pre> y se incrementa en cada párrafo.
+  </p>
+
+  <pre> Parrafo predeterminado - inicia el conteo de parrafos </pre>
+  <p> Parrafo </p>
+  <p> Parrafo </p>
+  <p> Parrafo </p>
+  <p> Parrafo </p>
+
+  <span>Otro parrafo</span>
+
+  <div>
+   <p> Parrafo - Cuenta tambien los parrafos dentro de un div </p>
+  </div>
+  
+  <p> Parrafo </p>
+  <p> Parrafo </p>
+
+ </body>
+
+</html>

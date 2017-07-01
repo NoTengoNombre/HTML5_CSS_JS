@@ -1,0 +1,166 @@
+<!--
+    @Created on : 30-jun-2017, 11:56:17
+    @Author     : RVS - N#F#N#D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tipo de letra</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   *{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       width: 500px;
+   }
+
+   p#palatino{
+       font-family: "Palatino" , sans-serif;
+   }
+
+   p#tahoma{
+       font-family: "Tahoma", "Geneva", sans-serif;
+   }
+
+   p#homer{
+       font-family: "Homer Simpson", cursive;
+   }
+
+   p#arial{
+       font-family: "arial", serif;
+   }
+
+   p {
+       font-family: "ARIAL", serif;
+   }
+
+   p {
+       font-size: x-large;
+   }
+
+   p#no_oblicua{
+       font-family: sans-serif;
+       font-size: 1.3rem;
+       font-style: normal;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <header>
+   <h1>Tipografia - Tamaño Absoluto</h1>
+  </header>
+
+  <section>
+   <h2>Tamaño Absoluto</h2>
+   <div>
+    <p>
+     El navegador tiene definidos una serie 
+     de tamaños que se llaman <br>
+     xx-small, x-small, small, medium, large, x-large y xx-large. 
+    </p>
+
+    <p>
+     Estos tamaños el navegador los elige en función 
+     de la resolución de la pantalla, el tamaño de la fuente, etc.
+    </p>
+
+    <p>
+     Nombres de tamaños absolutos a su propio <br>
+     tamaño: xx-small, x-small, small, medium, large, x-large y xx-large.
+    </p>
+   </div>
+  </section>
+
+  <section>
+   <h2>Tamaño Relativo</h2>
+   <div>
+    <p>
+     Valores larger o smaller.
+    </p>
+    <p>
+     Se interpretan con respecto al elemento padre <br>
+     y se toman el valor siguiente o anterior <br>
+     de la lista de tamaños absolutos.<br>
+    </p>
+   </div>
+  </section>
+
+  <section>
+   <h2>Tamaño Relativo</h2>
+   <div>
+    <p style="font-size : 150%">
+     Valor numérico con unidades absolutas : 150%
+    </p>
+    <p style="font-size : 80%">
+     Valor numérico con unidades absolutas : 80%
+    </p>
+    <p style="font-size : 1em">
+     Valor numérico con unidades absolutas : 1em
+    </p>
+    <p style="font-size : 1rem">
+     Valor numérico con unidades absolutas : 1rem
+    </p>
+   </div>
+  </section>
+
+  <section>
+   <h2>Subfamilias tipográficas</h2>
+   <div>
+    <p>
+     Fuentes que son variaciones de una fuente determinada. <br>
+     Algunas de las posibles variaciones son:
+    </p>
+    <ul>
+     <li>
+      <p>
+       La inclinación
+      </p>
+     </li>
+     <li>
+      <p>
+       Versalitas
+      </p>
+     </li>
+     <li>
+      <p>
+       El grosor del trazo
+      </p>
+     </li>
+    </ul>
+    <p>
+     Las propiedades font-style, font-weight y font-variant <br>
+     le indican al navegador qué variación es la que debería mostrar. <br>
+     <br>
+     El navegador es el que tiene que decidir <br>
+     qué fuente (de las instaladas en el ordenador <br>
+     en el que se están viendo las páginas) <br>
+     debe utilizar o, si es capaz de ello, simular.<br>
+    </p>
+   </div>
+  </section>
+
+  <section>
+   <h2>Propiedad oblicua</h2>
+   <div>
+    <p id="no_oblicua">
+     La propiedad <b>font-style</b> permite elegir la inclinación:
+     <b>normal, oblique o italic.</b>
+     <br>
+     Los navegadores no distinguen entre itálica y oblicua
+     y muestran en los dos casos la variante oblicua,
+     Por tanto, al utilizar esta propiedad <br>
+     es más apropiado dar el valor oblique, <br>
+    </p>
+   </div>
+  </section>
+ </body>
+</html>

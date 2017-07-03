@@ -1,0 +1,70 @@
+<!--
+    @Created on : 03-jul-2017, 11:28:21
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html Lang="es">
+ <head>
+  <title>Imágenes de fondo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+   
+   div{
+       width: 98%;
+       height: 10em;
+       border: 1px solid black;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: lightblue;
+       background-image: url('../assets/image/jpg/verde.jpg');
+       background-position: 100%;/*horizontal vertical*/
+       background-repeat: no-repeat;
+   }
+
+   div#esquina_derecha{
+       width: 98%;
+       height: 10em;
+       border: 1px solid black;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: lightblue;
+       background-image: url('../assets/image/jpg/verde.jpg');
+       background-position: 100% bottom;/*horizontal vertical*/
+       background-repeat: no-repeat;
+   }
+
+
+
+  </style>
+ </head>
+ <body>
+  <p>
+   La siguiente división, 
+   cuyo tamaño está establecido 
+   por la hoja de estilo, 
+   tiene una imagen de fondo 
+   situada en el centro a la derecha
+  </p>
+  <div></div>
+
+  <p>
+   La recomendación CSS 2 del W3C no permitía 
+   mezclar números y palabras, 
+   pero la recomendación CSS 2.1 
+   sí que permite mezclar números y palabras, 
+   aunque obligan a que el primer término 
+   se refiera a la posición horizontal 
+   y el segundo a la vertical.
+   Los navegadores muestran la imagen 
+   correctamente, abajo a la derecha.
+  </p>
+
+  <div id="esquina_derecha"></div>
+
+ </body>
+</html>

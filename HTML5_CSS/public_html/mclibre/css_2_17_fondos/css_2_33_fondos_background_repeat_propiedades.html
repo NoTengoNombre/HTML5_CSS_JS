@@ -1,0 +1,96 @@
+<!--
+    @Created on : 03-jul-2017, 11:28:21
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html Lang="es">
+ <head>
+  <title>Imágenes de fondo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   div{
+       dispLay: inline-block;
+       height: 300px;
+       width: 300px;
+   }
+
+   div#c1{
+       background-image: url(../assets/image/jpg/verde.jpg); 
+       background-repeat: no-repeat;
+       border: 1px solid red;
+   }
+
+   div#c2{
+       background-image: url(../assets/image/jpg/verde.jpg); 
+       background-repeat: repeat-x;
+       border: 1px solid red;
+   }
+
+   div#c3{
+       background-image: url(../assets/image/jpg/verde.jpg); 
+       background-repeat: repeat-y;
+       border: 1px solid red;
+   }
+
+   div#c4{
+       background-image: url(../assets/image/jpg/verde.jpg); 
+       background-repeat: space;
+       border: 1px solid red;
+   }
+
+   div#c5{
+       background-image: url(../assets/image/jpg/verde.jpg); 
+       background-repeat: round;
+       border: 1px solid red;
+   }
+
+  </style>
+ </head>
+ <body>
+
+   <p>Los navegadores repiten La imagen de fondo tanto en vertical como en horizontal.</p>
+   <div id="c1">
+    capa1 - no-repeat - 
+    <br>
+    La imagen no se repite
+   </div>
+
+   <div id="c2">
+    capa2 - repeat-x - 
+    <br>
+    La imagen se repite únicamente en horizontal
+   </div>
+
+   <div id="c3">
+    capa3 - repeat-y - 
+    <br>
+    La imagen se repite únicamente en vertical
+   </div>
+
+  <h3> CSS 3: Fondos y bordes </h3>
+
+   <div id="c4">
+    capa 4 - space<br>
+    La imagen se repite en horizontal y vertical,
+    pero se añaden espacios entre las imágenes 
+    para mostrar Las imágenes completas y 
+    que no se corten en los bordes derecho o inferior.
+   </div>
+
+   <div id="c5">
+    capa 5 - round
+    <br>
+    La imagen se repite en horizontal y vertical, 
+    pero las imágenes se deforman para mostrarlas completas 
+    y que no se corten en los bordes derecho e inferior.
+   </div>
+
+
+ </body>
+</html>

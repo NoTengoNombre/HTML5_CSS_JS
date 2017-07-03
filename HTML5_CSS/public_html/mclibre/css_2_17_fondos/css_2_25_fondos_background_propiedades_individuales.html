@@ -1,0 +1,77 @@
+<!--
+    @Created on : 03-jul-2017, 11:28:21
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Imágenes de fondo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+   div#fondo1{
+       background-color: limegreen; 
+       background: url(../assets/image/png/gota.png);
+       border-radius: 20px;
+   }
+   div#fondo2{
+       background: url(../assets/image/png/gota.png);
+       background-color: orange; 
+       border-radius: 20px;
+   }
+  </style>
+ </head>
+ <body>
+  <div>
+   <p style="
+      border: 1px solid red;
+      background-color: #ffffff; 
+      text-align: center; 
+      padding: 20px; 
+      font-size: 20px;
+      border-radius: 20px">
+   </p>
+  </div>
+  <div id="fondo1" style="
+       padding-top: 10px;
+       margin-bottom: 10px;
+       height: 500px; 
+       font-weight: bolder; 
+       text-align: center; 
+       font-size: 20px">
+   Fondo de color <br>
+   Este ejemplo tiene color de fondo orange y la misma imagen con transparencia del ejemplo anterior, pero el color de fondo no es visible porque la imagen de fondo está establecida posteriormente con background en vez de background-image.
+
+
+  </div>
+  <p>   
+   Utilizar o bien solamente la propiedad compuesta 
+   <b> background </b> o 
+   <b> propiedades individuales. </b>
+   <br>
+   Si se utiliza la propiedad <b>compuesta background</b> y además las propiedades individuales, 
+   es necesario escribir <br>
+   <b>Primero la propiedad compuesta, </b>
+   ya que la <b> propiedad background </b> anula las propiedades de fondo anteriores.<br><br> 
+   Ejemplo no se ve el color orange porque la <b>propiedad background anula la propiedad background-color anterior</b>. 
+
+   En el segundo ejemplo, sí que se ve el color orange porque la propiedad background-color está después de la propiedad background.
+  </p>
+  <div id="fondo2" style="
+       margin-top: 10px;
+       padding-top: 10px;
+       height: 500px; 
+       font-weight: bolder;
+       text-align: center; 
+       font-size: 20px">
+   Fondo de color naranja<br>
+   Este ejemplo tiene color de fondo orange y la misma imagen con transparencia del ejemplo anterior, pero el color de fondo sí es visible porque background-color está establecido posteriormente.
+  </div>
+
+ </body>
+
+</html>

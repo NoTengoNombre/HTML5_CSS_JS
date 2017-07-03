@@ -1,0 +1,44 @@
+<!--
+    @Created on : 03-jul-2017, 11:28:21
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Imágenes de fondo múltiples</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   html{
+       background: 
+           url('../assets/image/png/tartan.png'),
+           url('../assets/image/svg/icono_html5.svg')
+           , repeat-y, repeat;
+   }
+
+  </style>
+ </head>
+ <body>
+  <section>
+   <center>
+    <h2>Imágenes de fondo múltiples varios valores</h2>
+   </center>
+   <div>
+    <p style="background: #ffffff; margin: 10px; padding: 10px; border-radius: 20px; text-align: left;">
+     Tiene dos imágenes de fondo.<br>
+     El orden de las imágenes es de delante hacia atrás, es decir, la primera imagen de la lista está por encima de la segunda y así sucesivamente. <br>
+     El orden es importante pues si una imagen no tiene transparencia tapará las siguientes.<br>
+     En el ejemplo siguiente el fondo que asemeja una tela oculta la imagen del fuego:<br><br>
+     <img style="border: 2px solid red" src='../assets/image/png/tartan.png' alt="img2">
+     <img src='../assets/image/svg/icono_html5.svg' alt="img1">
+    </p>
+   </div>
+  </section>
+ </body>
+
+</html>

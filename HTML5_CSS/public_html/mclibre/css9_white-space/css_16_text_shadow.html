@@ -1,0 +1,189 @@
+<!--
+    @Created on : 01-jul-2017, 2:14:52
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Espaciado de letras </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" /> 
+  <style>
+
+   p.texto{
+       border: 1px solid #f00;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       width: 500px;
+   }
+
+   p#shadow-derecha{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: gray 6px 0;
+       text-transform: capitalize;
+   }
+
+   p#shadow-izquierda{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: gray -6px 0;
+       text-transform: capitalize;
+   }
+
+   p#shadow-arriba{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: gray 0px -6px;
+       text-transform: capitalize;
+   }
+
+   p#shadow-abajo{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: gray 0px 6px;
+       text-transform: capitalize;
+   }
+
+
+   p#shadow-2-param{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: gray 6px 6px;
+       text-transform: capitalize;
+   }
+
+   p#difuminado{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: black 6px 6px 4px;
+       text-transform: capitalize;
+   }
+
+   p#difuminado_centrado{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: black 6px 6px 8px;
+       text-transform: capitalize;
+   }
+
+   p#difuminado_centrado_sombra{
+       border: 1px solid #f00;
+       font-size: 200%;
+       font-weight: bold;
+       letter-spacing: 10px;
+       text-align: center;
+/*Da sombra a las letras*/ 
+       text-shadow: gray 8px 8px, gray -8px -8px;
+       text-transform: uppercase;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p class="texto">
+   Si se escriben dos distancias <br>
+   La primera distancia es la distancia horizontal <br>
+   La segunda la distancia vertical de la sombra con respecto al texto<br>
+  </p>
+
+  <p id="shadow-derecha">
+   Positivo hacia la derecha
+  </p>
+
+  <p id="shadow-izquierda">
+   Negativo hacia la izquierda
+  </p>
+
+  <p id="shadow-arriba">
+   2º parametro <br>
+   Negativo hacia arriba
+  </p>
+
+  <p id="shadow-abajo">
+   2º parametro <br>
+   Positivo hacia abajo
+  </p>
+
+  <p id="shadow-2-param">
+   2 parametros <br>
+   Positivo mueven la sombra
+  </p>
+
+  <p class="texto">
+   Si se escriben tres distancias,<br>
+   la tercera distancia indica <br>
+   el tamaño del difuminado de la sombra.
+   Cuanto más alto más difuminado
+  </p>
+
+  <p id="difuminado">
+   Si se escriben tres distancias,<br>
+   la tercera distancia indica <br>
+   el tamaño del difuminado de la sombra.
+  </p>
+
+  <p id="difuminado_centrado">
+   Si se escriben tres distancias,<br>
+   la tercera distancia indica <br>
+   el tamaño del difuminado de la sombra.
+  </p>
+
+  <p class="texto">
+   Se pueden definir varias <br>
+   sombras simultáneamente, <br>
+   escribiéndolas separadas por comas (,).
+  </p>
+
+  <p id="difuminado_centrado_sombra">
+   Si se escriben tres distancias,<br>
+   la tercera distancia indica <br>
+   el tamaño del difuminado de la sombra.
+  </p>
+
+  <div>
+   <pre>
+   text-shadow: gray 8px 8px, gray -8px -8px;
+   </pre>
+  </div>
+
+
+
+
+ </body>
+</html>

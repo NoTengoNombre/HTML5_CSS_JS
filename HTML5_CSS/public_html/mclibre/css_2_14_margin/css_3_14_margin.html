@@ -1,0 +1,106 @@
+<!--
+    @Created on : 02-jul-2017, 18:15:21
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>css 2 margin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>
+    <br>
+    La hoja de estilo por defecto de los navegadores establece márgenes exteriores 
+    en bastantes elementos, especialmente a los elementos de bloque y a los títulos
+    , y márgenes itnerior en algunos elementos. 
+    <br>
+    <br>
+    Aunque los márgenes establecidos en la hoja de estilo por el autor tienen 
+    prioridad sobre los márgenes establecidos por la hoja de estilo por defecto, 
+    el resultado final es la combinación de todos los márgenes establecidos en ambas hojas de estilo.
+    <br>
+   </p>
+  </div>
+
+  <div>
+   <ul>
+    <li>
+     1 valor: este valor se aplica a los cuatro lados
+    </li>
+    <li>
+     2 valores: el primer valor se aplica a los lados inferior <br> 
+     y superior y el segundo a los lados derecho e izquierdo
+    </li>
+    <li>
+     3 valores: el primer valor se aplica al lado superior, <br> 
+     el segundo a los lados derecho e izquierdo y el tercer valor al lado inferior
+    </li>
+    <li>
+     4 valores: el primer valor se aplica al lado superior, <br>
+     el segundo al lado derecho, el tercer valor al lado inferior y el cuarto al lado izquierdo
+    </li>
+   </ul>
+  </div>
+
+  <div>
+   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+        width="450" viewBox="-50 -100 450 320" font-family="sans-serif" font-size="18" style="border: black 1px solid">
+   <title>Propiedad margin con 4 valores</title>
+
+   <polygon points="-20,-30 394,-30 394,-5 -20,-5" fill="hsla(0, 100%, 90%, 0.5)" stroke="none" />
+   <polygon points="394,-30 394,208 359,208 359,-30" fill="hsla(240, 100%, 90%, 0.5)" stroke="none" />
+   <polygon points="394,208 -20,208 -20,163 394,163" fill="hsla(60, 100%, 90%, 0.5)" stroke="none" />
+   <polygon points="-20,208 -20,-30 -5,-30 -5,208" fill="hsla(120, 100%, 90%, 0.5)" stroke="none" />
+
+   <rect x="-20" y="-30"  width="414" height="238" fill="none" stroke="black" stroke-width="1" stroke-dasharray="5 5" />
+   <rect x="0" y="0"  width="354" height="158" fill="none" stroke="hsl(0, 100%, 50%)" stroke-width="10" />
+   <rect x="28" y="28"  width="299" height="103" fill="none" stroke="black" stroke-width="1" stroke-dasharray="5 5" />
+   <text x="10" y="4" text-anchor="start">
+   <tspan x="30" y="44">En el modelo de caja CSS, cualquier</tspan>
+   <tspan x="30" y="64">elemento (texto, imagen, etc.) está</tspan>
+   <tspan x="30" y="84">metido dentro de una caja</tspan>
+   <tspan x="30" y="104">rectangular que puede tener borde,</tspan>
+   <tspan x="30" y="124">margen interior y margen exterior.</tspan>
+   </text>
+
+   <line x1="280" y1="0" x2="320" y2="-40" stroke-width="2" stroke="black" />
+   <circle cx="280" cy="0" r="4" fill="black" />
+   <text x="325" y="-35" text-anchor="start" font-size="16pt">border</text>
+   <line x1="260" y1="-15" x2="320" y2="-75" stroke-width="2" stroke="black" />
+   <circle cx="260" cy="-15" r="4" fill="black" />
+   <text x="325" y="-70" text-anchor="start" font-size="16pt">margin</text>
+
+   <text x="0" y="-50" text-anchor="start" font-size="20">margin: 20px &nbsp; 30px &nbsp; 40px &nbsp; 10px</text>
+   <circle cx="90" cy="-85" r="12" fill="hsla(0, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+   <text x="90" y="-80" text-anchor="middle" font-size="14">1</text>
+   <circle cx="155" cy="-85" r="12" fill="hsla(240, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+   <text x="155" y="-80" text-anchor="middle" font-size="14">2</text>
+   <circle cx="215" cy="-85" r="12" fill="hsla(60, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+   <text x="215" y="-80" text-anchor="middle" font-size="14">3</text>
+   <circle cx="275" cy="-85" r="12" fill="hsla(120, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+   <text x="275" y="-80" text-anchor="middle" font-size="14">4</text>
+
+   <text x="180" y="-12" text-anchor="middle" font-size="14">1</text>
+   <circle cx="180" cy="-17" r="10" fill="none" stroke="black" stroke-width="2" />
+   <text x="375" y="80" text-anchor="middle" font-size="14">2</text>
+   <circle cx="375" cy="75" r="10" fill="none" stroke="black" stroke-width="2" />
+   <text x="180" y="190" text-anchor="middle" font-size="14">3</text>
+   <circle cx="180" cy="185" r="10" fill="none" stroke="black" stroke-width="2" />
+   <text x="-13" y="80" text-anchor="middle" font-size="14">4</text>
+   <circle cx="-13" cy="75" r="10" fill="none" stroke="black" stroke-width="2" />
+   </svg>
+  </div>
+
+ </body>
+</html>

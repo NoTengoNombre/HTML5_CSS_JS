@@ -1,0 +1,139 @@
+<!--
+    @Created on : 01-jul-2017, 2:14:52
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Espacios en blanco </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" /> 
+  <style>
+
+   p#left{
+       direction: ltr;
+   }
+
+   p#right{
+       direction: rtl;
+   }
+
+   p#bidi-override{
+       direction: rtl;
+       unicode-bidi: bidi-override;
+   }
+
+   p.direccion_tabla_izq{
+       direction: ltr;
+   }
+
+   p.direccion_tabla_der{
+       direction: rtl;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p id="left">
+   Esto es un párrafo normal y corriente.
+  </p>
+
+  <p id="right">
+   Esto es un párrafo normal y corriente.
+  </p>
+
+  <p>
+   Para que la propiedad direction se imponga al algoritmo de dirección de escritura del navegador, es necesario utilizar también la propiedad unicode-bidi.
+  </p>
+
+  <p id="bidi-override">
+   Para que la propiedad direction se imponga al algoritmo de dirección de escritura del navegador, es necesario utilizar también la propiedad unicode-bidi.
+  </p>
+
+  <table class="direccion_tabla_izq" border>
+   <tr>
+    <th>Cambiar la direccion de la tabla</th>
+    <th>Cambiar la direccion de la tabla</th>
+    <th>Cambiar la direccion de la tabla</th>
+   </tr>
+   <tr>
+    <td>
+     Cuando se aplica a una tabla, la propiedad direction 
+     establece el orden de las columnas de la tabla.
+    </td>
+    <td>
+     Cuando se aplica a una tabla, la propiedad direction 
+     establece el orden de las columnas de la tabla.
+    </td>
+    <td>
+     Cuando se aplica a una tabla, la propiedad direction 
+     establece el orden de las columnas de la tabla.
+    </td>
+   </tr>
+  </table>
+
+  <br>
+
+  <table class="direccion_tabla_der" border>
+   <caption></caption>
+   <tbody>
+    <tr>
+     <th>Columna 1 - Fila 1</th>
+     <th>Columna 2 - Fila 2</th>
+    </tr>
+    <tr>
+     <td>Columna 1 - Fila 2</td>
+     <td>Columna 2 - Fila 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <br>
+
+  <table id="direccion_tabla_der" border>
+   <tr>
+    <th>Cambiar la direccion de la tabla</th>
+    <th>Cambiar la direccion de la tabla</th>
+    <th>Cambiar la direccion de la tabla</th>
+   </tr>
+   <tr>
+    <td>
+     Cuando se aplica a una tabla, la propiedad direction 
+     establece el orden de las columnas de la tabla.
+    </td>
+    <td>
+     Cuando se aplica a una tabla, la propiedad direction 
+     establece el orden de las columnas de la tabla.
+    </td>
+    <td>
+     Cuando se aplica a una tabla, la propiedad direction 
+     establece el orden de las columnas de la tabla.
+    </td>
+   </tr>
+  </table>
+
+  <br>
+
+  <table class="direccion_tabla_der" border>
+   <caption></caption>
+   <tbody>
+    <tr>
+     <th>Columna 1 - Fila 1</th>
+     <th>Columna 2 - Fila 2</th>
+    </tr>
+    <tr>
+     <td>Columna 1 - Fila 2</td>
+     <td>Columna 2 - Fila 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+
+ </body>
+</html>

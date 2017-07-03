@@ -1,0 +1,107 @@
+<!--
+    @Created on : 01-jul-2017, 2:14:52
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Espacios en blanco </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Anton" /> 
+  <style>
+
+   pre{
+       white-space: normal;
+   }
+
+   pre#pre_basico{
+       white-space: pre;
+   }
+
+   pre#pre_nowrap{
+       white-space: nowrap;
+   }
+
+   pre#pre_wrap{
+       white-space: pre-wrap;
+   }
+
+   pre#pre_line{
+       white-space: pre-line;
+   }
+
+  </style>
+ </head>
+ <body>
+
+
+  <p>
+   Establecer el comportamiento del navegador con respecto <br>
+   a los espacios en blanco repetidos o con los saltos <br>
+   de línea del código fuente. <br>
+   <br>
+   Los posibles valores de <br>
+   white-space son : <br>
+   normal <br>
+   pre <br>
+   nowrap<br>
+   pre-wrap<br> 
+   pre-line<br>
+  </p>
+
+
+  <pre>
+   El valor <b>normal</b> hace que el navegador 
+colapse los espacios en blanco, colapse
+ los saltos de línea y haga ajuste de línea
+ (nota: para ver que el navegador hace 
+ajuste de línea, puede hacer falta
+ estrechar la ventana del navegador):
+  </pre>
+
+  <pre id="pre_basico">
+   El valor <b>pre</b> hace que el navegador no colapse
+   los espacios en blanco, 
+   no colapse los saltos de línea y no haga ajuste de línea:
+  </pre>
+
+
+
+  <pre id="pre_wrap">
+ El valor <b>pre-wrap</b> hace que el
+ navegador colapse los espacios en blanco,
+ colapse los saltos de línea y no haga ajuste de línea:
+  </pre>
+
+
+  <pre id="pre_nowrap">
+El valor <b>nowrap</b> hace que el navegador 
+no colapse los espacios en blanco, 
+no colapse los saltos de línea y haga 
+ajuste de línea (nota: para ver que el
+ navegador hace ajuste de línea, 
+puede hacer falta estrechar la ventana del navegador):
+  </pre>
+
+
+  <pre id="pre_line">
+El valor <b>pre-line</b> hace que el navegador colapse
+ los espacios en blanco, no colapse los saltos 
+de línea y haga ajuste de línea 
+(nota: para ver que el navegador hace ajuste de línea,
+ puede hacer falta estrechar la ventana del navegador):
+  </pre>
+
+
+
+
+
+
+
+ </body>
+</html>

@@ -1,0 +1,121 @@
+<!--
+    @Created on : 02-jul-2017, 21:22:26
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Margin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+
+  <section>
+   <center>
+    <h2>
+     El margen interior 
+    </h2>
+    <p>
+     Un elemento es el espacio transparente <br>
+     situado entre el elemento y el borde.<br> 
+     Este espacio se puede de definir <br>
+     aunque el elemento no tenga borde.<br> 
+     La hoja de estilo por defecto del navegador <br>
+     aplica márgenes interiores a muy pocos elementos.<br>
+    </p>
+   </center>
+  </section>
+
+  <div>
+   <ul>
+    <li>
+     La propiedad padding permite establecer el tamaño del margen interior. <br>
+     Como en el caso de las propiedades <br>
+     <b>
+      border-color, border-width y border-style 
+     </b>
+     <br>
+     se pueden escribir de uno 
+     a cuatro valores, que se interpretan de la siguiente manera:
+    </li>
+    <li>
+     1 valor: este valor se aplica a los cuatro lados
+    </li>
+    <li>
+     2 valores: el primer valor se aplica a los lados inferior y superior y el segundo a los lados derecho e izquierdo
+    </li>
+    <li>
+     3 valores: el primer valor se aplica al lado superior, el segundo a los lados derecho e izquierdo y el tercer valor al lado inferior
+    </li>
+    <li>
+     4 valores: el primer valor se aplica al lado superior, el segundo al lado derecho, el tercer valor al lado inferior y el cuarto al lado izquierdo
+    </li>
+   </ul>
+  </div>
+
+ <center>
+  <section>
+   <h2>
+    El margen interior 
+   </h2>
+
+   <div>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+         width="450" viewBox="-50 -100 450 320" font-family="sans-serif" font-size="18" style="border: black 1px solid">
+    <title>Propiedad padding con 4 valores</title>
+
+    <polygon points="10,-10 374,-10 374,27 10,27" fill="hsla(0, 100%, 90%, 0.5)" stroke="none" />
+    <polygon points="374,-10 374,190 327,190 327,-10" fill="hsla(240, 100%, 90%, 0.5)" stroke="none" />
+    <polygon points="374,190 10,190 10,132 374,132" fill="hsla(60, 100%, 90%, 0.5)" stroke="none" />
+    <polygon points="10,190 10,-10 28,-10 28,190" fill="hsla(120, 100%, 90%, 0.5)" stroke="none" />
+
+    <rect x="10" y="-10"  width="364" height="198" fill="none" stroke="hsl(0, 100%, 50%)" stroke-width="10" />
+    <rect x="28" y="28"  width="299" height="103" fill="none" stroke="black" stroke-width="1" stroke-dasharray="5 5" />
+    <text x="10" y="4" text-anchor="start">
+    <tspan x="30" y="44">En el modelo de caja CSS, cualquier</tspan>
+    <tspan x="30" y="64">elemento (texto, imagen, etc.) está</tspan>
+    <tspan x="30" y="84">metido dentro de una caja</tspan>
+    <tspan x="30" y="104">rectangular que puede tener borde,</tspan>
+    <tspan x="30" y="124">margen interior y margen exterior.</tspan>
+    </text>
+
+    <line x1="290" y1="-10" x2="320" y2="-40" stroke-width="2" stroke="black" />
+    <circle cx="290" cy="-10" r="4" fill="black" />
+    <text x="325" y="-35" text-anchor="start" font-size="16pt">border</text>
+    <line x1="235" y1="10" x2="320" y2="-75" stroke-width="2" stroke="black" />
+    <circle cx="235" cy="10" r="4" fill="black" />
+    <text x="325" y="-70" text-anchor="start" font-size="16pt">padding</text>
+
+    <text x="0" y="-50" text-anchor="start" font-size="20">padding: 20px &nbsp; 30px &nbsp; 40px &nbsp; 10px</text>
+    <circle cx="100" cy="-85" r="12" fill="hsla(0, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+    <text x="100" y="-80" text-anchor="middle" font-size="14">1</text>
+    <circle cx="163" cy="-85" r="12" fill="hsla(240, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+    <text x="163" y="-80" text-anchor="middle" font-size="14">2</text>
+    <circle cx="220" cy="-85" r="12" fill="hsla(60, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+    <text x="220" y="-80" text-anchor="middle" font-size="14">3</text>
+    <circle cx="280" cy="-85" r="12" fill="hsla(120, 100%, 90%, 0.5)" stroke="black" stroke-width="2" />
+    <text x="280" y="-80" text-anchor="middle" font-size="14">4</text>
+
+    <text x="180" y="16" text-anchor="middle" font-size="14">1</text>
+    <circle cx="180" cy="11" r="10" fill="none" stroke="black" stroke-width="2" />
+    <text x="345" y="80" text-anchor="middle" font-size="14">2</text>
+    <circle cx="345" cy="75" r="10" fill="none" stroke="black" stroke-width="2" />
+    <text x="180" y="162" text-anchor="middle" font-size="14">3</text>
+    <circle cx="180" cy="157" r="10" fill="none" stroke="black" stroke-width="2" />
+    <text x="20" y="80" text-anchor="middle" font-size="14">4</text>
+    <circle cx="20" cy="75" r="10" fill="none" stroke="black" stroke-width="2" />
+    </svg>
+   </div>
+  </section>
+ </center>
+
+</body>
+</html>

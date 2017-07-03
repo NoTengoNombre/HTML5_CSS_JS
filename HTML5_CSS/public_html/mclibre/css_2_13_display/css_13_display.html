@@ -1,0 +1,113 @@
+<!--
+    @Created on : 02-jul-2017, 15:03:56
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>CSS Display</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   div#valores{
+       display: block;
+       font-size: 1.3rem;
+       margin: 0 auto 0 auto;
+       text-align: center;
+   }
+
+   div#valores1{
+       display: block;
+       font-size: 1.3rem;
+       margin: 0 auto 0 auto;
+       text-align: center;
+   }
+
+   ul {
+       /*display: inline;*/
+       display: block;
+       /*display: list-item;*/
+       /*display: run-in;*/
+       margin-left: auto;
+       margin-right: auto;
+       text-align: left;
+   }
+
+   li{
+       background-color: #ccffff;
+       /*display: inline;*/
+       /*display: block;*/
+       display: list-item;
+       /*display: run-in;*/
+       font-size: 1.2rem;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   <p>La propiedad display permite especificar el tipo de caja <br>
+    que se aplica en un elemento. <br>
+    Los diferentes tipos de cajas corresponden <br>
+    a diferentes tipos de contenido (texto, listas, tablas)<br>
+   </p>
+
+   <div id='valores'>
+    Valores de 'display' 
+   </div>
+   <ul>
+    <li>    none: hace que no se genere caja
+    </li>
+    <li>    block: caja rectangular que forma un bloque
+    </li>
+    <li>    inline: caja en-línea que puede ocupar varias líneas y está incluida en una caja de tipo block
+    </li>
+    <li>    inline-block: caja en-línea, pero que se formatea como una caja de tipo block
+    </li>
+    <li>    run-in: caja de tipo inline, pero que se añade al principio del elemento siguiente
+    </li>
+    <li>    list-item: caja de tipo block pero que también incluye un marcador
+    </li>
+   </ul>
+
+   <div id='valores1'>
+    <p>
+     Cajas que forman parte de una tabla:
+    </p>
+   </div>
+   <ul>
+    <li>    table
+    </li>
+    <li>    table-caption
+    </li>
+    <li>    table-cell
+    </li>
+    <li>    table-column
+    </li>
+    <li>    table-column-group
+    </li>
+    <li>    table-footer-group
+    </li>
+    <li>    table-header-group
+    </li>
+    <li>    table-row
+    </li>
+    <li>    table-row-group
+    </li>
+    <li>    inline-table
+    </li>
+   </ul>
+
+  </div>
+
+
+ </body>
+</html>

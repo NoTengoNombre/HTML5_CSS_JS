@@ -1,0 +1,61 @@
+<!--
+    @Created on : 04-jul-2017, 12:31:37
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>CSS 2: Posicionamiento flotante</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   p{
+       border: 1px solid black;
+   }
+
+   p.desplazado_bottom{
+       background-color: white;
+       border: 1px solid black;
+       color: #00f;
+       font-size: 20px;
+
+       position: relative;
+       bottom: 20px;
+   }
+
+   p.desplazado_bottom_20{
+       background-color: #ccffcc;
+       border: 1px solid black;
+       color: #ff3333;
+       font-size: 20px;
+
+       position: relative;
+       top: -20px;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p>Este parrafo no tiene posicionamiento absoluto relativo</p>
+
+  <p class="desplazado_bottom">
+   <em>Este parrafo tiene posicionamiento absoluto relativo 0px</em>
+  </p>
+
+  <p class="desplazado_bottom_20">
+   <em>Este parrafo tiene posicionamiento absoluto relativo -20px</em>
+  </p>
+
+  <p>
+   Este parrafo no tiene posicionamiento absoluto relativo
+  </p>
+
+
+ </body>
+</html>

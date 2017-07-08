@@ -1,0 +1,71 @@
+<!--
+    @Created on : 04-jul-2017, 11:10:50
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>propiedad background-clip</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+   
+   p#border_box{
+       border: 10px dotted black;
+       margin: 20px;
+       padding: 20px;
+       background-color: lightblue;
+       background-clip: border-box;
+   }
+   
+   p#paddin_box{
+       border: 10px dotted black;
+       margin: 20px;
+       padding: 20px;
+       background-color: lightblue;
+       background-clip: padding-box;
+   }
+   
+   p#content-box{
+       border: 10px dotted black;
+       margin: 20px;
+       padding: 20px;
+       background-color: lightblue;
+       background-clip: content-box;
+   }
+   
+  </style>
+ </head>
+ <body>
+  <div>
+   <p>La <b>propiedad background-clip </b><br>
+    <br>
+    Permite definir la zona en la que aparece el fondo (color o imagen).<br>
+    Los posibles valores de la propiedad <b>background-clip</b> son:
+   </p>
+  </div>
+  <ul>
+   <li>
+    <p id="border_box">
+     <b>border-box: </b>el fondo se extiende hasta el borde (borde incluido)
+    </p>
+   </li>
+   <li>
+    <p id='paddin_box'>
+     <b>padding-box: </b>el fondo se extiende hasta el margen interior (el borde no se incluye)
+    </p>
+   </li>
+   <li>
+    <p id='content-box'>
+     <b>content-box: </b>el fondo se limita al contenido (no se incluye ni el margen interior ni el borde)
+    </p>
+   </li>
+
+  </ul>
+
+ </body>
+</html>

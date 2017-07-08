@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
   <style type="text/css">
-   
+
    div{
        width: 98%;
        height: 10em;
@@ -38,8 +38,54 @@
        background-repeat: no-repeat;
    }
 
+   div#esquina_superior{
+       width: 98%;
+       height: 10em;
+       border: 1px solid black;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: lightblue;
+       background-image: url('../assets/image/jpg/verde.jpg');
+       background-position: 100% top;/*horizontal vertical*/
+       background-repeat: no-repeat;
+   }
 
+   div#centro_superior{
+       width: 98%;
+       height: 10em;
+       border: 1px solid black;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: lightblue;
+       background-image: url('../assets/image/jpg/verde.jpg');
+       background-position: 50% top;/*horizontal vertical*/
+       background-repeat: no-repeat;
+   }
 
+   div#izquierda_superior{
+       width: 98%;
+       height: 10em;
+       border: 1px solid black;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: lightblue;
+       background-image: url('../assets/image/jpg/verde.jpg');
+       background-position: 0% top;/*horizontal vertical*/
+       background-repeat: no-repeat;
+   }
+   
+   div#centro{
+       width: 98%;
+       height: 10em;
+       border: 1px solid black;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: lightblue;
+       background-image: url('../assets/image/jpg/verde.jpg');
+       background-position: 50% center;/*horizontal vertical*/
+       background-repeat: no-repeat;
+   }
+   
   </style>
  </head>
  <body>
@@ -50,7 +96,7 @@
    tiene una imagen de fondo 
    situada en el centro a la derecha
   </p>
-  <div></div>
+  <div>Solo 1 parametro : background-position: 100%;</div>
 
   <p>
    La recomendación CSS 2 del W3C no permitía 
@@ -64,7 +110,11 @@
    correctamente, abajo a la derecha.
   </p>
 
-  <div id="esquina_derecha"></div>
+  <div id="esquina_derecha">esquina_derecha : background-position: 100% bottom</div>
+  <div id="centro_superior">centro_superior : background-position: 50% top;</div>
+  <div id="esquina_superior">esquina_superior derecha : background-position: 100% top</div>
+  <div id="izquierda_superior">izquierda_superior : background-position: 0% top;</div>
+  <div id="centro"> centro : background-position: 50% center;</div>
 
  </body>
 </html>

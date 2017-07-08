@@ -1,0 +1,89 @@
+<!--
+    @Created on : 04-jul-2017, 11:10:50
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>propiedad background-origin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   @font-face{
+       font-family: mifuente;
+       src: url(../assets/webfonts/fantasquesanmono/FantasqueSansMono-Regular.woff);
+   }
+
+   p#border_box{
+       background-image: url(../assets/image/png/cuadricula_transp.png);
+       background-color: lightblue;
+       background-origin: border-box;
+       
+       border: 10px dotted black;
+       font-family: mifuente;
+       margin: 20px;
+       padding: 20px;
+   }
+
+   p#paddin_box{
+       background-image: url(../assets/image/png/cuadricula_transp.png);
+       background-color: lightblue;
+       background-origin: padding-box;
+       
+       border: 10px dotted black;
+       font-family: mifuente;
+       margin: 20px;
+       padding: 20px;
+   }
+
+   p#content-box{
+       background-image: url(../assets/image/png/cuadricula_transp.png);
+       background-color: lightblue;
+       background-origin: content-box;
+       
+       border: 10px dotted black;
+       font-family: mifuente;
+       margin: 20px;
+       padding: 20px;
+   }
+
+  </style>
+ </head>
+ <body>
+  <div>
+   <p>La <b>propiedad background-origin </b><br>
+    <br>
+    La propiedad background-origin permite definir la zona en la que se sitúa el origen de la posición del fondo. 
+    <br><br>
+    Hay que tener en cuenta que una vez definido el origen de la imagen,
+    esta puede repetirse en todo el esapcio disponible <br>
+
+    (al que afecta la propiedad background-clip).
+   </p>
+  </div>
+  <ul>
+   <li>
+    <p id="border_box">
+     <b>border-box: </b>el fondo se extiende hasta el borde (borde incluido)
+    </p>
+   </li>
+   <li>
+    <p id='paddin_box'>
+     <b>padding-box: </b>el fondo se extiende hasta el margen interior (el borde no se incluye)
+    </p>
+   </li>
+   <li>
+    <p id='content-box'>
+     <b>content-box: </b>el fondo se limita al contenido (no se incluye ni el margen interior ni el borde)
+    </p>
+   </li>
+
+  </ul>
+
+ </body>
+</html>

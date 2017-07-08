@@ -1,0 +1,45 @@
+<!--
+    @Created on : 04-jul-2017, 12:31:37
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>CSS 2: Posicionamiento flotante</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style type="text/css">
+
+   div{
+       border: 3px solid black;
+       overflow: auto;
+   }
+
+   img{
+       float: left;
+   }
+
+  </style>
+ </head>
+ <body>
+  <p>
+   Para que los elementos flotantes se tengan en cuenta al calcular el tamaño de 
+   los elementos que los contienen, se puede utilizar la propiedad <b>overflow</b>
+   con el valor <b>auto</b> en el elemento contenedor.
+  </p>
+
+  <div>
+   <p>
+    <img src="../assets/image/png/gnu-head-sm.jpg" alt="Logo" title="logotipo html5" width="100">
+    Este parrafo tiene insertada una imagen flotante
+   </p>
+  </div>
+
+  <p>Este párrafo ya está fuera de la división.</p>
+  
+ </body>
+</html>

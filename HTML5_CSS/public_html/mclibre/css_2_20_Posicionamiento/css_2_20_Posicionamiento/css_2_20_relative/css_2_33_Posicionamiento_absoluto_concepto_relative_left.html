@@ -18,24 +18,24 @@
        border: 1px solid black;
    }
 
-   p.desplazado_bottom{
+   p#desplazado_left{
        background-color: white;
        border: 1px solid black;
        color: #00f;
        font-size: 20px;
 
        position: relative;
-       bottom: 20px;
+       left: 100px;
    }
 
-   p.desplazado_bottom_20{
+   p#desplazado_left_20{
        background-color: #ccffcc;
        border: 1px solid black;
        color: #ff3333;
        font-size: 20px;
 
        position: relative;
-       top: -20px;
+       left: -20px;
    }
 
   </style>
@@ -44,11 +44,11 @@
 
   <p>Este parrafo no tiene posicionamiento absoluto relativo</p>
 
-  <p class="desplazado_bottom">
-   <em>Este parrafo tiene posicionamiento absoluto relativo 0px</em>
+  <p id="desplazado_left">
+   <em>Este parrafo tiene posicionamiento absoluto relativo 100px</em>
   </p>
 
-  <p class="desplazado_bottom_20">
+  <p id="desplazado_left_20">
    <em>Este parrafo tiene posicionamiento absoluto relativo -20px</em>
   </p>
 

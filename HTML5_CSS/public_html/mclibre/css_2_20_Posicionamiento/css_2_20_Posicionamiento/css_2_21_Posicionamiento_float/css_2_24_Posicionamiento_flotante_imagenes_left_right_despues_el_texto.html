@@ -1,0 +1,78 @@
+<!--
+    @Created on : 04-jul-2017, 12:31:37
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>CSS 2: Posicionamiento flotante</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+
+   p{
+       border: 3px solid #990099;
+   }
+
+   img{
+       border: 1px solid red;
+   }
+
+   div.resultado{
+       margin: 1em 0;
+       margin-top: 1em;
+       margin-right: 0px;
+       margin-bottom: 1em;
+       margin-left: 0px;
+   }
+
+   img.izq{
+       float: left;
+   }
+   img.der{
+       float: right;
+   }
+
+  </style>
+ </head>
+ <body>
+  <div>
+   <img class="izq" src="../assets/image/svg/icono_html5.svg" alt="fuego" title="logo fuego" width="100" height="100" />
+   <img class="der" src="../assets/image/svg/icono_css3.svg" alt="fuego" title="logo fuego" width="100" height="100" />
+
+   <p>
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+   </p>
+  </div>
+
+  <div style="border: 1px solid blue;">
+   <p>Cambiando el orden de las imagenes aparecen en la misma posicion</p>
+  </div>
+
+  <div>
+   <p>
+    <img class="der" src="../assets/image/svg/icono_css3.svg" alt="fuego" title="logo fuego" width="100" height="100" />
+    <img class="izq" src="../assets/image/svg/icono_html5.svg" alt="fuego" title="logo fuego" width="100" height="100" />
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+    1º Tiene definidas las imagenes y luego tiene el texto , las imagenes aparecen a los lados
+   </p>
+  </div>
+
+
+
+ </body>
+</html>

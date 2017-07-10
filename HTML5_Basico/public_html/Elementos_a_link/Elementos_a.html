@@ -1,0 +1,77 @@
+<!--
+    @Created on : 13-may-2017, 20:29:34
+    @Author     : RVS - N.F.N.D
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Crear Enlace online</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/img/icono_html5.svg">
+  <style>
+
+   ul{
+       list-style: cross-fade;
+   }
+
+   li.sin_decoracion{
+       list-style: none;
+       font-weight: bolder;
+       font-size: 1.3em;
+   }
+
+   img{
+       width: auto;
+       height: auto;
+       border: 2px solid blue;
+       position: static;
+       top: 10px;
+   }
+
+   #caja0{
+       position: static;
+       top: 0px;
+   }
+
+   #caja1{
+       position: absolute;
+       bottom: -1000px;
+   }
+
+   a:link{
+       text-decoration: none;
+   }
+
+  </style>
+ </head>
+ <body>
+  <div id="caja0">
+   <p>
+    <a href="#enlace1">
+     <img id="enlace2" src="../assets/img/icono_html5.svg" alt="img1" width="100" />
+    </a>
+   </p>
+  </div>
+
+  <div>
+   <ul>
+    <li><p>Creamos el elemento que queremos enlazar y luego le añadimos un id para referenciarlo con a href </p></li>
+    <li class="sin_decoracion"><p>img id="enlace2"</p></li>
+    <li><p>Creamos el a href y le asignamos el mismo identificador que tiene el id que le pusimos al elemento</p></li>
+    <li class="sin_decoracion"><p>a href="#enlace2"</p></li>
+   </ul>
+  </div>
+
+  <div id="caja1">
+   <p>
+    <a href="#enlace2">Enlace 2</a> 
+   </p>
+   <p id="enlace1"></p>
+  </div>
+
+ </body>
+</html>

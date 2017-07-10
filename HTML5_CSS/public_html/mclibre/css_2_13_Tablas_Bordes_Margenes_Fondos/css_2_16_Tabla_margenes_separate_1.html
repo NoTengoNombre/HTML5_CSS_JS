@@ -1,0 +1,131 @@
+<!--
+    @Created on : 10-jul-2017, 22:21:25
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Tablas Bordes MargenesFondos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/image/png/gnu-head-sm.jpg">
+  <style>
+
+   table{
+       margin-top: 20px;
+       margin-left: 20px;
+       margin-right: 20px;
+       border: 1px solid orange;
+   }
+
+   .tabla{
+       margin: 15px;
+       padding: 15px;
+       border-collapse: separate;
+   }
+
+   .ttbody{
+       margin: 15px;
+       padding: 15px;
+       border-collapse: separate;
+   }
+
+   .ttr{
+       margin: 15px;
+       padding: 15px;
+       border-collapse: separate;
+   }
+
+   .ttd{
+       margin: 15px;
+       padding: 15px;
+       border-collapse: separate;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p style="border: 1px solid red">
+   En el modo separado, los navegadores representan 
+   el margin y el padding de la tabla (< table>) y 
+   el padding de las celdas (< td>).
+   <br>
+   En el modo colapsado, los navegadores representan 
+   únicamente el margin de la tabla (< table>) y el padding de las celdas (< td>).
+  </p>
+
+  <table class='tabla'>
+   <caption>
+    Separate
+    Acepta border-collapse
+   </caption>
+   <thead>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+
+  <table border>
+   <caption>
+    Separate
+    Acepta border-collapse
+   </caption>
+   <tbody class="ttbody">
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <table border>
+   <caption>
+    Separate 
+    Acepta border-collapse
+   </caption>
+   <tbody>
+    <tr class='ttr'>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+    <tr class='ttr'>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <table border>
+   <caption>    
+    Separate
+    Acepta border-collapse
+   </caption>
+   <tbody>
+    <tr>
+     <td class='ttd'>Celda 1</td>
+     <td class='ttd'>Celda 2</td>
+    </tr>
+    <tr>
+     <td class='ttd'>Celda 3</td>
+     <td class='ttd'>Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+ </body>
+</html>

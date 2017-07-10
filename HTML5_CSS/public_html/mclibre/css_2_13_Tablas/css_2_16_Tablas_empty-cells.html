@@ -1,0 +1,188 @@
+<!--
+    @Created on : 10-jul-2017, 19:07:36
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title> Modos de bordes: border-collapse </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   div{
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 10px;
+       text-align: justify;
+       width: 500px;
+   }
+
+   table{
+       background-color: #EEEEEE;
+   }
+
+   table#show{
+       empty-cells: show;
+   }
+
+   table#hidden{
+       empty-cells: hide;
+   }
+
+   /* En el modo colapsado empty-cells no hace nada */
+   table#border-collapse{
+       border-collapse: collapse;
+       empty-cells: hide;
+   }
+
+   table#border-spacing{
+       /*              derecha/izquierda
+                            arriba/abajo */
+       border-spacing: 40px; /* margin para tablas */
+       border: 1px solid red;
+   }
+
+   table#border-spacing2{
+       /*              derecha/izquierda
+                            arriba/abajo */
+       border-spacing: 40px 60px; /* margin para tablas */
+       border: 1px solid red;
+   }
+
+   table#collapse{
+       /*              derecha/izquierda
+                            arriba/abajo */
+       border-collapse: collapse;
+       border-spacing: 20px; /* margin para tablas */
+   }
+
+   span{
+       font-weight: bold;
+   }
+
+   td{
+       border: 1px solid black;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   La <span>propiedad border-collapse </span> permite elegir el modo 
+   de presentación de los bordes de las celdas y de la tabla. 
+   <br><br>
+   Los dos valores permitidos son separate (separado) y collapse (colapsado). <br><br>
+   En el modo separado existe un hueco entre los bordes de cada celda, 
+   mientras que en el modo colapsado los bordes se superponen.<br><br> 
+   Si no se establece el modo de presentación, <br>
+   los navegadores aplican el valor separate.
+  </div>
+
+  <h2>Si no se establece el modo de presentación, 
+   los navegadores aplican el valor <b>separate.</b>
+  </h2>
+
+  <div>
+   <p>Modo show - Aparecen las celdas sin valor</p>
+   <table id="show">
+    <tr>
+     <td>Celda 1</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>Celda 4</td>
+    </tr>
+   </table>
+  </div>
+
+  <div>
+   <p>Modo hidden - No aparecen las celdas</p>
+   <table id="hidden">
+    <tr>
+     <td>Celda 1</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>Celda 4</td>
+    </tr>
+   </table>
+  </div>
+
+  <h2>
+   En el modo de bordes colapsado no se aplica la propiedad empty-cells.
+  </h2>
+
+  <div>
+   <p>La <b>propiedad border-spacing </b> <br>
+    Permite establecer una separación <br>
+    entre las celdas cuando <br>
+    se utiliza el modo de bordes separado. 
+    <br><br>
+    Se puede escribir un único valor, <br>
+    que se aplicaría a los cuatro lados, <br>
+    o dos valores, que se aplicarían en <br>
+    horizontal (a derecha e izquierda) <br>
+    en vertical (arriba y abajo) respectivamente. 
+    <br><br>
+    Los valores no se pueden expresar en porcentajes, <br> 
+    pero sí en cualquier otra unidad (px, em, etc).
+   </p>
+  </div>
+
+  <div>
+   <table id="border-spacing">
+    <tr>
+     <td>Celda 1</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>Celda 4</td>
+    </tr>
+   </table>
+  </div>
+
+  <h2>Si no se establece la propiedad, los navegadores aplican el <b>valor 2px.</b></h2>
+
+  <div>
+   <table id="border-spacing2">
+    <tr>
+     <td>Celda 1</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>Celda 4</td>
+    </tr>
+   </table>
+
+  </div>
+  <h2>En el modo de bordes colapsado no se aplica la propiedad border-spacing</h2>
+
+  <div>
+   <table id="collapse">
+    <caption style="border: 1px solid red;">
+     En el modo de bordes colapsado no se aplica la propiedad border-spacing
+    </caption>
+    <tr>
+     <td>Celda 1</td>
+     <td></td>
+    </tr>
+    <tr>
+     <td></td>
+     <td>Celda 4</td>
+    </tr>
+   </table>
+  </div>
+
+ </body>
+</html>

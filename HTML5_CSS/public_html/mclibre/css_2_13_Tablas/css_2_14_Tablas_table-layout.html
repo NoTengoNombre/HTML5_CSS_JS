@@ -1,0 +1,83 @@
+<!--
+    @Created on : 10-jul-2017, 19:07:36
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title> CSS 2: Tablas  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   table{
+       border-collapse: separate;
+       width: 100%;
+       border: 1px solid black;
+   }
+
+   div{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: justify;
+       width: 500px;
+   }
+
+   span{
+       font-weight: bold;
+   }
+
+   td{
+       border: 1px solid black;
+   }
+
+   table.ex1{
+       table-layout: auto;
+   }
+
+   table.ex2{
+       table-layout: fixed;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   La <span>propiedad table-layout </span>
+   permite elegir el modo en el que el navegador 
+   calcula el tamaño total de la tabla y el de cada fila o columna. 
+   Los dos valores permitidos son fixed (fijo) y auto (automático).
+   En el modo fijo (fixed), el tamaño de las tablas y 
+   de las celdas depende de las propiedades width y height.
+   En el modo fijo (auto), el tamaño de las tablas y 
+   de las celdas depende de su contenido 
+   (y si es posible, de las propiedades width y height).
+  </div>
+
+  <p>Table-layout : auto</p>
+  <table class="ex1">
+   <tr>
+    <td width="5%">1000000000000000000000000000</td>
+    <td width="95%">10000000</td>
+   </tr>
+  </table>
+
+  <p>Table-layout : fixed</p>
+  <table class="ex2">
+   <tr>
+    <td width="5%">1000000000000000000000000000</td>
+    <td width="95%">10000000</td>
+   </tr>
+  </table>
+
+
+
+
+
+ </body>
+</html>

@@ -1,0 +1,94 @@
+<!--
+    @Created on : 10-jul-2017, 19:07:36
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title> Modos de bordes: border-collapse </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   table#separate{
+       border-collapse: separate;
+       width: 100%;
+       border: 1px solid black;
+   }
+
+   table#collapse{
+       border-collapse: collapse;
+       width: 100%;
+       border: 1px solid black;
+   }
+
+   div{
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 10px;
+       text-align: justify;
+       width: 500px;
+   }
+
+   span{
+       font-weight: bold;
+   }
+
+   td{
+       border: 1px solid black;
+   }
+
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   La <span>propiedad border-collapse </span> permite elegir el modo 
+   de presentación de los bordes de las celdas y de la tabla. 
+   Los dos valores permitidos son separate (separado) y collapse (colapsado). 
+   En el modo separado existe un hueco entre los bordes de cada celda, 
+   mientras que en el modo colapsado los bordes se superponen. 
+   Si no se establece el modo de presentación, los navegadores aplican el valor separate.
+  </div>
+
+  <h2>Si no se establece el modo de presentación, 
+   los navegadores aplican el valor <b>separate.</b></h2>
+
+  <div>
+   <p>Modo separado existe un hueco entre los bordes de cada celda</p>
+   <table id="separate">
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>
+   </table>
+  </div>
+
+  <div>
+   <p>Modo colapsado los bordes se superponen</p>
+   <table id="collapse">
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>
+   </table>
+  </div>
+
+
+
+
+ </body>
+</html>

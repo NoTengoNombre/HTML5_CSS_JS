@@ -1,0 +1,76 @@
+<!--
+    @Created on : 10-jul-2017, 16:37:52
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>CSS 2: Listas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+
+   ul{
+
+   }
+
+   li#outside{
+       background-color: lightblue;
+       margin-right: 600px;
+   }
+
+   li#inside{
+       background-color: lightblue;
+       margin-right: 600px;
+       list-style: inside;
+   }
+
+   p{
+       border: 1px solid red;
+       padding: 10px;
+       width: 300px;
+   }
+
+   div{
+       border: 1px solid red;
+       height : auto;
+       margin-right: auto;
+       padding: 10px;
+       width: 300px;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p>Posición del marcador: list-style-position</p>
+
+  <div>
+   La propiedad list-style-position 
+   establece la posición del marcador 
+   con respecto al resto del elemento 
+   de la lista: <br>
+   <ul>
+    <li>dentro (inside)<br> </li>
+    <li>fuera (outside)<br> </li>
+   </ul>
+   Los navegadores aplican por omisión el valor outside.
+  </div>  
+
+  <ul>
+   <li id='outside'>Posición del marcador: list-style-position - outside</li>
+  </ul>
+
+  <ul>
+   <li id='inside'>Posición del marcador: list-style-position - inside</li>
+  </ul>
+
+
+
+ </body>
+</html>

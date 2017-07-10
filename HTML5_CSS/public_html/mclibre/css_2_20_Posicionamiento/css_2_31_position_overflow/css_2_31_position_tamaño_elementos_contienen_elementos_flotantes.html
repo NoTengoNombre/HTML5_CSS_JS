@@ -16,7 +16,6 @@
 
    div{
        border: 3px solid black;
-       overflow: auto;
    }
 
    img{
@@ -26,20 +25,24 @@
   </style>
  </head>
  <body>
-  <p>
-   Para que los elementos flotantes se tengan en cuenta al calcular el tamaño de 
-   los elementos que los contienen, se puede utilizar la propiedad <b>overflow</b>
-   con el valor <b>auto</b> en el elemento contenedor.
-  </p>
+
 
   <div>
+
+
    <p>
-    <img src="../assets/image/png/gnu-head-sm.jpg" alt="Logo" title="logotipo html5" width="100">
-    Este parrafo tiene insertada una imagen flotante
+    Los elementos flotantes no se tienen en cuenta al calcular el tamaño de los elementos que los contienen. Por ejemplo, si un imagen flotante forma parte de una división con borde, la imagen puede "salirse" del borde, como se ve en siguiente ejemplo:
+   </p>
+
+   <p>
+    <img src="../../assets/image/svg/icono_html5.svg" alt="Logo" title="logotipo html5" width="100">
+   </p>
+
+   <p>
+    Este párrafo tiene insertada una imagen flotante.
+
+    Este párrafo y el anterior forman parte de una división.
    </p>
   </div>
-
-  <p>Este párrafo ya está fuera de la división.</p>
-  
  </body>
 </html>

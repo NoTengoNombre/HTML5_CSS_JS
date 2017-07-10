@@ -1,0 +1,127 @@
+<!--
+    @Created on : 10-jul-2017, 22:21:25
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Tablas Bordes MargenesFondos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/image/png/gnu-head-sm.jpg">
+  <style>
+
+
+
+   table{
+       border: 1px solid red;
+       border-collapse: collapse;
+   }
+
+   .tabla{
+       margin: 15px;
+       padding: 15px;
+   }
+
+   .ttbody{
+       margin: 15px;
+       padding: 15px;
+   }
+
+   .tfila{
+       margin: 15px;
+       padding: 15px;
+   }
+
+   .tcelda{
+       margin: 15px;
+       padding: 15px;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p>
+   En el modo separado, los navegadores representan 
+   el margin y el padding de la tabla (< table>) y 
+   el padding de las celdas (< td>).
+   <br>
+   En el modo colapsado, los navegadores representan 
+   únicamente el margin de la tabla (< table>) y el padding de las celdas (< td>).
+  </p>
+
+  <table class='tabla'>
+   <caption>
+    Collapse
+    Acepta border-collapse
+   </caption>
+   <thead>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+
+  <table>
+   <caption>
+    Collapse
+    No acepta border-collapse
+   </caption>
+   <tbody class="ttbody">
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <table>
+   <caption>
+    Collapse 
+    No acepta border-collapse
+   </caption>
+   <tbody>
+    <tr class='tfila'>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+    <tr class='tfila'>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <table border>
+   <caption>    
+    Collapse
+    Acepta border-collapse
+   </caption>
+   <tbody>
+    <tr>
+     <td class="tcelda">Celda 1</td>
+     <td class="tcelda">Celda 2</td>
+    </tr>
+    <tr>
+     <td class="tcelda">Celda 3</td>
+     <td class="tcelda">Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+ </body>
+</html>

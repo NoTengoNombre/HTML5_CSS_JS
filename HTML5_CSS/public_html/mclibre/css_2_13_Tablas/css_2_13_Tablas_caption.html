@@ -1,0 +1,110 @@
+<!--
+    @Created on : 10-jul-2017, 19:07:36
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title> CSS 2: Tablas  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   p{
+       text-align: center;
+   }
+
+   caption{
+   }
+
+   table{
+       margin-top : 40px;
+       margin-bottom : 40px;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <h1>Posición de la leyenda: caption-side</h1>
+
+  <div>
+   <p>
+    La <b>propiedad caption-side </b> 
+    permite elegir la posición de la leyenda <br>
+    <b>(< caption >) </b> con respecto a la tabla. <br>
+    <br>
+    Los cuatro valores permitidos son <b> top (arriba), right (derecha), bottom (abajo) y left (izquierda). </b>
+    <br>
+    Si no se establece la posición de la leyenda, los navegadores aplican el valor <b>top</b>.<br>
+   </p>
+  </div>
+
+  <table border>
+   <caption>This is a leyend</caption>
+   <tr>
+    <td>Celda 1 </td>
+    <td>Celda 2 </td>
+   </tr>
+   <tr>
+    <td>Celda 3 </td>
+    <td>Celda 4 </td>
+   </tr>
+  </table>
+
+  <table border>
+   <caption style="caption-side: top">Esto es una leyenda</caption>
+   <tr>
+    <td>Celda 1 </td>
+    <td>Celda 2 </td>
+   </tr>
+   <tr>
+    <td>Celda 3 </td>
+    <td>Celda 4 </td>
+   </tr>
+  </table>
+
+  <table border>
+   <caption style="caption-side: bottom">Esto es una leyenda</caption>
+   <tr>
+    <td>Celda 1 </td>
+    <td>Celda 2 </td>
+   </tr>
+   <tr>
+    <td>Celda 3 </td>
+    <td>Celda 4 </td>
+   </tr>
+  </table>
+
+  <table border>
+   <caption>Esto es una leyenda : Left No esta permitido</caption>
+   <!--<caption style="caption-side: left">Esto es una leyenda</caption>-->
+   <tr>
+    <td>Celda 1 </td>
+    <td>Celda 2 </td>
+   </tr>
+   <tr>
+    <td>Celda 3 </td>
+    <td>Celda 4 </td>
+   </tr>
+  </table>
+
+  <table border>
+   <caption>Esto es una leyenda : Right No esta permitido</caption>
+   <!--<caption style="caption-side: right">Esto es una leyenda</caption>-->
+   <tr>
+    <td>Celda 1 </td>
+    <td>Celda 2 </td>
+   </tr>
+   <tr>
+    <td>Celda 3 </td>
+    <td>Celda 4 </td>
+   </tr>
+  </table>
+
+
+ </body>
+</html>

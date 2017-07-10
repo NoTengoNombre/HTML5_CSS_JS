@@ -1,0 +1,126 @@
+<!--
+    @Created on : 10-jul-2017, 22:21:25
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Tablas Bordes MargenesFondos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/image/png/gnu-head-sm.jpg">
+  <style>
+   table{
+       margin: 10px;
+       border: 1px solid red;
+   }
+
+   caption{
+       border: 1px solid blue;
+       font-size: 1.3rem;
+   }
+
+   .tabla{
+       border: 5px solid red;
+       border-collapse: separate;
+   }
+
+   .tbody{
+       border: 5px solid green;
+       border-collapse: separate;
+   }
+
+   tr.tfila{
+       border: 5px solid orange;
+       border-collapse: separate;
+   }
+
+   td.tcelda{
+       border: 5px solid tomato;
+       border-collapse: separate;
+   }
+  </style>
+ </head>
+
+ <body>
+
+  <table class='tabla'>
+   <caption>
+    Separate 
+    Acepta border-collapse
+   </caption>
+   <thead>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+
+  <table>
+   <caption>
+    Separate 
+    Acepta border-collapse
+   </caption>
+   <thead>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </thead>
+   <tbody class="tbody">
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+
+  <table>
+   <caption>
+    Separate 
+    No acepta border-collapse
+   </caption>
+   <thead>
+    <tr class='tfila'>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr class='tfila'>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+
+  <table border id="d2">
+   <caption>    
+    Separate 
+    Acepta border-collapse
+   </caption>
+   <thead>
+    <tr>
+     <td class="tcelda">Celda 1</td>
+     <td class="tcelda">Celda 2</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td class="tcelda">Celda 3</td>
+     <td class="tcelda">Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+ </body>
+</html>

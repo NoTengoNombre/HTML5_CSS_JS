@@ -1,0 +1,204 @@
+<!--
+    @Created on : 10-jul-2017, 12:33:38
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Contorno outline</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   body{
+       background-color: white;
+   }
+
+   div {
+       border: 3px solid red;
+       width: fit-content;
+   }
+
+   p{
+       outline: 3px solid blue;
+       width: fit-content;
+   }
+
+   span{
+       width: fit-content;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   p#p1{
+       border: 1px solid red;
+   }
+
+   p#con-border{
+       outline: 3px solid orange;
+   }
+
+   p#con-outline{
+       outline: 3px solid #0f0;
+   }
+
+   p#con-outline{
+       outline: 3px solid #0f0;
+   }
+
+   p#con-border-modifica:hover{
+       border: 15px solid #ee0d1c;
+   }
+
+   p#con-outline-modifica:hover{
+       outline: 3px solid #885e06;
+   }
+
+   hr{
+       margin-top: 20px;
+       margin-bottom: 20px;
+       margin-left: auto;
+       margin-right: auto;
+       width: 400px;
+   }
+
+   span.con-border{
+       outline: 3px black solid;
+   }
+
+   span.con-outline{
+       outline: 3px black solid;
+   }
+
+   p#p_sin-invertido{
+       outline: 3px invert solid;
+   }
+
+   p#p_con_invertido{
+       outline: invert 3px solid;
+   }
+
+
+
+
+  </style>
+ </head>
+ <body>
+
+  <p>
+   La <b>propiedad compuesta outline </b> permite establecer<br>
+   un contorno a un elemento, indicando como en <br>
+   caso del borde, el color, el grosor y el estilo del contorno.<br>
+  </p>
+
+  <hr>
+
+  <p id='p1'>
+   Un elemento puede tener simultáneamente borde y contorno <br> 
+  </p>
+
+  <hr>
+
+  <p id='con-border'>
+   El contorno se diferencia del borde en que el <br>
+   contorno no se tiene en cuenta al calcular <br>
+   el tamaño del elemento, mientras que el borde sí,<br>  
+  </p>
+
+  <hr>
+
+  <p id='con-outline'>
+   si el contorno se genera cuando el ratón <br>
+   pasa por encima del elemento. <br>
+   En el caso del borde, al añadirse el borde, <br> 
+   los elementos siguientes se desplazan, <br>
+   pero en el caso del contorno, <br>
+   al generarse el contorno, <br>
+   los elementos siguientes no se desplazan.<br>
+  </p>
+
+  <hr>
+
+  <div>
+   <p style="border: 1px solid red">
+    Esto es un párrafo normal y corriente.<br>
+   </p>
+   <p id='con-border-modifica'>
+    Cuando el ratón pasa por encima, <br>
+    Desplaza la caja del PARRAFO<br>
+    se muestra un <b style="font-size: 30px;">border</b>  de estilo solid.<br>
+   </p>
+   <p>
+    Modifica el tamaño del parrafo gracias al <b>outline</b>.<br>
+   </p>
+  </div>
+
+  <hr>
+
+  <div>
+   <p style="border: 1px solid red">
+    Esto es un párrafo normal y corriente.<br>
+   </p>
+   <p id='con-outline-modifica'>
+    Cuando el ratón pasa por encima, <br>
+    se muestra un <b style="font-size: 30px;">outline</b>  de estilo solid.<br>
+   </p>
+   <p>
+    No modifica el tamaño del parrafo gracias al <b>outline</b>.<br>
+   </p>
+  </div>
+
+  <hr>
+
+  <div>
+   <b>con-border<br></b>
+   El contorno se diferencia también 
+   del borde 
+   <span class="con-border">
+    en que el borde es 
+    siempre rectangular, mientras 
+    que el contorno no tiene por qué serlo.
+   </span>
+  </div>
+
+  <hr>
+
+  <div>
+   <b>con-outline<br></b>
+   El contorno se diferencia 
+   también del borde 
+   <span class="con-outline">
+    en que el borde es 
+    siempre rectangular, mientras que 
+    el contorno no tiene por qué serlo.
+   </span>
+  </div>
+
+  <hr>
+
+  <div id="div_sin-invertido">
+   <p id="p_sin-invertido">
+    La propiedad <b>outline</b>
+    admite como color el valor <b>invert. </b>
+    El contorno toma el color opuesto <br>
+    al color de fondo del elemento.
+   </p>
+  </div>
+
+  <div id="div_con_invertido">
+   <p id="p_con_invertido">
+    La propiedad <b>outline</b>
+    admite como color el valor <b>invert. </b>
+    El contorno toma el color opuesto <br>
+    al color de fondo del elemento.
+   </p>
+  </div>
+
+
+
+ </body>
+</html>

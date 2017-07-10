@@ -1,0 +1,83 @@
+<!--
+    @Created on : 10-jul-2017, 19:07:36
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title> CSS 2: Tablas  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   table{
+       margin-left : auto;
+       margin-right:  auto;
+       width: 350px;
+   }
+
+   caption{
+       border: 1px solid red;
+       margin-top: 10px;
+   }
+
+
+   b{
+       font-size: 1.3rem;
+   }
+
+   caption#cap{
+       background-color: lightblue;
+       text-align: right;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <h2>Centrar una tabla</h2>
+
+  <p>
+   Para centrar una 
+   tabla horizontalmente en la página, <br>
+   se deben establecer las dos <br>
+   <br>
+   <b>propiedades : <br> margin-left <br>
+    margin-right </b> 
+   <br>
+   con el valor <b>auto.</b>
+  </p>
+
+  <table border>
+   <caption> Esto es una leyenda </caption>
+   <tr>
+    <td>Celda 1, con más texto</td>
+    <td>Celda 2</td>
+   </tr>
+   <tr>
+    <td>Celda 3</td>
+    <td>Celda 4, con más texto</td>
+   </tr>
+  </table>
+
+  <table border>
+   <caption id="cap"> Esto es una leyenda </caption>
+   <tr>
+    <td>Celda 1, con más texto</td>
+    <td>Celda 2</td>
+   </tr>
+   <tr>
+    <td>Celda 3</td>
+    <td>Celda 4, con más texto</td>
+   </tr>
+  </table>
+
+
+
+
+ </body>
+</html>

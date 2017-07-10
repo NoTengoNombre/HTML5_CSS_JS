@@ -1,0 +1,257 @@
+<!--
+    @Created on : 10-jul-2017, 17:22:22
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>CSS 2: Diseño de listas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   body{
+       height: 4000px;
+   }
+
+   div{
+       clear: both;
+       margin-top: 10px;
+       margin-bottom: 10px;
+   }
+
+   div#cuadrado{
+       margin: 5px;
+       border: 1px solid red;
+       width: 100px;
+       height: 100px;
+   }
+
+   span#fx{
+       font-size: 1.3rem;
+   }
+
+   a{
+       text-decoration: none; 
+   }
+
+   ul{
+   }
+
+   li{
+   }
+
+   h1{
+       margin-top: 70px;
+   }
+
+   ul#hor{
+       background-color: #d7c061;
+       list-style-type: none;
+       margin-right: 600px;
+   }
+
+   ul#hor2{
+       list-style-type: none;
+       position: fixed;
+       margin-left: 5px; 
+       top: 0px;
+   }
+
+   li.hor2{
+       float: left;
+       background-color: #9999ff;
+       border-radius: 10px;
+       font-size: 20px;
+       margin-left: 5px; 
+       padding: 5px;
+   }
+
+   ul#hor3{
+       list-style-type: none;
+   }
+
+   li.hor3{
+       background-color: #F6E3CA;
+       border-radius: 5px;
+       box-shadow: -5px 0px 5px 5px #6666ff;
+       float: left;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   ul#hor4{
+       list-style-type: none;
+   }
+
+   li.hor4{
+       background-color: #ccffff;
+       float: left;
+       text-align: center;
+       width: 5em;
+       border-radius: 5px;
+       box-shadow: -5px 0px 5px 5px #f55838;
+       margin: 10px;
+       padding: 10px;
+   }
+
+   li.hor4:hover{
+       background-color: #ccccff
+           ;
+   }
+
+
+   ul#hor5{
+       list-style-type: none;
+   }
+
+   li.hor5{
+       background-color: #d7c061;
+       border-radius: 2px;
+       float: left;
+       padding-top: 5px;
+       text-align: center;
+       width: 10em;
+       height: 30px;
+   }
+
+   li.hor5:hover{
+       /*valores 
+                  alto-bajo
+                       izqder 
+                           difuminado 
+                                 anchura*/
+       box-shadow: -5px -5px 5px 5px #ccccff;
+       background-color: tomato;
+   }
+
+   ul#hor6{
+       list-style-type: none;
+   }
+
+   li.hor6{
+       background-color: #F6E3CA;
+       border:  #D7C8B6 2px solid;
+       float: left;
+       margin-right: 10px;
+       padding: 0 4px;
+   }
+
+   li.hor6:hover{
+       box-shadow: -1px -1px 2px 2px #ccccff;
+       background-color: #ff99ff;
+   }
+
+   ul#hor7{
+       list-style-type: none;
+   }
+
+   li.hor7{
+       float: left;
+       background-color: #F6E3CA;
+       margin-right: 10px;
+       border:  #D7C8B6 2px solid;
+   }
+
+   a.hore7{
+       color: black;
+       padding: 0 4px;
+       text-decoration: none;
+   }
+
+   a:hover{
+       box-shadow: -1px -1px 2px 2px #ccccff;
+       background-color: #D7C8B6;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <h1>Menús horizontales con <b>float</b></h1>
+
+  <ul>
+   <li>1</li>
+   <li>2</li>
+   <li>3</li>
+   <li>4</li>
+  </ul>
+
+  <ul id="hor">
+   <li>1one</li>
+   <li>2two</li>
+   <li>3three</li>
+   <li>4four</li>
+  </ul>
+
+  <div>
+   <p>Cabecero con box-shadow : position - <span id='fx'>FIXED </span></p>
+   <p><em>Aqui va el cabecero superior </em></p>
+   <div id='cuadrado'></div>
+   <ul id="hor2">
+    <li class='hor2'><a href="">cabecera color1</a></li>
+    <li class='hor2'><a href="">cabecera color2</a></li>
+    <li class='hor2'><a href="">cabecera color3</a></li>
+    <li class='hor2'><a href="">cabecera color4</a></li>
+   </ul>
+  </div>
+
+  <div>
+   <p>Cabecero con box-shadow</p>
+   <ul id="hor3">
+    <li class='hor3'><a href="">cabecera basica 1</a></li>
+    <li class='hor3'><a href="">cabecera basica 2</a></li>
+    <li class='hor3'><a href="">cabecera basica 3</a></li>
+    <li class='hor3'><a href="">cabecera basica 4</a></li>
+   </ul>
+  </div>
+
+  <div>
+   <p>Cabecero con box-shadow</p>
+   <ul id="hor4">
+    <li class='hor4'><a href="">cabecera basica 1</a></li>
+    <li class='hor4'><a href="">cabecera basica 2</a></li>
+    <li class='hor4'><a href="">cabecera basica 3</a></li>
+    <li class='hor4'><a href="">cabecera basica 4</a></li>
+   </ul>
+  </div>
+
+  <div>
+   <p>Cabecero con misma franja 1</p>
+   <ul id="hor5">
+    <li class='hor5'><a href="#">cabecera basica 1</a></li>
+    <li class='hor5'><a href="#">cabecera basica 2</a></li>
+    <li class='hor5'><a href="#">cabecera basica 3</a></li>
+    <li class='hor5'><a href="#">cabecera basica 4</a></li>
+   </ul>
+  </div>
+
+  <div>
+   <p>Cabecero con misma franja 2</p>
+   <ul id="hor6">
+    <li class='hor6'><a href="#">cabecera basica 1</a></li>
+    <li class='hor6'><a href="#">cabecera basica 2</a></li>
+    <li class='hor6'><a href="#">cabecera basica 3</a></li>
+    <li class='hor6'><a href="#">cabecera basica 4</a></li>
+   </ul>
+  </div>
+
+  <div>
+   <p>Cabecero con misma franja 3</p>
+   <ul id="hor7">
+    <li class='hor7'><a class='hore7' href="#">cabecera basica 1</a></li>
+    <li class='hor7'><a class='hore7' href="#">cabecera basica 2</a></li>
+    <li class='hor7'><a class='hore7' href="#">cabecera basica 3</a></li>
+    <li class='hor7'><a class='hore7' href="#">cabecera basica 4</a></li>
+   </ul>
+  </div>
+
+
+
+
+ </body>
+</html>

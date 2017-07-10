@@ -1,0 +1,100 @@
+<!--
+    @Created on : 10-jul-2017, 12:33:38
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Contorno outline</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/Favicon.ico">
+  <style>
+
+   div , p{
+       text-align: center;
+       margin-top: 10px;
+       margin-bottom: 50px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   p#t1{
+       font-size: 30px;
+   }
+
+   #myDiv1{
+       width: 300px;
+       height: 200px;
+       outline: 1px solid black;
+       -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+       animation: mymove 5s infinite;
+   }
+
+   @-webkit-keyframes mymove{ /* Chrome, Safari, Opera */
+       50% {
+           outline: 15px solid lightblue;
+       }
+   }
+
+   /* Standard syntax */
+   @keyframes mymove{
+       50% {
+           outline: 15px solid lightblue;
+       }
+   }
+
+   #myDiv2{
+       width: 300px;
+       height: 200px;
+       outline: 1px solid black;
+       outline-style: dotted;
+       -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+       animation: mymove1 5s infinite;
+   }
+
+
+   @-webkit-keyframes mymove1{ /* Chrome, Safari, Opera */
+       50% {
+           outline:  15px dotted lightblue;
+       }
+   }
+
+   /* Standard syntax */
+   @keyframes mymove1{
+       50% {
+           outline: 15px dotted lightblue;
+       }
+   }
+
+  </style>
+ </head>
+ <body>
+  <p id="t1">Gradually change the outline property</p>
+
+  <div id="myDiv1">
+   <p>
+    The outline property is a shorthand property <br>
+    for all outline properties
+   </p>
+   <p>
+    See the indivual outline properties to see which is animatable
+   </p>
+  </div>
+
+  <div id="myDiv2">
+   <p>
+    The outline property is a shorthand property <br>
+    for all outline properties
+   </p>
+   <p>
+    See the indivual outline properties to see which is animatable
+   </p>
+  </div>
+
+
+ </body>
+</html>

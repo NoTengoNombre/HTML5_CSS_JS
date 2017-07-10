@@ -1,0 +1,119 @@
+<!--
+    @Created on : 10-jul-2017, 22:21:25
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Tablas Bordes MargenesFondos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/image/png/gnu-head-sm.jpg">
+  <style>
+
+   table{
+       margin: 10px;
+       border: 1px solid red;
+       border-collapse: collapse;
+   }
+
+   caption{
+       border: 1px solid blue;
+       font-size: 1.3rem;
+   }
+
+   .tabla{
+       border: 5px solid red;
+   }
+
+   .tbody{
+       border: 5px solid green;
+   }
+
+   tr.tfila{
+       border: 5px solid orange;
+   }
+
+   td.tcelda{
+       border: 5px solid tomato;
+   }
+
+  </style>
+ </head>
+
+ <body>
+
+  <table class='tabla'>
+   <caption>
+    Collapse
+    Acepta border-collapse
+   </caption>
+   <thead>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+
+  <table>
+   <caption>
+    Collapse
+    Acepta border-collapse
+   </caption>
+   <tbody class="tbody">
+    <tr>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>
+    <tr>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <table>
+   <caption>
+    Collapse 
+    No acepta border-collapse
+   </caption>
+   <tbody>
+    <tr class='tfila'>
+     <td>Celda 3</td>
+     <td>Celda 4</td>
+    </tr>    
+    <tr class='tfila'>
+     <td>Celda 1</td>
+     <td>Celda 2</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <table border>
+   <caption>    
+    Collapse
+    Acepta border-collapse
+   </caption>
+   <tbody>
+    <tr>
+     <td class="tcelda">Celda 1</td>
+     <td class="tcelda">Celda 2</td>
+    </tr>
+    <tr>
+     <td class="tcelda">Celda 3</td>
+     <td class="tcelda">Celda 4</td>
+    </tr>    
+   </tbody>
+  </table>
+ </body>
+</html>

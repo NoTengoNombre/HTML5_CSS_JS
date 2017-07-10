@@ -1,0 +1,125 @@
+<!--
+    @Created on : 09-jul-2017, 16:10:50
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Profundidad: z-index</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   p{
+       border: 1px solid red;
+       width: fit-content;
+   }
+
+   p.p1{
+       background-color: lightblue;
+       height: 150px;
+       width: 150px;
+
+       position: relative;
+       top: 0;
+       left: 50px;
+   }
+
+   p.p2{
+       background-color: #DDDDDD;
+       height: 150px; 
+       width: 150px;   
+
+       position: relative;
+       top: -50px;
+       left: 0;
+   }
+
+  </style>
+ </head>
+ <body>
+  <section>
+   <h2>Propiedad z-index </h2>
+   <div>
+    <p>
+     Al utilizar posicionamiento absoluto (relativo, fijo o absoluto) dos o más elementos se pueden solapar. 
+    </p>
+    <p>
+     La propiedad z-index, que debe ser un número entero (positivo, cero o negativo), <br>
+     permite establecer qué elemento se muestra encima, pero también <br>
+     influye si los elementos tienen o no posicionamiento <br>
+     y el orden en que aparecen los elementos en el código fuente. <br>
+    </p>
+    <p>
+     Las reglas a aplicar son las siguientes:
+    </p>
+    <ul>
+     <li>
+      Los elementos sin propiedad z-index se tratan como si tuviera un z-index igual a 0.
+     </li>
+     <li>
+      Los elementos sin posicionamiento se tratan como si tuvieran un z-index igual a 0 
+      (aunque tengan propiedad z-index).
+     </li>
+     <li>
+      Los elementos con mayor z-index se colocan sobre los elementos con menor z-index,
+     </li>
+     <li>
+      Si los z-index son iguales, los elementos con posicionamiento se colocan sobre los elementos sin posicionamiento
+     </li>
+     <li>
+      Si los z-index son iguales y los elementos tienen posicionamiento, 
+      los elementos que aparecen después en el código fuente 
+      se colocan encima de los elementos que aparecen antes en el código fuente
+     </li>
+    </ul>
+   </div>  
+  </section>
+
+
+  <section>
+   <h2> Position : relative </h2>
+   <div>
+
+    <p style="width: fit-content;"> 
+     Si no se utiliza la 'propiedad z-index'  <br>
+     cuando un elemento con 'position:' <br>
+     se solapa sobre otro elemento con 'position:' <br>
+     los elementos se van solapando en el mismo <br>
+     orden en que aparecen en el código fuente, <br>
+     en los que se puede observar cómo el <br>
+     al primero párrafo se superpone siempre <br>
+     al segundo
+    </p>
+   </div>
+
+   <p class='p1'>
+    <b>Primer parrafo</b>
+    <br>
+    position: relative;
+    <br>
+    top: 150px;
+    <br>
+    left: 50px;
+   </p>
+
+
+   <p class='p2'>
+    <b>Segundo parrafo</b>
+    <br>
+    position: relative;
+    <br>
+    top: -150px;
+    <br>
+    left: 0px;
+   </p>
+
+
+
+  </section>
+
+ </body>
+</html>

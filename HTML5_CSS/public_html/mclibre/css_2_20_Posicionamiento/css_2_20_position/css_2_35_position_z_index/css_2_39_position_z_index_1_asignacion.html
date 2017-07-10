@@ -1,0 +1,85 @@
+<!--
+    @Created on : 09-jul-2017, 16:10:50
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Profundidad: z-index</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+   p{
+       border: 1px solid red;
+   }
+
+   p.p1{
+       background-color: lightblue;
+       text-align: center;
+       height: 150px;
+       width: 150px;
+
+       position: relative;
+       top: 150px;
+       left: 50px;
+       z-index: 1;
+   }
+
+   p.p2{
+       background-color: #CCCCCC;
+       text-align: center;
+       height: 150px;
+       width: 150px;
+
+       position: relative;
+       top: -150px;
+       left: 0;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <section>
+   <h2> Position : relative </h2>
+   <div>
+
+    <p> 
+     Si se utiliza la propiedad <b>z-index</b> y posicionamiento,<br> 
+     los elementos con mayor <b>z-index</b> se colocan <br>
+     sobre los elementos con menor <b>z-index.</b>
+     <br>
+     Los elementos sin <b>z-index</b> se tratan <br>
+     como si tuvieran un <b>z-index</b> igual a 0.<br>
+    </p>
+   </div>
+
+   <p class='p1'>
+    <b>Primer parrafo</b>
+    <br>
+    position: relative;
+    <br>
+    top: 150px;
+    <br>
+    left: 50px;
+    <br>
+    <b>z-index: 1</b>
+   </p>
+
+   <p class='p2'>
+    <b>Segundo parrafo</b>
+    <br>
+    position: relative;
+    <br>
+    top: -150px;
+    <br>
+    left: 0px;
+   </p>
+  </section>
+
+ </body>
+</html>

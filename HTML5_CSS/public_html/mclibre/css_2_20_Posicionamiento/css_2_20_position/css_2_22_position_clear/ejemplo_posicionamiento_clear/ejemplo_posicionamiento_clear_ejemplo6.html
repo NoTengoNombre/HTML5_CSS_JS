@@ -1,0 +1,72 @@
+<!--
+    @Created on : 08-jul-2017, 16:07:51
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Propiedad Clear</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   hr{
+       clear: both;
+   }
+
+   img{
+       border: 7px solid green;
+       float: left;
+   }
+
+   p{
+       border: 3px solid red;
+   }
+
+   .parrafo{
+       border: 3px solid blue;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <p style="font-size: 1.3rem;">Divide el texto mediante 'hr' clear : both </p>
+  <img src="../../../../assets/image/png/gnu-head-sm.jpg" alt='fuego' title="fuego">
+  Texto flotando fuera sin pertenecer a ninguno elemento asociado
+  <p>El elemento texto fluye hacia la derecha y se situa junto al margen de la imagen</p>
+  <p>El elemento texto fluye hacia la derecha y se situa junto al margen de la imagen</p>
+
+  <hr>
+
+  <p style="width: 400px;">
+   La Caja del Elemento 'parrafo' tiene dentro el elemento IMAGEN
+   <img style="border: 3px solid green;" 
+        src="../../../../assets/image/jpg/tux.jpg" alt='fuego' title="fuego">
+  </p>
+  Texto flotando fuera sin pertenecer a ninguno elemento
+  <p class='parrafo'>Elemento parrafo se mete dentro del elemento imagen</p>
+  <p class='parrafo'>Elemento parrafo se mete dentro del elemento imagen</p>
+  <p class='parrafo'>Elemento parrafo se mete dentro del elemento imagen</p>
+
+  <hr>
+
+  <p style="width: 400px;">
+   El Elemento 'parrafo' tiene dentro el elemento IMAGEN
+   <img style="border: 3px solid green;" 
+        src="../../../../assets/image/jpg/tux.jpg" alt='fuego' title="fuego">
+   Texto dentro del parrafo <br>
+   Texto dentro del parrafo <br>
+   Texto dentro del parrafo <br>
+   Texto dentro del parrafo <br>
+   Texto dentro del parrafo <br>
+   Texto dentro del parrafo <br>
+   Texto dentro del parrafo <br>
+  </p>
+
+ </body>
+</html>

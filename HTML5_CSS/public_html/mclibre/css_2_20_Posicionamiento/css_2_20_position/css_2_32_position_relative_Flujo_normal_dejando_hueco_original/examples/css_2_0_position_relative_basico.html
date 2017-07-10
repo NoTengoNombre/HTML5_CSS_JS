@@ -1,0 +1,69 @@
+<!--
+    @Created on : 09-jul-2017, 9:02:15
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Posicionamiento absoluto relativo: relative</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   p.desplazado_top{
+       background-color: #ccffff;
+       border: 1px solid black;
+       position: relative;
+       top: 0px;
+   }
+
+   p.desplazado_bottom{
+       background-color: #ffcccc;
+       border: 1px solid black;
+       position: relative;
+       bottom: 0px;
+   }
+
+   p{
+       border: 1px solid #000099;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <section>
+   <h2>Posicionamiento : Relative</h2>
+   <div>
+    <p>Esta parrafo no tiene posicionamiento absoluto relativo </p>
+   </div>
+  </section>
+
+  <section>
+   <div>
+    <p class="desplazado_top">
+     Este párrafo sí tiene posicionamiento absoluto <b>relativo top de 0px.</b>
+    </p>
+    <p>
+     Esta parrafo no tiene posicionamiento absoluto relativo 
+    </p>
+   </div>
+  </section>
+
+  <section>
+   <div>
+    <p class="desplazado_bottom">
+     Este párrafo sí tiene posicionamiento absoluto <b>relativo bottom de 0px.</b>
+    </p>
+    <p>
+     Esta parrafo no tiene posicionamiento absoluto relativo 
+    </p>
+   </div>
+  </section>
+
+ </body>
+</html>

@@ -1,0 +1,63 @@
+<!--
+    @Created on : 04-jul-2017, 12:31:37
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>CSS 2: Posicionamiento flotante</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   div#caja{
+       border: red 3px solid;
+       overflow: auto;
+   }
+
+   img{
+       float: left;
+   }
+
+  </style>
+ </head>
+ <body>
+  <section>
+   <h1>
+    Para que los elementos flotantes se tengan en cuenta al 
+    calcular el tamaño de los elementos que los contienen, 
+    se puede utilizar la <b style="color : green"> propiedad overflow </b>
+    con el valor <b style="color : green">auto </b> en el elemento contenedor.
+   </h1>
+  </section>
+
+  <div id='caja'>
+   div 1
+   <img style="border: 5px solid #666600;" 
+        src='../../../assets/image/png/gnu-head-sm.jpg' alt='img1' title="gnu">
+   <br>El elemento 'parrafo' tiene insertada una imagen flotante
+   <br><br>
+   <b>
+    border: red 3px solid;
+    overflow: auto;
+   </b>
+   <br><br>
+   El elemento parrafo y el anterior forman parte de una división
+   <br><br>
+  </div>
+
+  <br>
+
+  <div style="border: 3px solid #990099;">
+   div 2
+   <p style="border: 5px solid #000099;" >
+    Elemento parrafo esta dentro de otro elemento division y fuera de la division principal
+   </p>
+   
+  </div>
+ </body>
+</html>

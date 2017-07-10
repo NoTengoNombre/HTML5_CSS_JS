@@ -1,0 +1,100 @@
+<!--
+    @Created on : 07-jul-2017, 19:51:18
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Posicionamiento absoluto fijo y absoluto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style type="text/css">
+
+   div{
+       border: 1px solid red;
+       margin: 0;
+       overflow: hidden;
+       position: absolute;
+   }
+
+   div#d1{
+       height: 10%;
+       left: 10%;
+       top: 15%;
+       width: 70%;
+   }
+
+   div#d2 { left:  10%; right: 20%; top: 30%; height: 10%;}
+   div#d3 { right: 20%; width: 70%; top: 45%; height: 10%;}
+   div#d4 { left: 10%; width: 20%; top: 60%; height: 30%;}
+   div#d5 { left: 40%; width: 20%; top: 60%; bottom: 10%;}
+   div#d6 { left: 70%; width: 20%; bottom: 10%; height: 30%; border: 1px solid red}
+
+   img.f1{
+       border: 1px solid red;
+       margin-left: 50px;
+       margin-top: 20px;
+       text-align: center;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   division basica 
+   <br>
+   overflow - Imagen se ajuste al marco entre otra cosas
+  </div>
+
+  <div id="d1">
+   division d1
+   <img style="border: 1px solid red;" src="../../../../assets/image/svg/fuego_1f525.svg" alt="fi" title="f1">
+  </div>
+
+  <div id="d2">
+   division d2
+   left:  10%; right: 20%; top: 30%; height: 10%;
+   <img class="f1" src="../../../../assets/image/svg/fuego_1f525.svg" alt="fi" title="f1">
+  </div>
+
+  <div id="d3">
+   division d3
+   right: 20%; width: 70%; top: 45%; height: 10%;
+   <img class="f1" src="../../../../assets/image/svg/fuego_1f525.svg" alt="fi" title="f1">
+  </div>
+
+  <div id="d4">
+   division d4
+   left:   10%; 
+   width:  20%; 
+   top:    60%; 
+   height: 30%;
+   <img style="border: 1px solid red;" src="../../../../assets/image/svg/fuego_1f525.svg" alt="fi" title="f1">
+  </div>
+
+  <div id="d5">
+   division d5
+   left:   40%; 
+   width:  20%; 
+   top:    60%; 
+   bottom: 10%;
+   <img class="f1" src="../../../../assets/image/svg/fuego_1f525.svg" alt="fi" title="f1">
+  </div>
+
+  <div id="d6">
+   division d6
+   left:   70%; 
+   width:  20%; 
+   bottom: 10%; 
+   height: 30%;
+   <img class="f1" src="../../../../assets/image/svg/fuego_1f525.svg" alt="fi" title="f1">
+  </div>
+
+
+ </body>
+</html>

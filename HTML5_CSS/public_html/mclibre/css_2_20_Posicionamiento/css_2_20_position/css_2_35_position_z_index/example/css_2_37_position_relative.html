@@ -1,0 +1,60 @@
+<!--
+    @Created on : 09-jul-2017, 16:10:50
+    @Author     : RVS - N.F.N.D - Home
+    @Pag        :
+    @version    :
+    @TODO       :
+-->
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <title>Profundidad: z-index</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="">
+  <style>
+
+   div{
+       border: 1px solid red;
+   }
+
+   p{
+       border: 1px solid red;
+       position: relative;
+   }
+
+   p.p1{
+       margin: 0px;
+       background-color: lightblue;
+       height: 150px;
+       width: 150px;
+
+       top: 10px;
+       left: 30px;
+   }
+
+   p.p2{
+       background-color: gray;
+       height: 150px;
+       width: 150px;
+
+       top: 20px;
+       left: 50px;
+   }
+
+  </style>
+ </head>
+ <body>
+
+  <div>
+   Margen del div que modifica el flujo de posicionamiento de los elementos
+   <br>
+   Aunque se mueva los elementos 'parrafo' se sigue guardando el hueco original del elemento
+   <p class='p1'><b>Primer parrafo</b></p>
+   Margen del div que modifica el flujo de posicionamiento de los elementos
+   <p class='p2'><b>Segundo parrafo</b></p>
+   Margen del div que modifica el flujo de posicionamiento de los elementos
+  </div>
+
+ </body>
+</html>
